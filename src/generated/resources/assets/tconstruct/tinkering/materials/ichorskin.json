@@ -1,11 +1,10 @@
 {
-  "color": "FF56CF4C",
+  "color": "FFFFB97C",
   "fallbacks": [
     "cloth"
   ],
   "generator": {
     "supported_stats": [
-      "tconstruct:bowstring",
       "tconstruct:cuirass",
       "tconstruct:armor_cuirass",
       "tconstruct:maille",
@@ -21,31 +20,27 @@
             "grey": 0
           },
           {
-            "color": "FF229630",
+            "color": "FFB04000",
             "grey": 63
           },
           {
-            "color": "FF24A033",
+            "color": "FFD35200",
             "grey": 102
           },
           {
-            "color": "FF27AB37",
+            "color": "FFEC5E00",
             "grey": 140
           },
           {
-            "color": "FF3EBD42",
+            "color": "FFFF8324",
             "grey": 178
           },
           {
-            "color": "FF56CF4C",
+            "color": "FFFFB97C",
             "grey": 216
           },
           {
-            "color": "FF6FEA60",
-            "grey": 234
-          },
-          {
-            "color": "FF82F86D",
+            "color": "FFFFFFFF",
             "grey": 255
           }
         ]
