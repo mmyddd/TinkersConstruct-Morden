@@ -10,9 +10,9 @@
     "tag": "forge:armors/boots/lead"
   },
   "result": {
-    "amount": 360,
+    "amount": 576,
     "tag": "forge:molten_lead",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 330,
   "time": 87

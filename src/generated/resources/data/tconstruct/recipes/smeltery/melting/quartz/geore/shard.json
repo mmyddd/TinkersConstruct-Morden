@@ -10,7 +10,7 @@
     "tag": "forge:geore_shards/quartz"
   },
   "result": {
-    "amount": 100,
+    "amount": 1600,
     "fluid": "tconstruct:molten_quartz"
   },
   "temperature": 637,

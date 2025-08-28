@@ -2,16 +2,16 @@
   "type": "tconstruct:alloy",
   "inputs": [
     {
-      "amount": 90,
+      "amount": 144,
       "tag": "forge:molten_copper"
     },
     {
-      "amount": 100,
+      "amount": 1600,
       "tag": "tconstruct:molten_amethyst"
     }
   ],
   "result": {
-    "amount": 90,
+    "amount": 144,
     "tag": "forge:molten_amethyst_bronze"
   },
   "temperature": 820

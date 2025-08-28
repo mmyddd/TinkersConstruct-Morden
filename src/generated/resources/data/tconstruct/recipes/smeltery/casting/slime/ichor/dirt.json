@@ -6,7 +6,7 @@
   "cast_consumed": true,
   "cooling_time": 134,
   "fluid": {
-    "amount": 500,
+    "amount": 800,
     "fluid": "tconstruct:ichor"
   },
   "result": "tconstruct:ichor_slime_dirt"

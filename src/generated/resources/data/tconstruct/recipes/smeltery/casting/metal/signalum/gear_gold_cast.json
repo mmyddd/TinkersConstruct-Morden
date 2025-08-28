@@ -11,7 +11,7 @@
   ],
   "cooling_time": 133,
   "fluid": {
-    "amount": 360,
+    "amount": 576,
     "tag": "forge:molten_signalum"
   },
   "result": {

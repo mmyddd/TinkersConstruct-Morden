@@ -3,11 +3,11 @@
   "units": [
     {
       "key": "gui.tconstruct.fluid.block",
-      "needed": 1000
+      "needed": 144
     },
     {
       "key": "gui.tconstruct.fluid.pane",
-      "needed": 250
+      "needed": 36
     }
   ]
 }

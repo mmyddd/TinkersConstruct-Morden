@@ -4,7 +4,7 @@
     "item": "minecraft:powered_rail"
   },
   "result": {
-    "amount": 90,
+    "amount": 144,
     "tag": "forge:molten_gold"
   },
   "temperature": 700,

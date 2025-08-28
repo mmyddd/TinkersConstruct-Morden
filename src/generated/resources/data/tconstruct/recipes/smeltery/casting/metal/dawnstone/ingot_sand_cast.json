@@ -17,7 +17,7 @@
   ],
   "cooling_time": 63,
   "fluid": {
-    "amount": 90,
+    "amount": 144,
     "tag": "forge:molten_dawnstone"
   },
   "result": {

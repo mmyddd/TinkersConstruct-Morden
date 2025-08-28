@@ -8,7 +8,7 @@
   ],
   "input": "tconstruct:platinum",
   "result": {
-    "amount": 90,
+    "amount": 144,
     "tag": "forge:molten_platinum"
   },
   "temperature": 970

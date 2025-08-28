@@ -10,7 +10,7 @@
     "tag": "forge:wires/electrum"
   },
   "result": {
-    "amount": 45,
+    "amount": 72,
     "tag": "forge:molten_electrum"
   },
   "temperature": 760,

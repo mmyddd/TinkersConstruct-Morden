@@ -4,9 +4,9 @@
     "item": "minecraft:iron_helmet"
   },
   "result": {
-    "amount": 450,
+    "amount": 720,
     "tag": "forge:molten_iron",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 800,
   "time": 134

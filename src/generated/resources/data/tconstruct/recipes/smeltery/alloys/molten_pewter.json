@@ -21,16 +21,16 @@
         "type": "tconstruct:alloy",
         "inputs": [
           {
-            "amount": 180,
+            "amount": 288,
             "tag": "forge:molten_tin"
           },
           {
-            "amount": 90,
+            "amount": 144,
             "tag": "forge:molten_lead"
           }
         ],
         "result": {
-          "amount": 270,
+          "amount": 432,
           "tag": "forge:molten_pewter"
         },
         "temperature": 400
@@ -47,16 +47,16 @@
         "type": "tconstruct:alloy",
         "inputs": [
           {
-            "amount": 270,
+            "amount": 432,
             "tag": "forge:molten_tin"
           },
           {
-            "amount": 90,
+            "amount": 144,
             "tag": "forge:molten_iron"
           }
         ],
         "result": {
-          "amount": 360,
+          "amount": 576,
           "tag": "forge:molten_pewter"
         },
         "temperature": 400
@@ -73,16 +73,16 @@
         "type": "tconstruct:alloy",
         "inputs": [
           {
-            "amount": 90,
+            "amount": 144,
             "tag": "forge:molten_iron"
           },
           {
-            "amount": 90,
+            "amount": 144,
             "tag": "forge:molten_lead"
           }
         ],
         "result": {
-          "amount": 180,
+          "amount": 288,
           "tag": "forge:molten_pewter"
         },
         "temperature": 400

@@ -4,7 +4,7 @@
     "tag": "minecraft:wooden_slabs"
   },
   "cast_consumed": true,
-  "cooling_time": 156,
+  "cooling_time": 124,
   "fluid": {
     "amount": 500,
     "tag": "tconstruct:molten_obsidian"

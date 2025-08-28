@@ -10,9 +10,9 @@
     "item": "railcraft:steel_spike_maul"
   },
   "result": {
-    "amount": 990,
+    "amount": 1584,
     "tag": "forge:molten_steel",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 950,
   "time": 215

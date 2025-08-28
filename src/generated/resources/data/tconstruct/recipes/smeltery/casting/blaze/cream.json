@@ -4,7 +4,7 @@
     "tag": "forge:slimeballs"
   },
   "cast_consumed": true,
-  "cooling_time": 60,
+  "cooling_time": 47,
   "fluid": {
     "amount": 50,
     "tag": "tconstruct:blazing_blood"

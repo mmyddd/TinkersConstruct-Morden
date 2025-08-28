@@ -7,7 +7,7 @@
   "cast_consumed": true,
   "cooling_time": 57,
   "fluid": {
-    "amount": 90,
+    "amount": 144,
     "tag": "forge:molten_gold"
   },
   "result": "tconstruct:maille_cast",

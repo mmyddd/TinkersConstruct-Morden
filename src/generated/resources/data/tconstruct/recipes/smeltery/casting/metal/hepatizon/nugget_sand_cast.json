@@ -6,7 +6,7 @@
   "cast_consumed": true,
   "cooling_time": 26,
   "fluid": {
-    "amount": 10,
+    "amount": 16,
     "tag": "forge:molten_hepatizon"
   },
   "result": {

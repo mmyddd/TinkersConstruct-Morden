@@ -59,7 +59,7 @@
     }
   ],
   "fluid": {
-    "amount": 50,
+    "amount": 80,
     "tag": "tconstruct:ender_slime"
   }
 }

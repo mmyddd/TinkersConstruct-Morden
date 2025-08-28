@@ -2,16 +2,16 @@
   "type": "tconstruct:alloy",
   "inputs": [
     {
-      "amount": 270,
+      "amount": 432,
       "tag": "forge:molten_cobalt"
     },
     {
-      "amount": 90,
+      "amount": 144,
       "tag": "tconstruct:molten_debris"
     }
   ],
   "result": {
-    "amount": 360,
+    "amount": 576,
     "tag": "forge:molten_manyullyn"
   },
   "temperature": 1200

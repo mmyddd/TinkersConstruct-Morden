@@ -2,7 +2,7 @@
   "type": "tconstruct:melting",
   "byproducts": [
     {
-      "amount": 1000,
+      "amount": 1600,
       "fluid": "tconstruct:scorched_stone"
     }
   ],
@@ -10,7 +10,7 @@
     "item": "tconstruct:scorched_duct"
   },
   "result": {
-    "amount": 180,
+    "amount": 288,
     "tag": "forge:molten_gold"
   },
   "temperature": 700,

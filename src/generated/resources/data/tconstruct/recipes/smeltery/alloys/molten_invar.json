@@ -8,16 +8,16 @@
   ],
   "inputs": [
     {
-      "amount": 180,
+      "amount": 288,
       "tag": "forge:molten_iron"
     },
     {
-      "amount": 90,
+      "amount": 144,
       "tag": "forge:molten_nickel"
     }
   ],
   "result": {
-    "amount": 270,
+    "amount": 432,
     "tag": "forge:molten_invar"
   },
   "temperature": 900

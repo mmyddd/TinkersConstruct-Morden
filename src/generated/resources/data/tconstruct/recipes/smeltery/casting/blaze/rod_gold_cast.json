@@ -3,7 +3,7 @@
   "cast": {
     "tag": "tconstruct:casts/multi_use/rod"
   },
-  "cooling_time": 85,
+  "cooling_time": 67,
   "fluid": {
     "amount": 100,
     "tag": "tconstruct:blazing_blood"

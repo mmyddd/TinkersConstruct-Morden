@@ -10,7 +10,7 @@
     "item": "ceramics:unfired_clay_plate"
   },
   "result": {
-    "amount": 250,
+    "amount": 400,
     "fluid": "tconstruct:molten_clay"
   },
   "temperature": 450,

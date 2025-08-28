@@ -11,7 +11,7 @@
             "items": [
               "tconstruct:scorched_lantern"
             ],
-            "nbt": "{tank:{Amount:50,FluidName:\"tconstruct:molten_manyullyn\"}}"
+            "nbt": "{tank:{Amount:80,FluidName:\"tconstruct:molten_manyullyn\"}}"
           }
         ]
       },
@@ -27,7 +27,7 @@
             "items": [
               "tconstruct:seared_lantern"
             ],
-            "nbt": "{tank:{Amount:50,FluidName:\"tconstruct:molten_manyullyn\"}}"
+            "nbt": "{tank:{Amount:80,FluidName:\"tconstruct:molten_manyullyn\"}}"
           }
         ]
       },
@@ -43,7 +43,7 @@
     "hidden": false,
     "icon": {
       "item": "tconstruct:scorched_lantern",
-      "nbt": "{tank:{Amount:50,FluidName:\"tconstruct:molten_manyullyn\"}}"
+      "nbt": "{tank:{Amount:80,FluidName:\"tconstruct:molten_manyullyn\"}}"
     },
     "show_toast": true,
     "title": {

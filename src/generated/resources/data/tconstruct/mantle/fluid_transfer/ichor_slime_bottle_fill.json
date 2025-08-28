@@ -1,7 +1,7 @@
 {
   "type": "mantle:fill_item",
   "fluid": {
-    "amount": 250,
+    "amount": 400,
     "fluid": "tconstruct:ichor"
   },
   "input": {

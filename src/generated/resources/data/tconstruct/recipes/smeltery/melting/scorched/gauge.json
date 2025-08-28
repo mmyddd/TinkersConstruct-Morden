@@ -2,7 +2,7 @@
   "type": "tconstruct:melting",
   "byproducts": [
     {
-      "amount": 500,
+      "amount": 8000,
       "fluid": "tconstruct:molten_quartz"
     }
   ],
@@ -18,7 +18,7 @@
     ]
   },
   "result": {
-    "amount": 1000,
+    "amount": 1600,
     "fluid": "tconstruct:scorched_stone"
   },
   "temperature": 500,

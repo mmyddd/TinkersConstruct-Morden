@@ -6,7 +6,7 @@
   "cast_consumed": true,
   "cooling_time": 23,
   "fluid": {
-    "amount": 10,
+    "amount": 16,
     "fluid": "tconstruct:molten_cinderslime"
   },
   "result": {

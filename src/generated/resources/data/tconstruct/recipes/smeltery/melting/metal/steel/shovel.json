@@ -10,9 +10,9 @@
     "tag": "tconstruct:melting/steel/tools_costing_1"
   },
   "result": {
-    "amount": 90,
+    "amount": 144,
     "tag": "forge:molten_steel",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 950,
   "time": 65

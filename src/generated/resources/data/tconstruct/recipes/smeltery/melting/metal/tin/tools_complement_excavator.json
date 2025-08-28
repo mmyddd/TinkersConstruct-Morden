@@ -10,9 +10,9 @@
     "item": "tools_complement:tin_excavator"
   },
   "result": {
-    "amount": 990,
+    "amount": 1584,
     "tag": "forge:molten_tin",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 225,
   "time": 129

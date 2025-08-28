@@ -59,7 +59,7 @@ public final class FluidValues {
     /**
      * Value of a single glass block, also used for obsidian
      */
-    public static final int GLASS_BLOCK = 1000;
+    public static final int GLASS_BLOCK = 144;
     /**
      * Value of a glass pane, slightly cheaper than vanilla
      */

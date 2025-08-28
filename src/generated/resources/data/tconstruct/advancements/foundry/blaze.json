@@ -34,7 +34,7 @@
             "items": [
               "tconstruct:scorched_ingot_gauge"
             ],
-            "nbt": "{tank:{Amount:4320,FluidName:\"tconstruct:blazing_blood\"}}"
+            "nbt": "{tank:{Amount:6912,FluidName:\"tconstruct:blazing_blood\"}}"
           }
         ]
       },
@@ -47,7 +47,7 @@
             "items": [
               "tconstruct:scorched_ingot_tank"
             ],
-            "nbt": "{tank:{Amount:4320,FluidName:\"tconstruct:blazing_blood\"}}"
+            "nbt": "{tank:{Amount:6912,FluidName:\"tconstruct:blazing_blood\"}}"
           }
         ]
       },
@@ -86,7 +86,7 @@
             "items": [
               "tconstruct:seared_ingot_gauge"
             ],
-            "nbt": "{tank:{Amount:4320,FluidName:\"tconstruct:blazing_blood\"}}"
+            "nbt": "{tank:{Amount:6912,FluidName:\"tconstruct:blazing_blood\"}}"
           }
         ]
       },
@@ -99,7 +99,7 @@
             "items": [
               "tconstruct:seared_ingot_tank"
             ],
-            "nbt": "{tank:{Amount:4320,FluidName:\"tconstruct:blazing_blood\"}}"
+            "nbt": "{tank:{Amount:6912,FluidName:\"tconstruct:blazing_blood\"}}"
           }
         ]
       },

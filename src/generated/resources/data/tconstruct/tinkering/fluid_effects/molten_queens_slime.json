@@ -34,7 +34,7 @@
     }
   ],
   "fluid": {
-    "amount": 20,
+    "amount": 32,
     "tag": "tconstruct:molten_queens_slime"
   }
 }

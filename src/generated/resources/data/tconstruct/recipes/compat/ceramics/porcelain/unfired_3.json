@@ -10,7 +10,7 @@
     "item": "ceramics:unfired_cistern"
   },
   "result": {
-    "amount": 750,
+    "amount": 1200,
     "fluid": "tconstruct:molten_porcelain"
   },
   "temperature": 700,

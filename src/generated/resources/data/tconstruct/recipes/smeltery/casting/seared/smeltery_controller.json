@@ -6,7 +6,7 @@
   "cast_consumed": true,
   "cooling_time": 100,
   "fluid": {
-    "amount": 360,
+    "amount": 576,
     "tag": "forge:molten_copper"
   },
   "result": "tconstruct:smeltery_controller"

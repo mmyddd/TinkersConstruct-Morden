@@ -2,11 +2,11 @@
   "type": "tconstruct:melting",
   "byproducts": [
     {
-      "amount": 1000,
+      "amount": 1600,
       "fluid": "tconstruct:seared_stone"
     },
     {
-      "amount": 1250,
+      "amount": 180,
       "fluid": "tconstruct:molten_glass"
     }
   ],
@@ -14,7 +14,7 @@
     "item": "tconstruct:seared_fluid_cannon"
   },
   "result": {
-    "amount": 450,
+    "amount": 720,
     "tag": "forge:molten_copper"
   },
   "temperature": 500,

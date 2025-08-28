@@ -2,7 +2,7 @@
   "type": "tconstruct:melting",
   "byproducts": [
     {
-      "amount": 5000,
+      "amount": 720,
       "fluid": "tconstruct:molten_glass"
     }
   ],
@@ -18,7 +18,7 @@
     ]
   },
   "result": {
-    "amount": 1000,
+    "amount": 1600,
     "fluid": "tconstruct:seared_stone"
   },
   "temperature": 600,

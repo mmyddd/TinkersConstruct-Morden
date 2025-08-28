@@ -16,7 +16,7 @@
     }
   ],
   "fluid": {
-    "amount": 90,
+    "amount": 144,
     "tag": "forge:molten_brass"
   },
   "input": "tconstruct:slimewood",

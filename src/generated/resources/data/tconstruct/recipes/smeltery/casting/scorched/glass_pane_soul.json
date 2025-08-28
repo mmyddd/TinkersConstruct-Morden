@@ -6,7 +6,7 @@
   "cast_consumed": true,
   "cooling_time": 83,
   "fluid": {
-    "amount": 250,
+    "amount": 400,
     "tag": "tconstruct:scorched_stone"
   },
   "result": "tconstruct:scorched_soul_glass_pane"

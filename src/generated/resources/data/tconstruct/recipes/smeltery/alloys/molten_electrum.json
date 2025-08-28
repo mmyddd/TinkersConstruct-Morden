@@ -8,16 +8,16 @@
   ],
   "inputs": [
     {
-      "amount": 90,
+      "amount": 144,
       "tag": "forge:molten_gold"
     },
     {
-      "amount": 90,
+      "amount": 144,
       "tag": "forge:molten_silver"
     }
   ],
   "result": {
-    "amount": 180,
+    "amount": 288,
     "tag": "forge:molten_electrum"
   },
   "temperature": 760

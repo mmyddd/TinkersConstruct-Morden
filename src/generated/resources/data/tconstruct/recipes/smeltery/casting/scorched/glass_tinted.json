@@ -6,7 +6,7 @@
   "cast_consumed": true,
   "cooling_time": 166,
   "fluid": {
-    "amount": 1000,
+    "amount": 1600,
     "tag": "tconstruct:scorched_stone"
   },
   "result": "tconstruct:scorched_tinted_glass"

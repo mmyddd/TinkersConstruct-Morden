@@ -6,7 +6,7 @@
   "cast_consumed": true,
   "cooling_time": 106,
   "fluid": {
-    "amount": 1000,
+    "amount": 1600,
     "tag": "tconstruct:ender_slime"
   },
   "result": "tconstruct:ender_enderbark_roots"

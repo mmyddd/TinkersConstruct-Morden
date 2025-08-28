@@ -4,9 +4,9 @@
     "tag": "forge:cobblestone"
   },
   "cast_consumed": true,
-  "cooling_time": 41,
+  "cooling_time": 129,
   "fluid": {
-    "amount": 50,
+    "amount": 800,
     "tag": "tconstruct:molten_quartz"
   },
   "result": "minecraft:andesite"

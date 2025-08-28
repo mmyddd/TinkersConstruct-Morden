@@ -4,7 +4,7 @@
     "item": "minecraft:magma_block"
   },
   "result": {
-    "amount": 1000,
+    "amount": 1600,
     "tag": "forge:magma"
   },
   "temperature": 300,

@@ -2,7 +2,7 @@
   "type": "tconstruct:melting",
   "byproducts": [
     {
-      "amount": 5,
+      "amount": 8,
       "tag": "forge:molten_gold"
     }
   ],
@@ -16,7 +16,7 @@
     "item": "ceramics:golden_bricks_slab"
   },
   "result": {
-    "amount": 500,
+    "amount": 800,
     "fluid": "tconstruct:molten_porcelain"
   },
   "temperature": 700,

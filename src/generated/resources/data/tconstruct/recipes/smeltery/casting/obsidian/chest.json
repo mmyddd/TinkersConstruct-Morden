@@ -4,9 +4,9 @@
     "item": "minecraft:ender_eye"
   },
   "cast_consumed": true,
-  "cooling_time": 625,
+  "cooling_time": 188,
   "fluid": {
-    "amount": 8000,
+    "amount": 1152,
     "tag": "tconstruct:molten_obsidian"
   },
   "result": "minecraft:ender_chest"

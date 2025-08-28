@@ -42,7 +42,7 @@
     }
   ],
   "fluid": {
-    "amount": 250,
+    "amount": 400,
     "tag": "tconstruct:scorched_stone"
   }
 }

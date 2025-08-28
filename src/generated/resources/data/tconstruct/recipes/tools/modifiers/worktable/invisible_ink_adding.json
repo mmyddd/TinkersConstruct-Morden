@@ -6,7 +6,7 @@
   "inputs": [
     {
       "type": "mantle:fluid_container",
-      "amount": 250,
+      "amount": 400,
       "display": {
         "item": "tconstruct:sky_slime_bottle"
       },

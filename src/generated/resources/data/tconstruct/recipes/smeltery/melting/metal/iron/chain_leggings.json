@@ -2,18 +2,18 @@
   "type": "tconstruct:damagable_melting",
   "byproducts": [
     {
-      "amount": 210,
+      "amount": 336,
       "tag": "forge:molten_steel",
-      "unit_size": 10
+      "unit_size": 16
     }
   ],
   "ingredient": {
     "item": "minecraft:chainmail_leggings"
   },
   "result": {
-    "amount": 420,
+    "amount": 672,
     "tag": "forge:molten_iron",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 800,
   "time": 130
