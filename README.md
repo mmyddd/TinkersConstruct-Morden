@@ -1,3 +1,6 @@
+# [Tinkers' Construct](https://github.com/SlimeKnights/TinkersConstruct) Unoffical Fork
+**"This fork will make Tinkers' Construct 3 compatible with Mod GTM in all aspects."**  
+
 # [Tinkers' Construct](https://slimeknights.github.io/projects/#tinkers-construct)
 
 Modify all the things, then do it again!   
@@ -36,7 +39,4 @@ Any modpack which uses Tinkers' Construct takes **full** responsibility for user
 
 If you have queries about any license or the above support restrictions, please drop by our IRC channel, #TinkersConstruct on irc.esper.net
 
-Any alternate licenses are noted where appropriate.
-
-## Jar Signing
-Some jars from our build servers may be signed. Under no circumstances does anyone have permission to verify the signatures on those jars from other mods. The signing is for informational purposes only.
+Any alternate licenses are noted where appropriate.=
