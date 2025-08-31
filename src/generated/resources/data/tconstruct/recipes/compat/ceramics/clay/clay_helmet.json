@@ -11,7 +11,7 @@
   },
   "result": {
     "amount": 2000,
-    "fluid": "tconstruct:molten_clay",
+    "fluid": "tconstruct:clay",
     "unit_size": 80
   },
   "temperature": 450,

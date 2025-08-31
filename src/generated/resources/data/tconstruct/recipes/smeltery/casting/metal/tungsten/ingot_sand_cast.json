@@ -13,7 +13,7 @@
   "cooling_time": 65,
   "fluid": {
     "amount": 144,
-    "tag": "forge:molten_tungsten"
+    "tag": "forge:tungsten"
   },
   "result": {
     "tag": "forge:ingots/tungsten"

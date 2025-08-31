@@ -9,7 +9,7 @@
   "cooling_time": 130,
   "fluid": {
     "amount": 1296,
-    "tag": "forge:molten_lead"
+    "tag": "forge:lead"
   },
   "result": {
     "tag": "forge:storage_blocks/lead"

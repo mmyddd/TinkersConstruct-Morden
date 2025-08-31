@@ -8,7 +8,7 @@
   ],
   "fluid": {
     "amount": 144,
-    "tag": "forge:molten_aluminium"
+    "tag": "forge:aluminium"
   },
   "input": "tconstruct:rock",
   "output": "tconstruct:whitestone#aluminium",

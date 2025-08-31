@@ -9,7 +9,7 @@
   "input": "tconstruct:aluminium",
   "result": {
     "amount": 144,
-    "tag": "forge:molten_aluminium"
+    "tag": "forge:aluminium"
   },
   "temperature": 425
 }

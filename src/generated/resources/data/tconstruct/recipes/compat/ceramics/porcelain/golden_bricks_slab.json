@@ -3,7 +3,7 @@
   "byproducts": [
     {
       "amount": 8,
-      "tag": "forge:molten_gold"
+      "tag": "forge:gold"
     }
   ],
   "conditions": [
@@ -17,7 +17,7 @@
   },
   "result": {
     "amount": 800,
-    "fluid": "tconstruct:molten_porcelain"
+    "fluid": "tconstruct:porcelain"
   },
   "temperature": 700,
   "time": 76

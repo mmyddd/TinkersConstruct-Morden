@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 288,
+      "tag": "forge:copper"
+    },
+    {
+      "amount": 144,
+      "tag": "forge:cobalt"
+    },
+    {
+      "amount": 1600,
+      "tag": "tconstruct:quartz"
+    }
+  ],
+  "result": {
+    "amount": 288,
+    "tag": "forge:hepatizon"
+  },
+  "temperature": 1400
+}

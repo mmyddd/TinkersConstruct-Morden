@@ -1385,11 +1385,11 @@ public class SmelteryRecipeProvider extends BaseRecipeProvider implements ISmelt
     MeltingRecipeBuilder.melting(Ingredient.of(Tags.Items.ORES_NETHERITE_SCRAP), TinkerFluids.moltenDebris, FluidValues.INGOT, 2.0f)
                         .setOre(OreRateType.METAL)
                         .addByproduct(TinkerFluids.moltenNetherite.result(FluidValues.NUGGET * 3))
-                        .save(consumer, location(metalFolder + "molten_debris/ore"));
+                        .save(consumer, location(metalFolder + "debris/ore"));
     MeltingRecipeBuilder.melting(Ingredient.of(TinkerTags.Items.INGOTS_NETHERITE_SCRAP), TinkerFluids.moltenDebris, FluidValues.INGOT, 1.0f)
-                        .save(consumer, location(metalFolder + "molten_debris/scrap"));
+                        .save(consumer, location(metalFolder + "debris/scrap"));
     MeltingRecipeBuilder.melting(Ingredient.of(TinkerTags.Items.NUGGETS_NETHERITE_SCRAP), TinkerFluids.moltenDebris, FluidValues.NUGGET, 1 / 3f)
-                        .save(consumer, location(metalFolder + "molten_debris/debris_nugget"));
+                        .save(consumer, location(metalFolder + "debris/debris_nugget"));
     
     // venom
     MeltingRecipeBuilder.melting(Ingredient.of(Items.SPIDER_EYE), TinkerFluids.venom, FluidValues.BOTTLE, 1.0f)
@@ -2201,7 +2201,7 @@ public class SmelteryRecipeProvider extends BaseRecipeProvider implements ISmelt
     metal(consumer, TinkerFluids.moltenNicrosil).optional().metal();
     metal(consumer, TinkerFluids.moltenDuralumin).optional().metal();
     // embers provides their own fluid. so we just have to add the recipes
-    TagKey<Fluid> dawnstone = getFluidTag(COMMON, "molten_dawnstone");
+    TagKey<Fluid> dawnstone = getFluidTag(COMMON, "dawnstone");
     metal(withCondition(consumer, new TagFilledCondition<>(dawnstone)), "dawnstone", dawnstone).temperature(900).optional().metal().plate();
   }
 

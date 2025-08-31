@@ -9,7 +9,7 @@
   "cooling_time": 161,
   "fluid": {
     "amount": 1296,
-    "tag": "forge:molten_brass"
+    "tag": "forge:brass"
   },
   "result": {
     "tag": "forge:storage_blocks/brass"

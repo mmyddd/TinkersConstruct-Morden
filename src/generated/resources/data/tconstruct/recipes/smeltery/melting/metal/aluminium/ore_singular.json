@@ -4,7 +4,7 @@
     {
       "amount": 288,
       "rate": "metal",
-      "tag": "forge:molten_iron"
+      "tag": "forge:iron"
     }
   ],
   "conditions": [
@@ -26,7 +26,7 @@
   "rate": "metal",
   "result": {
     "amount": 288,
-    "tag": "forge:molten_aluminium"
+    "tag": "forge:aluminium"
   },
   "temperature": 425,
   "time": 118

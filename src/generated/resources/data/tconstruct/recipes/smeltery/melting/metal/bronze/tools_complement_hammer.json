@@ -11,7 +11,7 @@
   },
   "result": {
     "amount": 1872,
-    "tag": "forge:molten_bronze",
+    "tag": "forge:bronze",
     "unit_size": 16
   },
   "temperature": 700,

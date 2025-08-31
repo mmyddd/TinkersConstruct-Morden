@@ -7,7 +7,7 @@
   "cooling_time": 101,
   "fluid": {
     "amount": 288,
-    "tag": "tconstruct:molten_debris"
+    "tag": "tconstruct:debris"
   },
   "result": {
     "item": "tconstruct:repair_kit",

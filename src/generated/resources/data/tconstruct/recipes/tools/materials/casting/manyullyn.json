@@ -2,7 +2,7 @@
   "type": "tconstruct:material_fluid",
   "fluid": {
     "amount": 144,
-    "tag": "forge:molten_manyullyn"
+    "tag": "forge:manyullyn"
   },
   "output": "tconstruct:manyullyn",
   "temperature": 1200

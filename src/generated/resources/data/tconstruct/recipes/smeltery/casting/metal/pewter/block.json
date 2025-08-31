@@ -9,7 +9,7 @@
   "cooling_time": 139,
   "fluid": {
     "amount": 1296,
-    "tag": "forge:molten_pewter"
+    "tag": "forge:pewter"
   },
   "result": {
     "tag": "forge:storage_blocks/pewter"

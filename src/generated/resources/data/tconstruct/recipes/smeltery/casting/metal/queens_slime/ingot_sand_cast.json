@@ -7,7 +7,7 @@
   "cooling_time": 71,
   "fluid": {
     "amount": 144,
-    "tag": "tconstruct:molten_queens_slime"
+    "tag": "tconstruct:queens_slime"
   },
   "result": {
     "tag": "forge:ingots/queens_slime"

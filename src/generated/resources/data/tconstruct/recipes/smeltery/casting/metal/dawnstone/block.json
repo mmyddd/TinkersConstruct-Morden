@@ -8,13 +8,13 @@
     {
       "type": "mantle:tag_filled",
       "registry": "minecraft:fluid",
-      "tag": "forge:molten_dawnstone"
+      "tag": "forge:dawnstone"
     }
   ],
   "cooling_time": 190,
   "fluid": {
     "amount": 1296,
-    "tag": "forge:molten_dawnstone"
+    "tag": "forge:dawnstone"
   },
   "result": {
     "tag": "forge:storage_blocks/dawnstone"

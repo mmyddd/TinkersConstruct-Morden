@@ -3,7 +3,7 @@
   "byproducts": [
     {
       "amount": 17600,
-      "fluid": "tconstruct:molten_diamond",
+      "fluid": "tconstruct:diamond",
       "unit_size": 400
     }
   ],
@@ -18,7 +18,7 @@
   },
   "result": {
     "amount": 144,
-    "tag": "forge:molten_netherite",
+    "tag": "forge:netherite",
     "unit_size": 16
   },
   "temperature": 1250,

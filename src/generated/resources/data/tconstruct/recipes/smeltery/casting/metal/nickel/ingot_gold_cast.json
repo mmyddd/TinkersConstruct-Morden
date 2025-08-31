@@ -12,7 +12,7 @@
   "cooling_time": 65,
   "fluid": {
     "amount": 144,
-    "tag": "forge:molten_nickel"
+    "tag": "forge:nickel"
   },
   "result": {
     "tag": "forge:ingots/nickel"

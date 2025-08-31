@@ -13,7 +13,7 @@
   "cooling_time": 14,
   "fluid": {
     "amount": 16,
-    "tag": "forge:molten_lead"
+    "tag": "forge:lead"
   },
   "result": {
     "tag": "forge:nuggets/lead"

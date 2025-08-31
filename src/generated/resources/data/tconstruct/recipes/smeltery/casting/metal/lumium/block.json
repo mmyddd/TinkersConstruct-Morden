@@ -9,7 +9,7 @@
   "cooling_time": 203,
   "fluid": {
     "amount": 1296,
-    "tag": "forge:molten_lumium"
+    "tag": "forge:lumium"
   },
   "result": {
     "tag": "forge:storage_blocks/lumium"

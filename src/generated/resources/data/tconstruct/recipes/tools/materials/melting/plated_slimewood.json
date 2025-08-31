@@ -18,7 +18,7 @@
   "input": "tconstruct:plated_slimewood",
   "result": {
     "amount": 144,
-    "tag": "forge:molten_brass"
+    "tag": "forge:brass"
   },
   "temperature": 605
 }

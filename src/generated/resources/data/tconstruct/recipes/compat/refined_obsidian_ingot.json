@@ -17,7 +17,7 @@
   "cooling_time": 66,
   "fluid": {
     "amount": 144,
-    "tag": "forge:molten_osmium"
+    "tag": "forge:osmium"
   },
   "result": {
     "tag": "forge:ingots/refined_obsidian"

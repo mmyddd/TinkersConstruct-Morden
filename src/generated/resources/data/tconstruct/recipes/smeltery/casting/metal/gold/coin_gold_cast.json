@@ -12,7 +12,7 @@
   "cooling_time": 33,
   "fluid": {
     "amount": 48,
-    "tag": "forge:molten_gold"
+    "tag": "forge:gold"
   },
   "result": {
     "tag": "forge:coins/gold"

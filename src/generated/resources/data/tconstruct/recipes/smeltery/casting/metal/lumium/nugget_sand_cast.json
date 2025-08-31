@@ -13,7 +13,7 @@
   "cooling_time": 23,
   "fluid": {
     "amount": 16,
-    "tag": "forge:molten_lumium"
+    "tag": "forge:lumium"
   },
   "result": {
     "tag": "forge:nuggets/lumium"

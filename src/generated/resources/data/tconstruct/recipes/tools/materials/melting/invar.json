@@ -18,7 +18,7 @@
   "input": "tconstruct:invar",
   "result": {
     "amount": 144,
-    "tag": "forge:molten_invar"
+    "tag": "forge:invar"
   },
   "temperature": 900
 }

@@ -13,7 +13,7 @@
   "cooling_time": 57,
   "fluid": {
     "amount": 144,
-    "tag": "forge:molten_gold"
+    "tag": "forge:gold"
   },
   "result": "tconstruct:plate_cast",
   "switch_slots": true

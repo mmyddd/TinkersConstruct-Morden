@@ -152,7 +152,7 @@ public abstract class AbstractFluidEffectProvider extends GenericDataProvider {
   protected Builder compatMetal(FluidObject<?> fluid, String... extraIngots) {
     Builder builder = addMetal(fluid);
     // automatically add ourself
-    String ourself = fluid.getId().getPath().substring("molten_".length());
+    String ourself = fluid.getId().getPath().substring("".length());
     if (extraIngots.length == 0) {
       builder.metalCondition(ourself);
     } else {

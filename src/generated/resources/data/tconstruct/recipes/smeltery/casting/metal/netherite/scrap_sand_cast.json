@@ -7,7 +7,7 @@
   "cooling_time": 71,
   "fluid": {
     "amount": 144,
-    "tag": "tconstruct:molten_debris"
+    "tag": "tconstruct:debris"
   },
   "result": "minecraft:netherite_scrap"
 }

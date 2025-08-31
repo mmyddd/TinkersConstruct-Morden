@@ -12,7 +12,7 @@
   "cooling_time": 35,
   "fluid": {
     "amount": 72,
-    "tag": "forge:molten_copper"
+    "tag": "forge:copper"
   },
   "result": {
     "tag": "forge:wires/copper"

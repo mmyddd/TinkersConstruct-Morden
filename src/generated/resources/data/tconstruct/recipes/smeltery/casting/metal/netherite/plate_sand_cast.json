@@ -13,7 +13,7 @@
   "cooling_time": 74,
   "fluid": {
     "amount": 144,
-    "tag": "forge:molten_netherite"
+    "tag": "forge:netherite"
   },
   "result": {
     "tag": "forge:plates/netherite"

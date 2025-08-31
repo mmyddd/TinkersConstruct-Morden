@@ -3,7 +3,7 @@
   "input": "tconstruct:queens_slime",
   "result": {
     "amount": 144,
-    "fluid": "tconstruct:molten_queens_slime"
+    "fluid": "tconstruct:queens_slime"
   },
   "temperature": 1150
 }

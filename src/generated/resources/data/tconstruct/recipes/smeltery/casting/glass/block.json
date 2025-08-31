@@ -3,7 +3,7 @@
   "cooling_time": 59,
   "fluid": {
     "amount": 144,
-    "tag": "tconstruct:molten_glass"
+    "tag": "tconstruct:glass"
   },
   "result": "tconstruct:clear_glass"
 }

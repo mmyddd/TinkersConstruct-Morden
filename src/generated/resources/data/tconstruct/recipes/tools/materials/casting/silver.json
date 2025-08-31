@@ -8,7 +8,7 @@
   ],
   "fluid": {
     "amount": 144,
-    "tag": "forge:molten_silver"
+    "tag": "forge:silver"
   },
   "output": "tconstruct:silver",
   "temperature": 790

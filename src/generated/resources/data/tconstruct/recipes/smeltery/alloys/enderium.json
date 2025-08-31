@@ -1,0 +1,32 @@
+{
+  "type": "tconstruct:alloy",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/enderium"
+    },
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/lead"
+    }
+  ],
+  "inputs": [
+    {
+      "amount": 432,
+      "tag": "forge:lead"
+    },
+    {
+      "amount": 1600,
+      "tag": "tconstruct:diamond"
+    },
+    {
+      "amount": 800,
+      "tag": "forge:ender"
+    }
+  ],
+  "result": {
+    "amount": 288,
+    "tag": "forge:enderium"
+  },
+  "temperature": 1350
+}

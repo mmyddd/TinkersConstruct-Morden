@@ -3,7 +3,7 @@
   "cooling_time": 789,
   "fluid": {
     "amount": 14400,
-    "tag": "tconstruct:molten_diamond"
+    "tag": "tconstruct:diamond"
   },
   "result": {
     "tag": "forge:storage_blocks/diamond"

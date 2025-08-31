@@ -6,7 +6,7 @@
   "cooling_time": 17,
   "fluid": {
     "amount": 16,
-    "tag": "forge:molten_copper"
+    "tag": "forge:copper"
   },
   "result": {
     "tag": "forge:nuggets/copper"

@@ -4,7 +4,7 @@
     {
       "amount": 192,
       "rate": "metal",
-      "tag": "forge:molten_gold"
+      "tag": "forge:gold"
     }
   ],
   "conditions": [
@@ -19,7 +19,7 @@
   "rate": "metal",
   "result": {
     "amount": 576,
-    "tag": "forge:molten_copper"
+    "tag": "forge:copper"
   },
   "temperature": 500,
   "time": 125

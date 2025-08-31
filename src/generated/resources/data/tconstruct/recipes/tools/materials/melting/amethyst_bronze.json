@@ -3,7 +3,7 @@
   "input": "tconstruct:amethyst_bronze",
   "result": {
     "amount": 144,
-    "tag": "forge:molten_amethyst_bronze"
+    "tag": "forge:amethyst_bronze"
   },
   "temperature": 820
 }

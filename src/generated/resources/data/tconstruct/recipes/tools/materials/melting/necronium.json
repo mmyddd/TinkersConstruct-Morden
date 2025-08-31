@@ -9,7 +9,7 @@
   "input": "tconstruct:necronium",
   "result": {
     "amount": 144,
-    "tag": "forge:molten_uranium"
+    "tag": "forge:uranium"
   },
   "temperature": 830
 }

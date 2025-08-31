@@ -9,7 +9,7 @@
   "cooling_time": 183,
   "fluid": {
     "amount": 1296,
-    "tag": "forge:molten_uranium"
+    "tag": "forge:uranium"
   },
   "result": {
     "tag": "forge:storage_blocks/uranium"

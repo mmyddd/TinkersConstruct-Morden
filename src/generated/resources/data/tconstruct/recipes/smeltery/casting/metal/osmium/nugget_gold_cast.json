@@ -12,7 +12,7 @@
   "cooling_time": 22,
   "fluid": {
     "amount": 16,
-    "tag": "forge:molten_osmium"
+    "tag": "forge:osmium"
   },
   "result": {
     "tag": "forge:nuggets/osmium"

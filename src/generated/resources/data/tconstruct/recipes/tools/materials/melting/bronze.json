@@ -18,7 +18,7 @@
   "input": "tconstruct:bronze",
   "result": {
     "amount": 144,
-    "tag": "forge:molten_bronze"
+    "tag": "forge:bronze"
   },
   "temperature": 700
 }

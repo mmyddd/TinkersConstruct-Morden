@@ -6,7 +6,7 @@
   "cooling_time": 21,
   "fluid": {
     "amount": 16,
-    "tag": "tconstruct:molten_slimesteel"
+    "tag": "tconstruct:slimesteel"
   },
   "result": {
     "tag": "forge:nuggets/slimesteel"

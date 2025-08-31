@@ -3,7 +3,7 @@
   "input": "tconstruct:slimesteel",
   "result": {
     "amount": 144,
-    "fluid": "tconstruct:molten_slimesteel"
+    "fluid": "tconstruct:slimesteel"
   },
   "temperature": 900
 }

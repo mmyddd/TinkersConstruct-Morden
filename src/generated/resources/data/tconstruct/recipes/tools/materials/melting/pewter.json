@@ -22,7 +22,7 @@
   "input": "tconstruct:pewter",
   "result": {
     "amount": 144,
-    "tag": "forge:molten_pewter"
+    "tag": "forge:pewter"
   },
   "temperature": 400
 }

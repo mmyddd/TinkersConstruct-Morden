@@ -9,7 +9,7 @@
   "cooling_time": 141,
   "fluid": {
     "amount": 1296,
-    "tag": "forge:molten_zinc"
+    "tag": "forge:zinc"
   },
   "result": {
     "tag": "forge:storage_blocks/zinc"

@@ -7,7 +7,7 @@
   "cooling_time": 63,
   "fluid": {
     "amount": 144,
-    "tag": "tconstruct:molten_slimesteel"
+    "tag": "tconstruct:slimesteel"
   },
   "result": {
     "tag": "forge:ingots/slimesteel"

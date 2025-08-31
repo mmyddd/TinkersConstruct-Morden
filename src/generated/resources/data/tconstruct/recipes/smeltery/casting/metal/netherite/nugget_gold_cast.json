@@ -6,7 +6,7 @@
   "cooling_time": 25,
   "fluid": {
     "amount": 16,
-    "tag": "forge:molten_netherite"
+    "tag": "forge:netherite"
   },
   "result": {
     "tag": "forge:nuggets/netherite"

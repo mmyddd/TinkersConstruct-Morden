@@ -1,0 +1,22 @@
+{
+  "type": "tconstruct:alloy",
+  "inputs": [
+    {
+      "amount": 144,
+      "tag": "forge:gold"
+    },
+    {
+      "amount": 400,
+      "fluid": "tconstruct:ichor"
+    },
+    {
+      "amount": 400,
+      "tag": "tconstruct:scorched_stone"
+    }
+  ],
+  "result": {
+    "amount": 288,
+    "fluid": "tconstruct:cinderslime"
+  },
+  "temperature": 1050
+}

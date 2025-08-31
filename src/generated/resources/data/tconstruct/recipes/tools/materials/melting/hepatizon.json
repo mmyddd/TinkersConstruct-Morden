@@ -3,7 +3,7 @@
   "input": "tconstruct:hepatizon",
   "result": {
     "amount": 144,
-    "tag": "forge:molten_hepatizon"
+    "tag": "forge:hepatizon"
   },
   "temperature": 1400
 }

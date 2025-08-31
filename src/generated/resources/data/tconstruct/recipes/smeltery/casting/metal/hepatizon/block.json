@@ -3,7 +3,7 @@
   "cooling_time": 233,
   "fluid": {
     "amount": 1296,
-    "tag": "forge:molten_hepatizon"
+    "tag": "forge:hepatizon"
   },
   "result": {
     "tag": "forge:storage_blocks/hepatizon"

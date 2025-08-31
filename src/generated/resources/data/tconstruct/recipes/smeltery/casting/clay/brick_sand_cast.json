@@ -7,7 +7,7 @@
   "cooling_time": 80,
   "fluid": {
     "amount": 400,
-    "tag": "tconstruct:molten_clay"
+    "tag": "tconstruct:clay"
   },
   "result": "minecraft:brick"
 }

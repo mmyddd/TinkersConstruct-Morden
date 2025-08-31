@@ -3,7 +3,7 @@
   "cooling_time": 160,
   "fluid": {
     "amount": 1600,
-    "tag": "tconstruct:molten_clay"
+    "tag": "tconstruct:clay"
   },
   "result": "minecraft:terracotta"
 }

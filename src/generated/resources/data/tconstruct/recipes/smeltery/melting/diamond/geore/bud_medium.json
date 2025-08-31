@@ -3,7 +3,7 @@
   "byproducts": [
     {
       "amount": 288,
-      "fluid": "tconstruct:molten_debris",
+      "fluid": "tconstruct:debris",
       "rate": "metal"
     }
   ],
@@ -19,7 +19,7 @@
   "rate": "gem",
   "result": {
     "amount": 3200,
-    "fluid": "tconstruct:molten_diamond"
+    "fluid": "tconstruct:diamond"
   },
   "temperature": 1450,
   "time": 118

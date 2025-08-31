@@ -6,7 +6,7 @@
   "cooling_time": 19,
   "fluid": {
     "amount": 16,
-    "tag": "forge:molten_gold"
+    "tag": "forge:gold"
   },
   "result": {
     "tag": "forge:nuggets/gold"
