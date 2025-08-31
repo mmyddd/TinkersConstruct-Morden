@@ -755,11 +755,11 @@
 "item.tconstruct.molten_tin_bucket": "Balde de Estanho Derretido",
 "fluid.tconstruct.molten_tin.fluid_effect": "Dizem que cenouras são boas para os olhos, mas estanho derretido é melhor.",
 
-"block.tconstruct.molten_aluminum_fluid": "Alumínio Derretido",
-"fluid.tconstruct.molten_aluminum": "Alumínio Derretido",
-"fluid.tconstruct.flowing_molten_aluminum": "Fluido de Alumínio Derretido",
-"item.tconstruct.molten_aluminum_bucket": "Balde de Alumínio Derretido",
-"fluid.tconstruct.molten_aluminum.fluid_effect": "Alumínio derretido é como leite, mas agressivo. Ideal para combate quando seus oponentes têm muitos efeitos.",
+"block.tconstruct.molten_aluminium_fluid": "Alumínio Derretido",
+"fluid.tconstruct.molten_aluminium": "Alumínio Derretido",
+"fluid.tconstruct.flowing_molten_aluminium": "Fluido de Alumínio Derretido",
+"item.tconstruct.molten_aluminium_bucket": "Balde de Alumínio Derretido",
+"fluid.tconstruct.molten_aluminium.fluid_effect": "Alumínio derretido é como leite, mas agressivo. Ideal para combate quando seus oponentes têm muitos efeitos.",
 
 "block.tconstruct.molten_lead_fluid": "Chumbo Derretido",
 "fluid.tconstruct.molten_lead": "Chumbo Derretido",
@@ -1941,16 +1941,16 @@
 "material.tconstruct.silver.armor": "Reduz o dano de mortos-vivos em 5%, por nível",
 
 "material.tconstruct.whitestone": "Pedra do End",
-"material.tconstruct.whitestone.aluminum": "Pedra Branca",
+"material.tconstruct.whitestone.aluminium": "Pedra Branca",
 "material.tconstruct.whitestone.tin": "Pedra Branca",
 "material.tconstruct.whitestone.zinc": "Pedra Branca",
 "material.tconstruct.whitestone.flavor": "Pegue seus metais brancos ou rochas inúteis e faça uma ferramenta útil",
 "material.tconstruct.whitestone.encyclopedia": "Mineração de pedra tem 20% de chance, por nível, de conceder +3 de escudo de pedra",
 
-"material.tconstruct.aluminum": "Alumínio",
-"material.tconstruct.aluminum.flavor": "Não é pra colocar na cabeça! Para com isso!.",
-"material.tconstruct.aluminum.ranged": "Concede +7% de velocidade de puxada e precisão ao custo de 5% de perda de proteção",
-"material.tconstruct.aluminum.armor": "Concede +5% de velocidade de uso de item ao custo de 5% de perda de proteção",
+"material.tconstruct.aluminium": "Alumínio",
+"material.tconstruct.aluminium.flavor": "Não é pra colocar na cabeça! Para com isso!.",
+"material.tconstruct.aluminium.ranged": "Concede +7% de velocidade de puxada e precisão ao custo de 5% de perda de proteção",
+"material.tconstruct.aluminium.armor": "Concede +5% de velocidade de uso de item ao custo de 5% de perda de proteção",
 
 "material.tconstruct.treated_wood": "Madeira Tratada",
 "material.tconstruct.treated_wood.flavor": "Slán go fóill",

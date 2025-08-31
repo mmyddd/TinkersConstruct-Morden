@@ -118,7 +118,7 @@ public class MaterialTagProvider extends AbstractMaterialTagProvider {
       MaterialIds.hepatizon, MaterialIds.queensSlime
     ).addOptional(
       // tier 2
-      MaterialIds.aluminum, MaterialIds.tungsten,
+      MaterialIds.aluminium, MaterialIds.tungsten,
       // tier 3
       MaterialIds.necronium, MaterialIds.constantan, MaterialIds.platedSlimewood
     );

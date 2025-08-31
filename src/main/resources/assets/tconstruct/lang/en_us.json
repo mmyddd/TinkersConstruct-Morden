@@ -754,11 +754,11 @@
   "item.tconstruct.molten_tin_bucket": "Molten Tin Bucket",
   "fluid.tconstruct.molten_tin.fluid_effect": "They say carrots are good for your eyes, but molten tin is better.",
 
-  "block.tconstruct.molten_aluminum_fluid": "Molten Aluminum",
-  "fluid.tconstruct.molten_aluminum": "Molten Aluminum",
-  "fluid.tconstruct.flowing_molten_aluminum": "Flowing Molten Aluminum",
-  "item.tconstruct.molten_aluminum_bucket": "Molten Aluminum Bucket",
-  "fluid.tconstruct.molten_aluminum.fluid_effect": "Molten aluminium is like milk, but aggressive. Ideal for combat when your opponents have too many effects.",
+  "block.tconstruct.molten_aluminium_fluid": "Molten Aluminum",
+  "fluid.tconstruct.molten_aluminium": "Molten Aluminum",
+  "fluid.tconstruct.flowing_molten_aluminium": "Flowing Molten Aluminium",
+  "item.tconstruct.molten_aluminium_bucket": "Molten Aluminum Bucket",
+  "fluid.tconstruct.molten_aluminium.fluid_effect": "Molten aluminium is like milk, but aggressive. Ideal for combat when your opponents have too many effects.",
 
   "block.tconstruct.molten_lead_fluid": "Molten Lead",
   "fluid.tconstruct.molten_lead": "Molten Lead",
@@ -1969,16 +1969,16 @@
   "material.tconstruct.silver.armor": "Reduces damage from undead by 5% per level",
 
   "material.tconstruct.whitestone": "End Stone",
-  "material.tconstruct.whitestone.aluminum": "Whitestone",
+  "material.tconstruct.whitestone.aluminium": "Whitestone",
   "material.tconstruct.whitestone.tin": "Whitestone",
   "material.tconstruct.whitestone.zinc": "Whitestone",
   "material.tconstruct.whitestone.flavor": "Take your useless white metals or rocks and make a useful tool",
   "material.tconstruct.whitestone.encyclopedia": "Mining stone has a 20% per level of granting +3 stoneshield",
 
-  "material.tconstruct.aluminum": "Aluminum",
-  "material.tconstruct.aluminum.flavor": "Found most commonly in ashmounds.",
-  "material.tconstruct.aluminum.ranged": "Grants +7% drawspeed and accuracy at the cost of 5% loss of protection",
-  "material.tconstruct.aluminum.armor": "Grants +5% use item speed at the cost of 5% loss of protection",
+  "material.tconstruct.aluminium": "Aluminum",
+  "material.tconstruct.aluminium.flavor": "Found most commonly in ashmounds.",
+  "material.tconstruct.aluminium.ranged": "Grants +7% drawspeed and accuracy at the cost of 5% loss of protection",
+  "material.tconstruct.aluminium.armor": "Grants +5% use item speed at the cost of 5% loss of protection",
 
   "material.tconstruct.treated_wood": "Treated Wood",
   "material.tconstruct.treated_wood.flavor": "Slán go fóill",

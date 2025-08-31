@@ -3,13 +3,13 @@
   "conditions": [
     {
       "type": "mantle:tag_filled",
-      "tag": "forge:ingots/aluminum"
+      "tag": "forge:ingots/aluminium"
     }
   ],
-  "input": "tconstruct:aluminum",
+  "input": "tconstruct:aluminium",
   "result": {
     "amount": 144,
-    "tag": "forge:molten_aluminum"
+    "tag": "forge:molten_aluminium"
   },
   "temperature": 425
 }

@@ -9,7 +9,7 @@
         },
         {
           "type": "mantle:tag_filled",
-          "tag": "forge:ingots/aluminum"
+          "tag": "forge:ingots/aluminium"
         }
       ]
     }
@@ -30,6 +30,6 @@
   ],
   "fluid": {
     "amount": 16,
-    "tag": "forge:molten_aluminum"
+    "tag": "forge:molten_aluminium"
   }
 }

@@ -628,10 +628,10 @@
   "fluid.tconstruct.flowing_molten_tin": "흐르는 녹은 주석",
   "item.tconstruct.molten_tin_bucket": "녹은 주석 양동이",
 
-  "block.tconstruct.molten_aluminum_fluid": "녹은 알루미늄",
-  "fluid.tconstruct.molten_aluminum": "녹은 알루미늄",
-  "fluid.tconstruct.flowing_molten_aluminum": "흐르는 녹은 알루미늄",
-  "item.tconstruct.molten_aluminum_bucket": "녹은 알루미늄 양동이",
+  "block.tconstruct.molten_aluminium_fluid": "녹은 알루미늄",
+  "fluid.tconstruct.molten_aluminium": "녹은 알루미늄",
+  "fluid.tconstruct.flowing_molten_aluminium": "흐르는 녹은 알루미늄",
+  "item.tconstruct.molten_aluminium_bucket": "녹은 알루미늄 양동이",
 
   "block.tconstruct.molten_lead_fluid": "녹은 납",
   "fluid.tconstruct.molten_lead": "녹은 납",
@@ -1581,9 +1581,9 @@
   "material.tconstruct.whitestone.flavor": "쓸모없는 하얀 금속이나 돌로 유용한 도구를 만들어 봅시다",
   "material.tconstruct.whitestone.encyclopedia": "돌을 채굴할 때 (20 × 특성 레벨)% 확률로 3 돌 방패를 얻습니다",
 
-  "material.tconstruct.aluminum": "알루미늄",
-  "material.tconstruct.aluminum.flavor": "화산재에서 가장 흔하게 발견됩니다",
-  "material.tconstruct.aluminum.ranged": "공격 속도와 정확도가 7% 증가합니다",
+  "material.tconstruct.aluminium": "알루미늄",
+  "material.tconstruct.aluminium.flavor": "화산재에서 가장 흔하게 발견됩니다",
+  "material.tconstruct.aluminium.ranged": "공격 속도와 정확도가 7% 증가합니다",
 
 
   "material.tconstruct.steel": "강철",

@@ -755,11 +755,11 @@
   "item.tconstruct.molten_tin_bucket": "熔融锡桶",
   "fluid.tconstruct.molten_tin.fluid_effect": "他们说多吃胡萝卜对眼睛好，但熔融锡对眼睛更好。",
 
-  "block.tconstruct.molten_aluminum_fluid": "熔融铝",
-  "fluid.tconstruct.molten_aluminum": "熔融铝",
-  "fluid.tconstruct.flowing_molten_aluminum": "流动的熔融铝",
-  "item.tconstruct.molten_aluminum_bucket": "熔融铝桶",
-  "fluid.tconstruct.molten_aluminum.fluid_effect": "熔融铝像奶一样，但更争强好胜。可以考虑用它来应对有许多效果的对手。",
+  "block.tconstruct.molten_aluminium_fluid": "熔融铝",
+  "fluid.tconstruct.molten_aluminium": "熔融铝",
+  "fluid.tconstruct.flowing_molten_aluminium": "流动的熔融铝",
+  "item.tconstruct.molten_aluminium_bucket": "熔融铝桶",
+  "fluid.tconstruct.molten_aluminium.fluid_effect": "熔融铝像奶一样，但更争强好胜。可以考虑用它来应对有许多效果的对手。",
 
   "block.tconstruct.molten_lead_fluid": "熔融铅",
   "fluid.tconstruct.molten_lead": "熔融铅",
@@ -1964,16 +1964,16 @@
   "material.tconstruct.silver.armor": "每级来自亡灵生物伤害-5%",
 
   "material.tconstruct.whitestone": "末地石",
-  "material.tconstruct.whitestone.aluminum": "白石",
+  "material.tconstruct.whitestone.aluminium": "白石",
   "material.tconstruct.whitestone.tin": "白石",
   "material.tconstruct.whitestone.zinc": "白石",
   "material.tconstruct.whitestone.flavor": "拿上你那些毫无用处的白色金属和石头，做个有用的工具吧",
   "material.tconstruct.whitestone.encyclopedia": "挖掘石头时有概率石盾+3，每级概率+20%",
 
-  "material.tconstruct.aluminum": "铝",
-  "material.tconstruct.aluminum.flavor": "前代奢侈品，现代寻常物。",
-  "material.tconstruct.aluminum.ranged": "拉弓速度+7%，精确度+7%；但同时保护-5%",
-  "material.tconstruct.aluminum.armor": "使用时移速+5%，但同时保护-5%",
+  "material.tconstruct.aluminium": "铝",
+  "material.tconstruct.aluminium.flavor": "前代奢侈品，现代寻常物。",
+  "material.tconstruct.aluminium.ranged": "拉弓速度+7%，精确度+7%；但同时保护-5%",
+  "material.tconstruct.aluminium.armor": "使用时移速+5%，但同时保护-5%",
 
   "material.tconstruct.treated_wood": "防腐木",
   "material.tconstruct.treated_wood.flavor": "善自珍摄，浸待重逢",

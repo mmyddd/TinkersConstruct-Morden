@@ -1,0 +1,21 @@
+{
+  "type": "tconstruct:casting_table",
+  "cast": {
+    "tag": "tconstruct:casts/single_use/coin"
+  },
+  "cast_consumed": true,
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:coins/aluminium"
+    }
+  ],
+  "cooling_time": 27,
+  "fluid": {
+    "amount": 48,
+    "tag": "forge:molten_aluminium"
+  },
+  "result": {
+    "tag": "forge:coins/aluminium"
+  }
+}

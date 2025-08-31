@@ -548,10 +548,10 @@
     "fluid.tconstruct.flowing_molten_tin": "Płynąca stopiona cyna",
     "item.tconstruct.molten_tin_bucket": "Wiadro stopionej cyny",
 
-    "block.tconstruct.molten_aluminum_fluid": "Stopione aluminium",
-    "fluid.tconstruct.molten_aluminum": "Stopione aluminium",
-    "fluid.tconstruct.flowing_molten_aluminum": "Płynące stopione aluminium",
-    "item.tconstruct.molten_aluminum_bucket": "Wiadro stopionego aluminium",
+    "block.tconstruct.molten_aluminium_fluid": "Stopione aluminium",
+    "fluid.tconstruct.molten_aluminium": "Stopione aluminium",
+    "fluid.tconstruct.flowing_molten_aluminium": "Płynące stopione aluminium",
+    "item.tconstruct.molten_aluminium_bucket": "Wiadro stopionego aluminium",
 
     "block.tconstruct.molten_lead_fluid": "Stopiony ołów",
     "fluid.tconstruct.molten_lead": "Stopiony ołów",

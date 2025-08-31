@@ -666,10 +666,10 @@
   "fluid.tconstruct.flowing_molten_tin": "Akan Ergimiş Kalay",
   "item.tconstruct.molten_tin_bucket": "Ergimiş Kalay Kovası",
 
-  "block.tconstruct.molten_aluminum_fluid": "Ergimiş Alüminyum",
-  "fluid.tconstruct.molten_aluminum": "Ergimiş Alüminyum",
-  "fluid.tconstruct.flowing_molten_aluminum": "Akan Ergimiş Alüminyum",
-  "item.tconstruct.molten_aluminum_bucket": "Ergimiş Alüminyum Kovası",
+  "block.tconstruct.molten_aluminium_fluid": "Ergimiş Alüminyum",
+  "fluid.tconstruct.molten_aluminium": "Ergimiş Alüminyum",
+  "fluid.tconstruct.flowing_molten_aluminium": "Akan Ergimiş Alüminyum",
+  "item.tconstruct.molten_aluminium_bucket": "Ergimiş Alüminyum Kovası",
 
   "block.tconstruct.molten_lead_fluid": "Ergimiş Kurşun",
   "fluid.tconstruct.molten_lead": "Ergimiş Kurşun",
@@ -1652,9 +1652,9 @@
   "material.tconstruct.whitestone.flavor": "İşe yaramaz ak metalleri ya da taşları işe yarar araçlar yap",
   "material.tconstruct.whitestone.encyclopedia": "Taşları kazmak seviye başına %20 şansla +3 taş kalkanı sağlar",
 
-  "material.tconstruct.aluminum": "Alüminyum",
-  "material.tconstruct.aluminum.flavor": "En çok kül yığınlarında bulunur.",
-  "material.tconstruct.aluminum.ranged": "Çekme hızı ve doğruluğu %7 artış sağlar",
+  "material.tconstruct.aluminium": "Alüminyum",
+  "material.tconstruct.aluminium.flavor": "En çok kül yığınlarında bulunur.",
+  "material.tconstruct.aluminium.ranged": "Çekme hızı ve doğruluğu %7 artış sağlar",
 
 
   "__comment": "3. Aşama Bütünleşme Malzemeleri",

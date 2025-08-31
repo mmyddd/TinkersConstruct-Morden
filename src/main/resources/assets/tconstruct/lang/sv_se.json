@@ -606,10 +606,10 @@
   "fluid.tconstruct.flowing_molten_tin": "Flödande nedsmält tenn",
   "item.tconstruct.molten_tin_bucket": "Hink med nedsmält tenn",
   
-  "block.tconstruct.molten_aluminum_fluid": "Nedsmält aluminium",
-  "fluid.tconstruct.molten_aluminum": "Nedsmält aluminium",
-  "fluid.tconstruct.flowing_molten_aluminum": "Flödande nedsmält aluminium",
-  "item.tconstruct.molten_aluminum_bucket": "Hink med nedsmält aluminium",
+  "block.tconstruct.molten_aluminium_fluid": "Nedsmält aluminium",
+  "fluid.tconstruct.molten_aluminium": "Nedsmält aluminium",
+  "fluid.tconstruct.flowing_molten_aluminium": "Flödande nedsmält aluminium",
+  "item.tconstruct.molten_aluminium_bucket": "Hink med nedsmält aluminium",
   
   "block.tconstruct.molten_lead_fluid": "Nedsmält bly",
   "fluid.tconstruct.molten_lead": "Nedsmält bly",
@@ -1527,7 +1527,7 @@
   "material.tconstruct.rabbit": "Kaninskinn",
   "material.tconstruct.rabbit.format": "%s av kaninskinn",
 
-  "material.tconstruct.aluminum": "Aluminium",
+  "material.tconstruct.aluminium": "Aluminium",
   "material.tconstruct.nickel":   "Nickel",
   "material.tconstruct.tin":      "Tenn",
   "material.tconstruct.zinc":     "Zink",

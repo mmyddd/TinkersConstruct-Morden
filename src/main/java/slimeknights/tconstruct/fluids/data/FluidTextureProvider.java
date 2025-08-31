@@ -76,7 +76,7 @@ public class FluidTextureProvider extends AbstractFluidTextureProvider {
     alloy(TinkerFluids.moltenKnightslime);
 
     // compat - ore
-    compatOre(TinkerFluids.moltenAluminum);
+    compatOre(TinkerFluids.moltenAluminium);
     compatOre(TinkerFluids.moltenLead);
     compatOre(TinkerFluids.moltenNickel);
     compatOre(TinkerFluids.moltenOsmium);

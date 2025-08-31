@@ -604,10 +604,10 @@
 "fluid.tconstruct.flowing_molten_tin": "Fließendes geschmolzenes Zinn",
 "item.tconstruct.molten_tin_bucket": "Eimer aus geschmolzenem Zinn",
 
-"block.tconstruct.molten_aluminum_fluid": "Geschmolzenes Aluminium",
-"fluid.tconstruct.molten_aluminum": "Geschmolzenes Aluminium",
-"fluid.tconstruct.flowing_molten_aluminum": "Fließendes geschmolzenes Aluminium",
-"item.tconstruct.molten_aluminum_bucket": "Eimer für geschmolzenes Aluminium",
+"block.tconstruct.molten_aluminium_fluid": "Geschmolzenes Aluminium",
+"fluid.tconstruct.molten_aluminium": "Geschmolzenes Aluminium",
+"fluid.tconstruct.flowing_molten_aluminium": "Fließendes geschmolzenes Aluminium",
+"item.tconstruct.molten_aluminium_bucket": "Eimer für geschmolzenes Aluminium",
 
 "block.tconstruct.molten_lead_fluid": "Geschmolzenes Blei",
 "fluid.tconstruct.molten_lead": "Geschmolzenes Blei",
@@ -1474,7 +1474,7 @@
 "material.tconstruct.chorus": "Chorus",
 "material.tconstruct.rabbit": "Kaninchenhaut",
 
-"material.tconstruct.aluminum": "Aluminium",
+"material.tconstruct.aluminium": "Aluminium",
 "material.tconstruct.nickel": "Nickel",
 "material.tconstruct.tin": "Zinn",
 "material.tconstruct.zinc": "Zink",

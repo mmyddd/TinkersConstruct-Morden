@@ -616,10 +616,10 @@
   "fluid.tconstruct.flowing_molten_tin": "Текучее расплавленное олово",
   "item.tconstruct.molten_tin_bucket": "Ведро расплавленного олова",
 
-  "block.tconstruct.molten_aluminum_fluid": "Расплавленный алюминий",
-  "fluid.tconstruct.molten_aluminum": "Расплавленный алюминий",
-  "fluid.tconstruct.flowing_molten_aluminum": "Текучий расплавленный алюминий",
-  "item.tconstruct.molten_aluminum_bucket": "Ведро расплавленного алюминия",
+  "block.tconstruct.molten_aluminium_fluid": "Расплавленный алюминий",
+  "fluid.tconstruct.molten_aluminium": "Расплавленный алюминий",
+  "fluid.tconstruct.flowing_molten_aluminium": "Текучий расплавленный алюминий",
+  "item.tconstruct.molten_aluminium_bucket": "Ведро расплавленного алюминия",
 
   "block.tconstruct.molten_lead_fluid": "Расплавленный свинец",
   "fluid.tconstruct.molten_lead": "Расплавленный свинец",
@@ -1507,7 +1507,7 @@
   "material.tconstruct.chorus":     "Хорус",
   "material.tconstruct.rabbit":     "Кроличья шкурка",
 
-  "material.tconstruct.aluminum": "Алюминий",
+  "material.tconstruct.aluminium": "Алюминий",
   "material.tconstruct.nickel":   "Никель",
   "material.tconstruct.tin":      "Олово",
   "material.tconstruct.zinc":     "Цинк",

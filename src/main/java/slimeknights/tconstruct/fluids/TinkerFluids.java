@@ -168,7 +168,7 @@ public final class TinkerFluids extends TinkerModule {
 
   // compat ores
   public static final FlowingFluidObject<ForgeFlowingFluid> moltenTin      = FLUIDS.register("molten_tin").type(hot("molten_tin").temperature(525).lightLevel(12)).block(createBurning(MapColor.COLOR_CYAN, 12, 10, 5f)).bucket().commonTag().flowing();
-  public static final FlowingFluidObject<ForgeFlowingFluid> moltenAluminum = FLUIDS.register("molten_aluminum").type(hot("molten_aluminum").temperature(725).lightLevel(12)).block(createBurning(MapColor.METAL, 12, 10, 5f)).bucket().commonTag().flowing();
+  public static final FlowingFluidObject<ForgeFlowingFluid> moltenAluminium = FLUIDS.register("molten_aluminium").type(hot("molten_aluminium").temperature(725).lightLevel(12)).block(createBurning(MapColor.METAL, 12, 10, 5f)).bucket().commonTag().flowing();
   public static final FlowingFluidObject<ForgeFlowingFluid> moltenLead     = FLUIDS.register("molten_lead").type(hot("molten_lead").temperature(630).lightLevel(12)).block(createBurning(MapColor.TERRACOTTA_BLUE, 12, 10, 5f)).bucket().commonTag().flowing();
   public static final FlowingFluidObject<ForgeFlowingFluid> moltenSilver   = FLUIDS.register("molten_silver").type(hot("molten_silver").temperature(1090).lightLevel(12)).block(createBurning(MapColor.METAL, 12, 10, 5f)).bucket().commonTag().flowing();
   public static final FlowingFluidObject<ForgeFlowingFluid> moltenNickel   = FLUIDS.register("molten_nickel").type(hot("molten_nickel").temperature(1250).lightLevel(12)).block(createBurning(MapColor.WOOD, 12, 10, 5f)).bucket().commonTag().flowing();
@@ -333,7 +333,7 @@ public final class TinkerFluids extends TinkerModule {
       DispenserBlock.registerBehavior(moltenKnightslime, dispenseBucket);
       // compat ores
       DispenserBlock.registerBehavior(moltenTin, dispenseBucket);
-      DispenserBlock.registerBehavior(moltenAluminum, dispenseBucket);
+      DispenserBlock.registerBehavior(moltenAluminium, dispenseBucket);
       DispenserBlock.registerBehavior(moltenLead, dispenseBucket);
       DispenserBlock.registerBehavior(moltenSilver, dispenseBucket);
       DispenserBlock.registerBehavior(moltenNickel, dispenseBucket);
@@ -434,7 +434,7 @@ public final class TinkerFluids extends TinkerModule {
 
     // compat ores
     acceptMolten(output, moltenTin);
-    acceptMolten(output, moltenAluminum);
+    acceptMolten(output, moltenAluminium);
     acceptMolten(output, moltenLead);
     acceptMolten(output, moltenSilver);
     acceptMolten(output, moltenNickel);

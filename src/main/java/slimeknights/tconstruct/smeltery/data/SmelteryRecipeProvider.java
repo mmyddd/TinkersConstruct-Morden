@@ -1987,9 +1987,9 @@ public class SmelteryRecipeProvider extends BaseRecipeProvider implements ISmelt
       .build(wrapped, prefix(TinkerFluids.moltenNicrosil, folder));
 
     // duralumin
-    wrapped = withCondition(consumer, tagCondition("ingots/duralumin"), tagCondition("ingots/aluminum"));
+    wrapped = withCondition(consumer, tagCondition("ingots/duralumin"), tagCondition("ingots/aluminium"));
     AlloyRecipeBuilder.alloy(TinkerFluids.moltenDuralumin, FluidValues.INGOT * 4)
-      .addInput(TinkerFluids.moltenAluminum.ingredient(FluidValues.INGOT * 3))
+      .addInput(TinkerFluids.moltenAluminium.ingredient(FluidValues.INGOT * 3))
       .addInput(TinkerFluids.moltenCopper.ingredient(FluidValues.INGOT))
       .save(wrapped, prefix(TinkerFluids.moltenDuralumin, folder));
   }
@@ -2176,7 +2176,7 @@ public class SmelteryRecipeProvider extends BaseRecipeProvider implements ISmelt
 
     // compat ores
     metal(consumer, TinkerFluids.moltenTin     ).ore(Byproduct.NICKEL, Byproduct.COPPER).optional().metal().dust().oreberry().plate().gear().coin().common(TOOLS_COMPLEMENT).common(ARMOR);
-    metal(consumer, TinkerFluids.moltenAluminum).ore(Byproduct.IRON                    ).optional().metal().dust().oreberry().plate().gear().coin().sheetmetal().wire().rod();
+    metal(consumer, TinkerFluids.moltenAluminium).ore(Byproduct.IRON                    ).optional().metal().dust().oreberry().plate().gear().coin().sheetmetal().wire().rod();
     metal(consumer, TinkerFluids.moltenLead    ).ore(Byproduct.SILVER, Byproduct.GOLD  ).optional().metal().dust().oreberry().plate().gear().coin().common(TOOLS_COMPLEMENT).common(ARMOR).sheetmetal().wire();
     metal(consumer, TinkerFluids.moltenSilver  ).ore(Byproduct.LEAD, Byproduct.GOLD    ).optional().metal().dust().oreberry().plate().gear().coin().common(TOOLS_COMPLEMENT).common(ARMOR).sheetmetal();
     metal(consumer, TinkerFluids.moltenNickel  ).ore(Byproduct.PLATINUM, Byproduct.IRON).optional().metal().dust().oreberry().plate().gear().coin().common(TOOLS_COMPLEMENT).common(ARMOR).sheetmetal();

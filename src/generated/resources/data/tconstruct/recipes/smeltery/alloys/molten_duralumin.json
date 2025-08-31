@@ -7,13 +7,13 @@
     },
     {
       "type": "mantle:tag_filled",
-      "tag": "forge:ingots/aluminum"
+      "tag": "forge:ingots/aluminium"
     }
   ],
   "inputs": [
     {
       "amount": 432,
-      "tag": "forge:molten_aluminum"
+      "tag": "forge:molten_aluminium"
     },
     {
       "amount": 144,

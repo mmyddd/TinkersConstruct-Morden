@@ -630,10 +630,10 @@
   "fluid.tconstruct.flowing_molten_tin": "Flowing Molten Tin",
   "item.tconstruct.molten_tin_bucket": "Molten Tin Bucket",
 
-  "block.tconstruct.molten_aluminum_fluid": "Molten Aluminum",
-  "fluid.tconstruct.molten_aluminum": "Molten Aluminum",
-  "fluid.tconstruct.flowing_molten_aluminum": "Flowing Molten Aluminum",
-  "item.tconstruct.molten_aluminum_bucket": "Molten Aluminum Bucket",
+  "block.tconstruct.molten_aluminium_fluid": "Molten Aluminium",
+  "fluid.tconstruct.molten_aluminium": "Molten Aluminium",
+  "fluid.tconstruct.flowing_molten_aluminium": "Flowing Molten Aluminium",
+  "item.tconstruct.molten_aluminium_bucket": "Molten Aluminum Bucket",
 
   "block.tconstruct.molten_lead_fluid": "Molten Lead",
   "fluid.tconstruct.molten_lead": "Molten Lead",
@@ -1513,7 +1513,7 @@
   "material.tconstruct.chorus": "Chorus",
   "material.tconstruct.rabbit": "Rabbit Hide",
 
-  "material.tconstruct.aluminum": "Aluminum",
+  "material.tconstruct.aluminium": "Aluminum",
   "material.tconstruct.nickel":   "Nickel",
   "material.tconstruct.tin":      "Tin",
   "material.tconstruct.zinc":     "Zinc",
