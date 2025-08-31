@@ -16,7 +16,7 @@
     "item": "ceramics:lava_bricks_slab"
   },
   "result": {
-    "amount": 500,
+    "amount": 800,
     "fluid": "tconstruct:molten_clay"
   },
   "temperature": 450,

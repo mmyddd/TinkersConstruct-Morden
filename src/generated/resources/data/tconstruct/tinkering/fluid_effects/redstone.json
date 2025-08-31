@@ -37,7 +37,7 @@
     }
   ],
   "fluid": {
-    "amount": 100,
+    "amount": 1600,
     "tag": "forge:redstone"
   }
 }

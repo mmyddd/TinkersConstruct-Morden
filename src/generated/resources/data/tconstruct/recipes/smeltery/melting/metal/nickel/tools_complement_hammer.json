@@ -10,9 +10,9 @@
     "item": "tools_complement:nickel_hammer"
   },
   "result": {
-    "amount": 1170,
+    "amount": 1872,
     "tag": "forge:molten_nickel",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 950,
   "time": 234

@@ -12,16 +12,16 @@
         "type": "tconstruct:alloy",
         "inputs": [
           {
-            "amount": 40,
+            "amount": 64,
             "tag": "tconstruct:molten_debris"
           },
           {
-            "amount": 20,
+            "amount": 32,
             "tag": "forge:molten_gold"
           }
         ],
         "result": {
-          "amount": 10,
+          "amount": 16,
           "tag": "forge:molten_netherite"
         },
         "temperature": 1250
@@ -37,16 +37,16 @@
         "type": "tconstruct:alloy",
         "inputs": [
           {
-            "amount": 40,
+            "amount": 64,
             "tag": "tconstruct:molten_debris"
           },
           {
-            "amount": 40,
+            "amount": 64,
             "tag": "forge:molten_gold"
           }
         ],
         "result": {
-          "amount": 10,
+          "amount": 16,
           "tag": "forge:molten_netherite"
         },
         "temperature": 1250

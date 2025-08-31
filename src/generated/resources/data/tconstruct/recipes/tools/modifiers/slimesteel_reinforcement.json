@@ -6,7 +6,7 @@
   "cast_consumed": true,
   "cooling_time": 37,
   "fluid": {
-    "amount": 30,
+    "amount": 48,
     "tag": "tconstruct:molten_slimesteel"
   },
   "result": "tconstruct:slimesteel_reinforcement"

@@ -1,8 +1,8 @@
 {
   "type": "tconstruct:casting_basin",
-  "cooling_time": 115,
+  "cooling_time": 365,
   "fluid": {
-    "amount": 400,
+    "amount": 6400,
     "tag": "tconstruct:molten_quartz"
   },
   "result": {

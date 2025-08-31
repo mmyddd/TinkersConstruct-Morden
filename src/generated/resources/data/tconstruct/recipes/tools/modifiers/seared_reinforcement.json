@@ -7,11 +7,11 @@
   "cooling_time": 89,
   "fluid": [
     {
-      "amount": 250,
+      "amount": 400,
       "tag": "tconstruct:seared_stone"
     },
     {
-      "amount": 250,
+      "amount": 400,
       "tag": "tconstruct:scorched_stone"
     }
   ],

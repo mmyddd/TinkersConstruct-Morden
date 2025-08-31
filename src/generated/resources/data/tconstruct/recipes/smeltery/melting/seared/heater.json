@@ -4,7 +4,7 @@
     "item": "tconstruct:seared_heater"
   },
   "result": {
-    "amount": 2000,
+    "amount": 3200,
     "fluid": "tconstruct:seared_stone"
   },
   "temperature": 600,

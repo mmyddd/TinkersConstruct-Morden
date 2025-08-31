@@ -5,7 +5,7 @@
   },
   "cooling_time": 71,
   "fluid": {
-    "amount": 90,
+    "amount": 144,
     "tag": "tconstruct:molten_queens_slime"
   },
   "result": {

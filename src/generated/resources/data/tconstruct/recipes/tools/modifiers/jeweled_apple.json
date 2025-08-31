@@ -4,9 +4,9 @@
     "item": "minecraft:apple"
   },
   "cast_consumed": true,
-  "cooling_time": 118,
+  "cooling_time": 372,
   "fluid": {
-    "amount": 200,
+    "amount": 3200,
     "tag": "tconstruct:molten_diamond"
   },
   "result": "tconstruct:jeweled_apple"

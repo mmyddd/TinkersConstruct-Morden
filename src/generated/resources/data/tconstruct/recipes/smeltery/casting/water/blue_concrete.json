@@ -4,7 +4,7 @@
     "item": "minecraft:blue_concrete_powder"
   },
   "cast_consumed": true,
-  "cooling_time": 30,
+  "cooling_time": 23,
   "fluid": {
     "amount": 100,
     "fluid": "minecraft:water"

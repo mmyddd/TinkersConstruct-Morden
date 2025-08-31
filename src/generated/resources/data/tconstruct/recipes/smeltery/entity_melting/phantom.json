@@ -5,7 +5,7 @@
     "type": "minecraft:phantom"
   },
   "result": {
-    "amount": 50,
+    "amount": 80,
     "nbt": {
       "Potion": "minecraft:slow_falling"
     },

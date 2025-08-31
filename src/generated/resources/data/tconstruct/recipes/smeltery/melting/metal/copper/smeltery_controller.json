@@ -2,7 +2,7 @@
   "type": "tconstruct:melting",
   "byproducts": [
     {
-      "amount": 1000,
+      "amount": 1600,
       "fluid": "tconstruct:seared_stone"
     }
   ],
@@ -10,7 +10,7 @@
     "item": "tconstruct:smeltery_controller"
   },
   "result": {
-    "amount": 360,
+    "amount": 576,
     "tag": "forge:molten_copper"
   },
   "temperature": 500,

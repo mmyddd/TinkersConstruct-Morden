@@ -34,7 +34,7 @@
     }
   ],
   "fluid": {
-    "amount": 20,
+    "amount": 32,
     "fluid": "tconstruct:molten_cinderslime"
   }
 }

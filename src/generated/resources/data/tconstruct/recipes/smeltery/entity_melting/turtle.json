@@ -5,7 +5,7 @@
     "type": "minecraft:turtle"
   },
   "result": {
-    "amount": 25,
+    "amount": 40,
     "nbt": {
       "Potion": "minecraft:turtle_master"
     },

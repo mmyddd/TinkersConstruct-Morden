@@ -44,7 +44,7 @@
     }
   ],
   "fluid": {
-    "amount": 10,
+    "amount": 16,
     "tag": "forge:molten_enderium"
   }
 }

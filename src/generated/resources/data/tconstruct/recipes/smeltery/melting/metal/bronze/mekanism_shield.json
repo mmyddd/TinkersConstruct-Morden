@@ -10,9 +10,9 @@
     "item": "mekanism:bronze_shield"
   },
   "result": {
-    "amount": 540,
+    "amount": 864,
     "tag": "forge:molten_bronze",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 700,
   "time": 139

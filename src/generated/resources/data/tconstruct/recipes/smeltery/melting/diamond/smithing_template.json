@@ -9,9 +9,9 @@
     }
   ],
   "result": {
-    "amount": 500,
+    "amount": 8000,
     "fluid": "tconstruct:molten_diamond"
   },
   "temperature": 1450,
-  "time": 186
+  "time": 588
 }

@@ -6,7 +6,7 @@
   "cast_consumed": true,
   "cooling_time": 48,
   "fluid": {
-    "amount": 250,
+    "amount": 400,
     "tag": "tconstruct:venom"
   },
   "result": "tconstruct:venombone"

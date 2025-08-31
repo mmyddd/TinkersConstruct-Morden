@@ -18,7 +18,7 @@
         "type": "tconstruct:ore_melting",
         "byproducts": [
           {
-            "amount": 180,
+            "amount": 288,
             "rate": "metal",
             "tag": "forge:molten_tin"
           }
@@ -28,7 +28,7 @@
         },
         "rate": "metal",
         "result": {
-          "amount": 180,
+          "amount": 288,
           "tag": "forge:molten_zinc"
         },
         "temperature": 420,
@@ -45,7 +45,7 @@
         "type": "tconstruct:ore_melting",
         "byproducts": [
           {
-            "amount": 180,
+            "amount": 288,
             "rate": "metal",
             "tag": "forge:molten_copper"
           }
@@ -55,7 +55,7 @@
         },
         "rate": "metal",
         "result": {
-          "amount": 180,
+          "amount": 288,
           "tag": "forge:molten_zinc"
         },
         "temperature": 420,

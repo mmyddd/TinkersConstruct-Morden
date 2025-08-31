@@ -4,7 +4,7 @@
     "item": "tconstruct:bloodshroom_planks_slab"
   },
   "cast_consumed": true,
-  "cooling_time": 85,
+  "cooling_time": 67,
   "fluid": {
     "amount": 100,
     "tag": "tconstruct:blazing_blood"

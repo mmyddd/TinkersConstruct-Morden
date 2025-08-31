@@ -5,7 +5,7 @@
     "type": "minecraft:slime"
   },
   "result": {
-    "amount": 25,
+    "amount": 40,
     "tag": "forge:slime"
   }
 }

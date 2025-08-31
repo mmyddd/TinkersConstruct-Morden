@@ -5,7 +5,7 @@
   },
   "cooling_time": 101,
   "fluid": {
-    "amount": 180,
+    "amount": 288,
     "tag": "tconstruct:molten_debris"
   },
   "result": {

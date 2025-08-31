@@ -10,9 +10,9 @@
     "tag": "forge:armors/helmets/electrum"
   },
   "result": {
-    "amount": 450,
+    "amount": 720,
     "tag": "forge:molten_electrum",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 760,
   "time": 132

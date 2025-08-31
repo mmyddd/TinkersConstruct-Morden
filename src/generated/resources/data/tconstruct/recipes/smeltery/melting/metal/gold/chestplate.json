@@ -4,9 +4,9 @@
     "item": "minecraft:golden_chestplate"
   },
   "result": {
-    "amount": 720,
+    "amount": 1152,
     "tag": "forge:molten_gold",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 700,
   "time": 161

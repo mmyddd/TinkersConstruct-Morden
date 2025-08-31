@@ -2,7 +2,7 @@
   "type": "tconstruct:ore_melting",
   "byproducts": [
     {
-      "amount": 90,
+      "amount": 144,
       "rate": "metal",
       "tag": "forge:molten_cobalt"
     }
@@ -12,7 +12,7 @@
   },
   "rate": "metal",
   "result": {
-    "amount": 90,
+    "amount": 144,
     "tag": "forge:molten_gold"
   },
   "temperature": 700,

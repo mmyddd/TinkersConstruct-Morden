@@ -10,7 +10,7 @@
       "modid": "ceramics"
     }
   ],
-  "cooling_time": 70,
+  "cooling_time": 55,
   "fluid": {
     "amount": 100,
     "fluid": "minecraft:lava"

@@ -24,7 +24,7 @@
     }
   ],
   "fluid": {
-    "amount": 10,
+    "amount": 16,
     "tag": "tconstruct:molten_pig_iron"
   }
 }

@@ -5,7 +5,7 @@
   },
   "cooling_time": 50,
   "fluid": {
-    "amount": 90,
+    "amount": 144,
     "tag": "forge:molten_copper"
   },
   "result": {

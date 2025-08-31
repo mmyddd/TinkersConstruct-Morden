@@ -8,7 +8,7 @@
     ]
   },
   "result": {
-    "amount": 50,
+    "amount": 80,
     "nbt": {
       "Potion": "minecraft:night_vision"
     },

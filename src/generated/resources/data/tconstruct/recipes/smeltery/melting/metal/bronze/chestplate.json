@@ -10,9 +10,9 @@
     "tag": "forge:armors/chestplates/bronze"
   },
   "result": {
-    "amount": 720,
+    "amount": 1152,
     "tag": "forge:molten_bronze",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 700,
   "time": 161

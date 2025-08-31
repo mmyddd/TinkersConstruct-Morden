@@ -3,15 +3,15 @@
   "units": [
     {
       "key": "gui.tconstruct.fluid.block",
-      "needed": 900
+      "needed": 14400
     },
     {
       "key": "gui.tconstruct.fluid.gem",
-      "needed": 100
+      "needed": 1600
     },
     {
       "key": "gui.tconstruct.fluid.shard",
-      "needed": 25
+      "needed": 400
     }
   ]
 }

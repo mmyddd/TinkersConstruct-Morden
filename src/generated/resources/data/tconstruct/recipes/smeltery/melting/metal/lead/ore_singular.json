@@ -19,7 +19,7 @@
         "type": "tconstruct:ore_melting",
         "byproducts": [
           {
-            "amount": 180,
+            "amount": 288,
             "rate": "metal",
             "tag": "forge:molten_silver"
           }
@@ -35,7 +35,7 @@
         },
         "rate": "metal",
         "result": {
-          "amount": 180,
+          "amount": 288,
           "tag": "forge:molten_lead"
         },
         "temperature": 330,
@@ -52,7 +52,7 @@
         "type": "tconstruct:ore_melting",
         "byproducts": [
           {
-            "amount": 180,
+            "amount": 288,
             "rate": "metal",
             "tag": "forge:molten_gold"
           }
@@ -68,7 +68,7 @@
         },
         "rate": "metal",
         "result": {
-          "amount": 180,
+          "amount": 288,
           "tag": "forge:molten_lead"
         },
         "temperature": 330,

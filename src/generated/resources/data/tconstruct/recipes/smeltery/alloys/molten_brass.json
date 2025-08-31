@@ -8,16 +8,16 @@
   ],
   "inputs": [
     {
-      "amount": 90,
+      "amount": 144,
       "tag": "forge:molten_copper"
     },
     {
-      "amount": 90,
+      "amount": 144,
       "tag": "forge:molten_zinc"
     }
   ],
   "result": {
-    "amount": 180,
+    "amount": 288,
     "tag": "forge:molten_brass"
   },
   "temperature": 605

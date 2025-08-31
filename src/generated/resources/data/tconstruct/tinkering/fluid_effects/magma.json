@@ -34,7 +34,7 @@
     }
   ],
   "fluid": {
-    "amount": 100,
+    "amount": 160,
     "tag": "forge:magma"
   }
 }

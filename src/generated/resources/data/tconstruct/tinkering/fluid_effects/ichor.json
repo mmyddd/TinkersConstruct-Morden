@@ -21,7 +21,7 @@
     }
   ],
   "fluid": {
-    "amount": 50,
+    "amount": 80,
     "fluid": "tconstruct:ichor"
   }
 }

@@ -10,9 +10,9 @@
     "tag": "tconstruct:melting/lead/tools_costing_2"
   },
   "result": {
-    "amount": 180,
+    "amount": 288,
     "tag": "forge:molten_lead",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 330,
   "time": 61

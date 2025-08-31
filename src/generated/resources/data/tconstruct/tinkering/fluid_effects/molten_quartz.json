@@ -13,7 +13,7 @@
     }
   ],
   "fluid": {
-    "amount": 25,
+    "amount": 400,
     "tag": "tconstruct:molten_quartz"
   }
 }

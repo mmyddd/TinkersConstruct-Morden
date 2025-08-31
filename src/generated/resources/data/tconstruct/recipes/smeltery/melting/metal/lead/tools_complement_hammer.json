@@ -10,9 +10,9 @@
     "item": "tools_complement:lead_hammer"
   },
   "result": {
-    "amount": 1170,
+    "amount": 1872,
     "tag": "forge:molten_lead",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 330,
   "time": 157

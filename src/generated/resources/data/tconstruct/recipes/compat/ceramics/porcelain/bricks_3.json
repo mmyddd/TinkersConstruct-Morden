@@ -10,7 +10,7 @@
     "tag": "ceramics:porcelain_cisterns"
   },
   "result": {
-    "amount": 750,
+    "amount": 1200,
     "fluid": "tconstruct:molten_porcelain"
   },
   "temperature": 700,

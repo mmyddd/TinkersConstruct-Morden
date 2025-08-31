@@ -8,7 +8,7 @@
   ],
   "cooling_time": 194,
   "fluid": {
-    "amount": 810,
+    "amount": 1296,
     "tag": "forge:molten_nickel"
   },
   "result": {

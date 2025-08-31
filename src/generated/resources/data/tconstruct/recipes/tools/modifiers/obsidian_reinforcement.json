@@ -4,9 +4,9 @@
     "item": "tconstruct:pattern"
   },
   "cast_consumed": true,
-  "cooling_time": 221,
+  "cooling_time": 66,
   "fluid": {
-    "amount": 1000,
+    "amount": 144,
     "tag": "tconstruct:molten_obsidian"
   },
   "result": "tconstruct:obsidian_reinforcement"

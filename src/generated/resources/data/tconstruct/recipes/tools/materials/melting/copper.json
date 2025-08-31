@@ -2,7 +2,7 @@
   "type": "tconstruct:material_melting",
   "input": "tconstruct:copper",
   "result": {
-    "amount": 90,
+    "amount": 144,
     "tag": "forge:molten_copper"
   },
   "temperature": 500

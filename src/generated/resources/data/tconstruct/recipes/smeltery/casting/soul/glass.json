@@ -1,8 +1,8 @@
 {
   "type": "tconstruct:casting_basin",
-  "cooling_time": 154,
+  "cooling_time": 46,
   "fluid": {
-    "amount": 1000,
+    "amount": 144,
     "tag": "tconstruct:liquid_soul"
   },
   "result": "tconstruct:soul_glass"

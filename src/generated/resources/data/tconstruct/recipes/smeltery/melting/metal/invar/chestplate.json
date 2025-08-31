@@ -10,9 +10,9 @@
     "tag": "forge:armors/chestplates/invar"
   },
   "result": {
-    "amount": 720,
+    "amount": 1152,
     "tag": "forge:molten_invar",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 900,
   "time": 179

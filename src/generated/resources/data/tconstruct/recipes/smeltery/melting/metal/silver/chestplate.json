@@ -10,9 +10,9 @@
     "tag": "forge:armors/chestplates/silver"
   },
   "result": {
-    "amount": 720,
+    "amount": 1152,
     "tag": "forge:molten_silver",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 790,
   "time": 169

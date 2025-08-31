@@ -8,16 +8,16 @@
   ],
   "inputs": [
     {
-      "amount": 270,
+      "amount": 432,
       "tag": "forge:molten_copper"
     },
     {
-      "amount": 90,
+      "amount": 144,
       "tag": "forge:molten_tin"
     }
   ],
   "result": {
-    "amount": 360,
+    "amount": 576,
     "tag": "forge:molten_bronze"
   },
   "temperature": 700

@@ -10,9 +10,9 @@
     "tag": "tconstruct:melting/osmium/tools_costing_3"
   },
   "result": {
-    "amount": 270,
+    "amount": 432,
     "tag": "forge:molten_osmium",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 975,
   "time": 114

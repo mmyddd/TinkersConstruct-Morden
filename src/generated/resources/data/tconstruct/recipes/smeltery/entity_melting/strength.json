@@ -10,7 +10,7 @@
     ]
   },
   "result": {
-    "amount": 50,
+    "amount": 80,
     "nbt": {
       "Potion": "minecraft:strength"
     },

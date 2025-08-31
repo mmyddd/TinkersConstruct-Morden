@@ -6,7 +6,7 @@
   "cast_consumed": true,
   "cooling_time": 115,
   "fluid": {
-    "amount": 1250,
+    "amount": 2000,
     "tag": "forge:slime"
   },
   "result": "minecraft:slime_block"

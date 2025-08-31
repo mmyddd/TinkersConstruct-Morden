@@ -6,7 +6,7 @@
   "cast_consumed": true,
   "cooling_time": 280,
   "fluid": {
-    "amount": 7000,
+    "amount": 11200,
     "tag": "tconstruct:ender_slime"
   },
   "result": "tconstruct:slime_leggings"

@@ -12,16 +12,16 @@
   ],
   "inputs": [
     {
-      "amount": 270,
+      "amount": 432,
       "tag": "forge:molten_aluminum"
     },
     {
-      "amount": 90,
+      "amount": 144,
       "tag": "forge:molten_copper"
     }
   ],
   "result": {
-    "amount": 360,
+    "amount": 576,
     "tag": "forge:molten_duralumin"
   },
   "temperature": 625

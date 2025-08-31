@@ -3,9 +3,9 @@
   "cast": {
     "tag": "tconstruct:casts/multi_use/gem"
   },
-  "cooling_time": 68,
+  "cooling_time": 214,
   "fluid": {
-    "amount": 100,
+    "amount": 1600,
     "tag": "tconstruct:molten_emerald"
   },
   "result": {

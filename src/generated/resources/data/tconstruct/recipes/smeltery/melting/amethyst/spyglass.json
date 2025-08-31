@@ -2,7 +2,7 @@
   "type": "tconstruct:melting",
   "byproducts": [
     {
-      "amount": 180,
+      "amount": 288,
       "tag": "forge:molten_copper"
     }
   ],
@@ -10,9 +10,9 @@
     "item": "minecraft:spyglass"
   },
   "result": {
-    "amount": 100,
+    "amount": 1600,
     "fluid": "tconstruct:molten_amethyst"
   },
   "temperature": 950,
-  "time": 68
+  "time": 216
 }

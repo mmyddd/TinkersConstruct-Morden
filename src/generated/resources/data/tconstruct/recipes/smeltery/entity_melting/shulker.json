@@ -5,7 +5,7 @@
     "type": "minecraft:shulker"
   },
   "result": {
-    "amount": 25,
+    "amount": 40,
     "nbt": {
       "Potion": "minecraft:leaping"
     },

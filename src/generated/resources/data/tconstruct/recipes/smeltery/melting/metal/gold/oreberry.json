@@ -10,7 +10,7 @@
     "item": "oreberriesreplanted:gold_oreberry"
   },
   "result": {
-    "amount": 10,
+    "amount": 16,
     "tag": "forge:molten_gold"
   },
   "temperature": 700,

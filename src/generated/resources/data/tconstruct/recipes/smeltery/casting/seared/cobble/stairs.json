@@ -6,7 +6,7 @@
   "cast_consumed": true,
   "cooling_time": 113,
   "fluid": {
-    "amount": 500,
+    "amount": 800,
     "tag": "tconstruct:molten_clay"
   },
   "result": "tconstruct:seared_cobble_stairs"

@@ -10,9 +10,9 @@
     "item": "tools_complement:invar_hammer"
   },
   "result": {
-    "amount": 1170,
+    "amount": 1872,
     "tag": "forge:molten_invar",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 900,
   "time": 228

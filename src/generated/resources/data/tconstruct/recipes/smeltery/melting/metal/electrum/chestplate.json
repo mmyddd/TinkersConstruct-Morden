@@ -10,9 +10,9 @@
     "tag": "forge:armors/chestplates/electrum"
   },
   "result": {
-    "amount": 720,
+    "amount": 1152,
     "tag": "forge:molten_electrum",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 760,
   "time": 166

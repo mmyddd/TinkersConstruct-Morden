@@ -10,9 +10,9 @@
     "tag": "forge:tools/shovels/refined_obsidian"
   },
   "result": {
-    "amount": 90,
+    "amount": 144,
     "tag": "forge:molten_refined_obsidian",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 1475,
   "time": 80

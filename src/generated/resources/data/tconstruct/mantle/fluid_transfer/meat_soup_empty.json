@@ -1,7 +1,7 @@
 {
   "type": "mantle:empty_item",
   "fluid": {
-    "amount": 250,
+    "amount": 400,
     "fluid": "tconstruct:meat_soup"
   },
   "input": {

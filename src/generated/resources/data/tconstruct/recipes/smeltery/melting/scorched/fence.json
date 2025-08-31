@@ -4,7 +4,7 @@
     "item": "tconstruct:scorched_bricks_fence"
   },
   "result": {
-    "amount": 750,
+    "amount": 1200,
     "fluid": "tconstruct:scorched_stone"
   },
   "temperature": 500,

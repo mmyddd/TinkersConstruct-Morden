@@ -10,9 +10,9 @@
     "tag": "forge:armors/leggings/nickel"
   },
   "result": {
-    "amount": 630,
+    "amount": 1008,
     "tag": "forge:molten_nickel",
-    "unit_size": 10
+    "unit_size": 16
   },
   "temperature": 950,
   "time": 171

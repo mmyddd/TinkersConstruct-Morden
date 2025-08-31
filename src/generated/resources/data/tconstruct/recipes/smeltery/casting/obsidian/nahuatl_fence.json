@@ -4,7 +4,7 @@
     "tag": "minecraft:wooden_fences"
   },
   "cast_consumed": true,
-  "cooling_time": 221,
+  "cooling_time": 175,
   "fluid": {
     "amount": 1000,
     "tag": "tconstruct:molten_obsidian"
