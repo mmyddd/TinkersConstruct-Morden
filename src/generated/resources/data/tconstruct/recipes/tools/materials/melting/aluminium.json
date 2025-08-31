@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material_melting",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/aluminium"
+    }
+  ],
+  "input": "tconstruct:aluminium",
+  "result": {
+    "amount": 144,
+    "tag": "forge:aluminium"
+  },
+  "temperature": 425
+}

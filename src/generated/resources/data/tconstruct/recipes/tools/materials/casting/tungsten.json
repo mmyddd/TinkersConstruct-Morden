@@ -8,7 +8,7 @@
   ],
   "fluid": {
     "amount": 144,
-    "tag": "forge:molten_tungsten"
+    "tag": "forge:tungsten"
   },
   "output": "tconstruct:tungsten",
   "temperature": 950

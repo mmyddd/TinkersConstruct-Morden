@@ -9,7 +9,7 @@
   "cooling_time": 199,
   "fluid": {
     "amount": 1296,
-    "tag": "forge:molten_signalum"
+    "tag": "forge:signalum"
   },
   "result": {
     "tag": "forge:storage_blocks/signalum"

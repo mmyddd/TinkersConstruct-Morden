@@ -11,7 +11,7 @@
   },
   "result": {
     "amount": 144,
-    "fluid": "tconstruct:molten_obsidian"
+    "fluid": "tconstruct:obsidian"
   },
   "temperature": 1000,
   "time": 232

@@ -7,7 +7,7 @@
   "cooling_time": 120,
   "fluid": {
     "amount": 576,
-    "tag": "forge:molten_iron"
+    "tag": "forge:iron"
   },
   "result": "minecraft:compass"
 }

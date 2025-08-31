@@ -13,7 +13,7 @@
   "cooling_time": 54,
   "fluid": {
     "amount": 144,
-    "tag": "forge:molten_brass"
+    "tag": "forge:brass"
   },
   "result": {
     "tag": "forge:ingots/brass"

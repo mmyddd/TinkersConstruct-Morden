@@ -7,7 +7,7 @@
   "cooling_time": 91,
   "fluid": {
     "amount": 400,
-    "tag": "tconstruct:molten_quartz"
+    "tag": "tconstruct:quartz"
   },
   "result": "tconstruct:scorched_glass_pane"
 }

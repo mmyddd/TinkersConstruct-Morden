@@ -17,7 +17,7 @@
   ],
   "fluid": {
     "amount": 144,
-    "tag": "forge:molten_invar"
+    "tag": "forge:invar"
   },
   "output": "tconstruct:invar",
   "temperature": 900

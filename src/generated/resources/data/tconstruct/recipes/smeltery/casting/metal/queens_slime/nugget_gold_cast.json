@@ -6,7 +6,7 @@
   "cooling_time": 24,
   "fluid": {
     "amount": 16,
-    "tag": "tconstruct:molten_queens_slime"
+    "tag": "tconstruct:queens_slime"
   },
   "result": {
     "tag": "forge:nuggets/queens_slime"

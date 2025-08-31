@@ -1,0 +1,24 @@
+{
+  "type": "tconstruct:alloy",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/tin"
+    }
+  ],
+  "inputs": [
+    {
+      "amount": 432,
+      "tag": "forge:copper"
+    },
+    {
+      "amount": 144,
+      "tag": "forge:tin"
+    }
+  ],
+  "result": {
+    "amount": 576,
+    "tag": "forge:bronze"
+  },
+  "temperature": 700
+}

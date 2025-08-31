@@ -13,7 +13,7 @@
   "cooling_time": 21,
   "fluid": {
     "amount": 16,
-    "tag": "forge:molten_invar"
+    "tag": "forge:invar"
   },
   "result": {
     "tag": "forge:nuggets/invar"

@@ -3,7 +3,7 @@
   "cooling_time": 194,
   "fluid": {
     "amount": 1296,
-    "tag": "forge:molten_cobalt"
+    "tag": "forge:cobalt"
   },
   "result": {
     "tag": "forge:storage_blocks/cobalt"

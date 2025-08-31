@@ -3,7 +3,7 @@
   "byproducts": [
     {
       "amount": 4800,
-      "fluid": "tconstruct:molten_quartz"
+      "fluid": "tconstruct:quartz"
     }
   ],
   "ingredient": {

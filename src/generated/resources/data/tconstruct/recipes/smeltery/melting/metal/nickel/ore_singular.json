@@ -21,7 +21,7 @@
           {
             "amount": 288,
             "rate": "metal",
-            "tag": "forge:molten_platinum"
+            "tag": "forge:platinum"
           }
         ],
         "ingredient": {
@@ -36,7 +36,7 @@
         "rate": "metal",
         "result": {
           "amount": 288,
-          "tag": "forge:molten_nickel"
+          "tag": "forge:nickel"
         },
         "temperature": 950,
         "time": 162
@@ -54,7 +54,7 @@
           {
             "amount": 288,
             "rate": "metal",
-            "tag": "forge:molten_iron"
+            "tag": "forge:iron"
           }
         ],
         "ingredient": {
@@ -69,7 +69,7 @@
         "rate": "metal",
         "result": {
           "amount": 288,
-          "tag": "forge:molten_nickel"
+          "tag": "forge:nickel"
         },
         "temperature": 950,
         "time": 162

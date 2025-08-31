@@ -7,7 +7,7 @@
   "cooling_time": 306,
   "fluid": {
     "amount": 3200,
-    "tag": "tconstruct:molten_amethyst"
+    "tag": "tconstruct:amethyst"
   },
   "result": "tconstruct:clear_tinted_glass"
 }

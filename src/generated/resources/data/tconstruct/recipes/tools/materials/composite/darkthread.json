@@ -2,7 +2,7 @@
   "type": "tconstruct:material_fluid",
   "fluid": {
     "amount": 36,
-    "tag": "tconstruct:molten_obsidian"
+    "tag": "tconstruct:obsidian"
   },
   "input": "tconstruct:string",
   "output": "tconstruct:darkthread",

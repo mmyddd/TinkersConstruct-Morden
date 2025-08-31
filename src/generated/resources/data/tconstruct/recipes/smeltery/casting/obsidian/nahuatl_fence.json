@@ -7,7 +7,7 @@
   "cooling_time": 175,
   "fluid": {
     "amount": 1000,
-    "tag": "tconstruct:molten_obsidian"
+    "tag": "tconstruct:obsidian"
   },
   "result": "tconstruct:nahuatl_fence"
 }

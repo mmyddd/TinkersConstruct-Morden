@@ -3,7 +3,7 @@
   "cooling_time": 643,
   "fluid": {
     "amount": 14400,
-    "tag": "tconstruct:molten_emerald"
+    "tag": "tconstruct:emerald"
   },
   "result": {
     "tag": "forge:storage_blocks/emerald"

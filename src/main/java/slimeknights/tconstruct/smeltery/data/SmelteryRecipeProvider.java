@@ -1385,11 +1385,11 @@ public class SmelteryRecipeProvider extends BaseRecipeProvider implements ISmelt
     MeltingRecipeBuilder.melting(Ingredient.of(Tags.Items.ORES_NETHERITE_SCRAP), TinkerFluids.moltenDebris, FluidValues.INGOT, 2.0f)
                         .setOre(OreRateType.METAL)
                         .addByproduct(TinkerFluids.moltenNetherite.result(FluidValues.NUGGET * 3))
-                        .save(consumer, location(metalFolder + "molten_debris/ore"));
+                        .save(consumer, location(metalFolder + "debris/ore"));
     MeltingRecipeBuilder.melting(Ingredient.of(TinkerTags.Items.INGOTS_NETHERITE_SCRAP), TinkerFluids.moltenDebris, FluidValues.INGOT, 1.0f)
-                        .save(consumer, location(metalFolder + "molten_debris/scrap"));
+                        .save(consumer, location(metalFolder + "debris/scrap"));
     MeltingRecipeBuilder.melting(Ingredient.of(TinkerTags.Items.NUGGETS_NETHERITE_SCRAP), TinkerFluids.moltenDebris, FluidValues.NUGGET, 1 / 3f)
-                        .save(consumer, location(metalFolder + "molten_debris/debris_nugget"));
+                        .save(consumer, location(metalFolder + "debris/debris_nugget"));
     
     // venom
     MeltingRecipeBuilder.melting(Ingredient.of(Items.SPIDER_EYE), TinkerFluids.venom, FluidValues.BOTTLE, 1.0f)
@@ -1987,9 +1987,9 @@ public class SmelteryRecipeProvider extends BaseRecipeProvider implements ISmelt
       .build(wrapped, prefix(TinkerFluids.moltenNicrosil, folder));
 
     // duralumin
-    wrapped = withCondition(consumer, tagCondition("ingots/duralumin"), tagCondition("ingots/aluminum"));
+    wrapped = withCondition(consumer, tagCondition("ingots/duralumin"), tagCondition("ingots/aluminium"));
     AlloyRecipeBuilder.alloy(TinkerFluids.moltenDuralumin, FluidValues.INGOT * 4)
-      .addInput(TinkerFluids.moltenAluminum.ingredient(FluidValues.INGOT * 3))
+      .addInput(TinkerFluids.moltenAluminium.ingredient(FluidValues.INGOT * 3))
       .addInput(TinkerFluids.moltenCopper.ingredient(FluidValues.INGOT))
       .save(wrapped, prefix(TinkerFluids.moltenDuralumin, folder));
   }
@@ -2176,7 +2176,7 @@ public class SmelteryRecipeProvider extends BaseRecipeProvider implements ISmelt
 
     // compat ores
     metal(consumer, TinkerFluids.moltenTin     ).ore(Byproduct.NICKEL, Byproduct.COPPER).optional().metal().dust().oreberry().plate().gear().coin().common(TOOLS_COMPLEMENT).common(ARMOR);
-    metal(consumer, TinkerFluids.moltenAluminum).ore(Byproduct.IRON                    ).optional().metal().dust().oreberry().plate().gear().coin().sheetmetal().wire().rod();
+    metal(consumer, TinkerFluids.moltenAluminium).ore(Byproduct.IRON                    ).optional().metal().dust().oreberry().plate().gear().coin().sheetmetal().wire().rod();
     metal(consumer, TinkerFluids.moltenLead    ).ore(Byproduct.SILVER, Byproduct.GOLD  ).optional().metal().dust().oreberry().plate().gear().coin().common(TOOLS_COMPLEMENT).common(ARMOR).sheetmetal().wire();
     metal(consumer, TinkerFluids.moltenSilver  ).ore(Byproduct.LEAD, Byproduct.GOLD    ).optional().metal().dust().oreberry().plate().gear().coin().common(TOOLS_COMPLEMENT).common(ARMOR).sheetmetal();
     metal(consumer, TinkerFluids.moltenNickel  ).ore(Byproduct.PLATINUM, Byproduct.IRON).optional().metal().dust().oreberry().plate().gear().coin().common(TOOLS_COMPLEMENT).common(ARMOR).sheetmetal();
@@ -2201,7 +2201,7 @@ public class SmelteryRecipeProvider extends BaseRecipeProvider implements ISmelt
     metal(consumer, TinkerFluids.moltenNicrosil).optional().metal();
     metal(consumer, TinkerFluids.moltenDuralumin).optional().metal();
     // embers provides their own fluid. so we just have to add the recipes
-    TagKey<Fluid> dawnstone = getFluidTag(COMMON, "molten_dawnstone");
+    TagKey<Fluid> dawnstone = getFluidTag(COMMON, "dawnstone");
     metal(withCondition(consumer, new TagFilledCondition<>(dawnstone)), "dawnstone", dawnstone).temperature(900).optional().metal().plate();
   }
 

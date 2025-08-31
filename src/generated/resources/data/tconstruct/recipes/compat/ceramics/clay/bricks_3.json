@@ -19,7 +19,7 @@
   ],
   "result": {
     "amount": 1200,
-    "fluid": "tconstruct:molten_clay"
+    "fluid": "tconstruct:clay"
   },
   "temperature": 450,
   "time": 80

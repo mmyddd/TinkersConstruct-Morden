@@ -9,7 +9,7 @@
   "input": "tconstruct:lead",
   "result": {
     "amount": 144,
-    "tag": "forge:molten_lead"
+    "tag": "forge:lead"
   },
   "temperature": 330
 }

@@ -13,7 +13,7 @@
   "cooling_time": 13,
   "fluid": {
     "amount": 16,
-    "tag": "forge:molten_tin"
+    "tag": "forge:tin"
   },
   "result": {
     "tag": "forge:nuggets/tin"

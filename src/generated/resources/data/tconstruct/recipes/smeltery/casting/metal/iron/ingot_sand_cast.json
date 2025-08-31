@@ -7,7 +7,7 @@
   "cooling_time": 60,
   "fluid": {
     "amount": 144,
-    "tag": "forge:molten_iron"
+    "tag": "forge:iron"
   },
   "result": {
     "tag": "forge:ingots/iron"

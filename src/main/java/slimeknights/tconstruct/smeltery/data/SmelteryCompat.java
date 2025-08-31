@@ -18,7 +18,7 @@ import java.util.Locale;
 public enum SmelteryCompat {
   // ores
   TIN     (TinkerFluids.moltenTin,      true),
-  ALUMINUM(TinkerFluids.moltenAluminum, true),
+  ALUMINIUM(TinkerFluids.moltenAluminium, true),
   LEAD    (TinkerFluids.moltenLead,     true),
   SILVER  (TinkerFluids.moltenSilver,   true),
   NICKEL  (TinkerFluids.moltenNickel,   true),

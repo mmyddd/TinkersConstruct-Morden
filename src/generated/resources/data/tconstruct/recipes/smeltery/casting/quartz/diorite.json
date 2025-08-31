@@ -7,7 +7,7 @@
   "cooling_time": 129,
   "fluid": {
     "amount": 800,
-    "tag": "tconstruct:molten_quartz"
+    "tag": "tconstruct:quartz"
   },
   "result": "minecraft:diorite"
 }

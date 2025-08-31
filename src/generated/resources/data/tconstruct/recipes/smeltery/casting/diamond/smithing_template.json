@@ -11,6 +11,6 @@
   "cooling_time": 588,
   "fluid": {
     "amount": 8000,
-    "tag": "tconstruct:molten_diamond"
+    "tag": "tconstruct:diamond"
   }
 }

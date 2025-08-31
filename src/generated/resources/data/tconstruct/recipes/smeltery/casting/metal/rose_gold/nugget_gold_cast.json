@@ -6,7 +6,7 @@
   "cooling_time": 17,
   "fluid": {
     "amount": 16,
-    "tag": "forge:molten_rose_gold"
+    "tag": "forge:rose_gold"
   },
   "result": {
     "tag": "forge:nuggets/rose_gold"

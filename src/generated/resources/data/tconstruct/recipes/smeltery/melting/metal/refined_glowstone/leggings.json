@@ -11,7 +11,7 @@
   },
   "result": {
     "amount": 1008,
-    "tag": "forge:molten_refined_glowstone",
+    "tag": "forge:refined_glowstone",
     "unit_size": 16
   },
   "temperature": 825,

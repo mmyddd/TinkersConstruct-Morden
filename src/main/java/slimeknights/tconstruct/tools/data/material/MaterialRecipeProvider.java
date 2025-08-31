@@ -260,8 +260,8 @@ public class MaterialRecipeProvider extends BaseRecipeProvider implements IMater
     compatMeltingCasting(consumer, MaterialIds.platinum, TinkerFluids.moltenPlatinum, folder);
     compatMeltingCasting(consumer, MaterialIds.silver,   TinkerFluids.moltenSilver,   folder);
     compatMeltingCasting(consumer, MaterialIds.lead,     TinkerFluids.moltenLead,     folder);
-    compatMeltingCasting(consumer, MaterialIds.aluminum, TinkerFluids.moltenAluminum, folder);
-    materialComposite(withCondition(consumer, tagCondition("ingots/aluminum")), MaterialIds.rock, MaterialIds.whitestoneAluminum, TinkerFluids.moltenAluminum, FluidValues.INGOT, folder, "whitestone_from_aluminum");
+    compatMeltingCasting(consumer, MaterialIds.aluminium, TinkerFluids.moltenAluminium, folder);
+    materialComposite(withCondition(consumer, tagCondition("ingots/aluminium")), MaterialIds.rock, MaterialIds.whitestoneAluminium, TinkerFluids.moltenAluminium, FluidValues.INGOT, folder, "whitestone_from_aluminium");
     materialComposite(withCondition(consumer, tagCondition("ingots/tin")),      MaterialIds.rock, MaterialIds.whitestoneTin,      TinkerFluids.moltenTin,      FluidValues.INGOT, folder, "whitestone_from_tin");
     materialComposite(withCondition(consumer, tagCondition("ingots/zinc")),     MaterialIds.rock, MaterialIds.whitestoneZinc,     TinkerFluids.moltenZinc,     FluidValues.INGOT, folder, "whitestone_from_zinc");
     TagKey<Fluid> creosote = getFluidTag(COMMON, "creosote");

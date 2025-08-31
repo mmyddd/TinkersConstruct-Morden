@@ -52,7 +52,7 @@ public class MaterialTraitsDataProvider extends AbstractMaterialTraitDataProvide
     addDefaultTraits(MaterialIds.slimewood, ModifierIds.overgrowth, TinkerModifiers.overslime.getId());
     addDefaultTraits(MaterialIds.slimeskin, ModifierIds.overgrowth, TinkerModifiers.overslime.getId());
     addDefaultTraits(MaterialIds.venombone, ModifierIds.antitoxin);
-    addDefaultTraits(MaterialIds.aluminum, ModifierIds.featherweight);
+    addDefaultTraits(MaterialIds.aluminium, ModifierIds.featherweight);
     // tier 2 - nether
     addDefaultTraits(MaterialIds.necroticBone, TinkerModifiers.necrotic);
     addDefaultTraits(MaterialIds.scorchedStone, ModifierIds.scorching);

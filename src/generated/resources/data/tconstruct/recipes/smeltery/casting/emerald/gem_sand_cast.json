@@ -7,7 +7,7 @@
   "cooling_time": 214,
   "fluid": {
     "amount": 1600,
-    "tag": "tconstruct:molten_emerald"
+    "tag": "tconstruct:emerald"
   },
   "result": {
     "tag": "forge:gems/emerald"

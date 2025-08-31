@@ -4,7 +4,7 @@
     {
       "amount": 288,
       "rate": "metal",
-      "tag": "forge:molten_iron"
+      "tag": "forge:iron"
     }
   ],
   "conditions": [
@@ -26,7 +26,7 @@
   "rate": "metal",
   "result": {
     "amount": 288,
-    "tag": "forge:molten_osmium"
+    "tag": "forge:osmium"
   },
   "temperature": 975,
   "time": 164

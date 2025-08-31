@@ -276,7 +276,7 @@ public class MaterialStatsDataProvider extends AbstractMaterialStatsDataProvider
     addMaterialStats(MaterialIds.platinum,
                      new LimbMaterialStats(400, -0.05f, 0, 0.1f),
                      new GripMaterialStats(0.05f, 0.05f, 1.5f));
-    addMaterialStats(MaterialIds.aluminum,
+    addMaterialStats(MaterialIds.aluminium,
                      new LimbMaterialStats(225, 0.15f, -0.15f, -0.05f),
                      new GripMaterialStats(-0.15f, 0.15f, 2f));
     addMaterialStats(MaterialIds.tungsten,
@@ -384,7 +384,7 @@ public class MaterialStatsDataProvider extends AbstractMaterialStatsDataProvider
     // tier 2 - compat
     addArmorShieldStats(MaterialIds.osmium,   PlatingMaterialStats.builder().durabilityFactor(25).armor(1, 3, 5, 2).knockbackResistance(0.05f), StatlessMaterialStats.MAILLE);
     addArmorShieldStats(MaterialIds.tungsten, PlatingMaterialStats.builder().durabilityFactor(20).armor(2, 4, 6, 2), StatlessMaterialStats.MAILLE);
-    addArmorShieldStats(MaterialIds.aluminum, PlatingMaterialStats.builder().durabilityFactor(13).armor(1, 3, 4, 1).knockbackResistance(0.1f), StatlessMaterialStats.MAILLE);
+    addArmorShieldStats(MaterialIds.aluminium, PlatingMaterialStats.builder().durabilityFactor(13).armor(1, 3, 4, 1).knockbackResistance(0.1f), StatlessMaterialStats.MAILLE);
     addArmorShieldStats(MaterialIds.silver,   PlatingMaterialStats.builder().durabilityFactor(18).armor(1, 4, 5, 2).knockbackResistance(0.05f), StatlessMaterialStats.MAILLE);
     addArmorShieldStats(MaterialIds.lead,     PlatingMaterialStats.builder().durabilityFactor(12).armor(1, 3, 4, 2).knockbackResistance(0.05f), StatlessMaterialStats.MAILLE);
     addMaterialStats(MaterialIds.treatedWood, StatlessMaterialStats.SHIELD_CORE);

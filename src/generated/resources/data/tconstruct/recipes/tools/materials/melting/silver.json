@@ -9,7 +9,7 @@
   "input": "tconstruct:silver",
   "result": {
     "amount": 144,
-    "tag": "forge:molten_silver"
+    "tag": "forge:silver"
   },
   "temperature": 790
 }

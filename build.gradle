@@ -50,7 +50,7 @@ repositories {
 
 group = 'slimeknights.tconstruct'
 base {
-    archivesName = 'TinkersConstruct'
+    archivesName = 'TinkersConstruct-Morden'
 }                                                          
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 

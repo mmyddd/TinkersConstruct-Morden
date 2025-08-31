@@ -74,7 +74,7 @@ public final class MaterialIds {
   public static final MaterialId platinum = id("platinum");
   public static final MaterialId silver = id("silver");
   public static final MaterialId lead = id("lead");
-  public static final MaterialId aluminum = id("aluminum");
+  public static final MaterialId aluminium = id("aluminium");
   // tier 3 (mod integration)
   public static final MaterialId bronze = id("bronze");
   public static final MaterialId constantan = id("constantan");
@@ -151,7 +151,7 @@ public final class MaterialIds {
   // whitestone
   public static final MaterialVariantId endstone            = create(whitestone, "end");
   public static final MaterialVariantId whitestoneComposite = create(whitestone, "composite");
-  public static final MaterialVariantId whitestoneAluminum  = create(whitestone, "aluminum");
+  public static final MaterialVariantId whitestoneAluminium  = create(whitestone, "aluminium");
   public static final MaterialVariantId whitestoneTin       = create(whitestone, "tin");
   public static final MaterialVariantId whitestoneZinc      = create(whitestone, "zinc");
   // slimewood

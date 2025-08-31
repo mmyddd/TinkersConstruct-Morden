@@ -21,7 +21,7 @@
           {
             "amount": 288,
             "rate": "metal",
-            "tag": "forge:molten_silver"
+            "tag": "forge:silver"
           }
         ],
         "ingredient": {
@@ -36,7 +36,7 @@
         "rate": "metal",
         "result": {
           "amount": 288,
-          "tag": "forge:molten_lead"
+          "tag": "forge:lead"
         },
         "temperature": 330,
         "time": 109
@@ -54,7 +54,7 @@
           {
             "amount": 288,
             "rate": "metal",
-            "tag": "forge:molten_gold"
+            "tag": "forge:gold"
           }
         ],
         "ingredient": {
@@ -69,7 +69,7 @@
         "rate": "metal",
         "result": {
           "amount": 288,
-          "tag": "forge:molten_lead"
+          "tag": "forge:lead"
         },
         "temperature": 330,
         "time": 109

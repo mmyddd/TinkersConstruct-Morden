@@ -231,7 +231,7 @@ public class FluidEffectProvider extends AbstractFluidEffectProvider {
     compatMetal(TinkerFluids.moltenElectrum, "silver").magicDamage(3).addEffect(FluidMobEffect.builder().effect(MobEffects.DIG_SPEED, 20 * 8, 1), TimeAction.SET);
     addMetal(TinkerFluids.moltenRoseGold).magicDamage(3).addEffect(FluidMobEffect.builder().effect(MobEffects.ABSORPTION, 20 * 15, 2), TimeAction.SET);
     // aluminum/silver - remove effects
-    compatMetal(TinkerFluids.moltenAluminum).magicDamage(2).addEntityEffect(new CureEffectsFluidEffect(Items.MILK_BUCKET));
+    compatMetal(TinkerFluids.moltenAluminium).magicDamage(2).addEntityEffect(new CureEffectsFluidEffect(Items.MILK_BUCKET));
     compatMetal(TinkerFluids.moltenSilver).magicDamage(2).addEntityEffect(new RemoveEffectFluidEffect(MobEffects.WITHER));
     // non-cosmere ores
     compatMetal(TinkerFluids.moltenLead).fireDamage(2).addEffect(FluidMobEffect.builder().effect(MobEffects.POISON, 20 * 5, 1), TimeAction.SET);

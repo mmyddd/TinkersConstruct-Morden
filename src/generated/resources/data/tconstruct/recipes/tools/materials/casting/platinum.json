@@ -8,7 +8,7 @@
   ],
   "fluid": {
     "amount": 144,
-    "tag": "forge:molten_platinum"
+    "tag": "forge:platinum"
   },
   "output": "tconstruct:platinum",
   "temperature": 970

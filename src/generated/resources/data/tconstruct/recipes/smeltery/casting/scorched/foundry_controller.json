@@ -7,7 +7,7 @@
   "cooling_time": 66,
   "fluid": {
     "amount": 144,
-    "tag": "tconstruct:molten_obsidian"
+    "tag": "tconstruct:obsidian"
   },
   "result": "tconstruct:foundry_controller"
 }

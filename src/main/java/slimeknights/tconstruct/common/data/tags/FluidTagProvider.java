@@ -70,7 +70,7 @@ public class FluidTagProvider extends FluidTagsProvider {
     fluidTag(TinkerFluids.moltenKnightslime);
     // compat ores
     fluidTag(TinkerFluids.moltenTin);
-    fluidTag(TinkerFluids.moltenAluminum);
+    fluidTag(TinkerFluids.moltenAluminium);
     fluidTag(TinkerFluids.moltenLead);
     fluidTag(TinkerFluids.moltenSilver);
     fluidTag(TinkerFluids.moltenNickel);
@@ -140,7 +140,7 @@ public class FluidTagProvider extends FluidTagsProvider {
         // tier 2
         TinkerFluids.moltenCopper.getLocalTag(), TinkerFluids.moltenIron.getLocalTag(), TinkerFluids.moltenGold.getLocalTag(),
         // tier 2 compat
-        TinkerFluids.moltenZinc.getLocalTag(), TinkerFluids.moltenTin.getLocalTag(), TinkerFluids.moltenAluminum.getLocalTag(),
+        TinkerFluids.moltenZinc.getLocalTag(), TinkerFluids.moltenTin.getLocalTag(), TinkerFluids.moltenAluminium.getLocalTag(),
         TinkerFluids.moltenSilver.getLocalTag(), TinkerFluids.moltenLead.getLocalTag(), TinkerFluids.moltenNickel.getLocalTag(),
         TinkerFluids.moltenPlatinum.getLocalTag(), TinkerFluids.moltenTungsten.getLocalTag(), TinkerFluids.moltenOsmium.getLocalTag(),
         TinkerFluids.moltenUranium.getLocalTag(),
@@ -184,7 +184,7 @@ public class FluidTagProvider extends FluidTagsProvider {
         TinkerFluids.moltenManyullyn.getTag(), TinkerFluids.moltenHepatizon.getTag(), TinkerFluids.moltenQueensSlime.getTag(), TinkerFluids.moltenNetherite.getTag(),
         TinkerFluids.moltenSoulsteel.getTag(), TinkerFluids.moltenKnightslime.getTag(),
         // compat ores
-        TinkerFluids.moltenTin.getTag(), TinkerFluids.moltenAluminum.getTag(), TinkerFluids.moltenLead.getTag(), TinkerFluids.moltenSilver.getTag(),
+        TinkerFluids.moltenTin.getTag(), TinkerFluids.moltenAluminium.getTag(), TinkerFluids.moltenLead.getTag(), TinkerFluids.moltenSilver.getTag(),
         TinkerFluids.moltenNickel.getTag(), TinkerFluids.moltenZinc.getTag(), TinkerFluids.moltenPlatinum.getTag(),
         TinkerFluids.moltenTungsten.getTag(), TinkerFluids.moltenOsmium.getTag(), TinkerFluids.moltenUranium.getTag(),
         // compat alloys

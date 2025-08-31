@@ -12,7 +12,7 @@
   "cooling_time": 18,
   "fluid": {
     "amount": 16,
-    "tag": "forge:molten_duralumin"
+    "tag": "forge:duralumin"
   },
   "result": {
     "tag": "forge:nuggets/duralumin"

@@ -13,7 +13,7 @@
   "cooling_time": 13,
   "fluid": {
     "amount": 8,
-    "tag": "forge:molten_gold"
+    "tag": "forge:gold"
   },
   "result": "ceramics:golden_bricks_slab"
 }

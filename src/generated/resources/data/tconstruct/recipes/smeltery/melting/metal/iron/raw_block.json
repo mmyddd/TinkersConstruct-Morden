@@ -4,7 +4,7 @@
     {
       "amount": 1296,
       "rate": "metal",
-      "tag": "forge:molten_steel"
+      "tag": "forge:steel"
     }
   ],
   "ingredient": {
@@ -13,7 +13,7 @@
   "rate": "metal",
   "result": {
     "amount": 1296,
-    "tag": "forge:molten_iron"
+    "tag": "forge:iron"
   },
   "temperature": 800,
   "time": 361

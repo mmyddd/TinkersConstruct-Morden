@@ -9,7 +9,7 @@
   "cooling_time": 183,
   "fluid": {
     "amount": 1296,
-    "tag": "forge:molten_refined_glowstone"
+    "tag": "forge:refined_glowstone"
   },
   "result": {
     "tag": "forge:storage_blocks/refined_glowstone"

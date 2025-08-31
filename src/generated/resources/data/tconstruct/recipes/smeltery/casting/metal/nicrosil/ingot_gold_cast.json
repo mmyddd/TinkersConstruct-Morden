@@ -12,7 +12,7 @@
   "cooling_time": 69,
   "fluid": {
     "amount": 144,
-    "tag": "forge:molten_nicrosil"
+    "tag": "forge:nicrosil"
   },
   "result": {
     "tag": "forge:ingots/nicrosil"

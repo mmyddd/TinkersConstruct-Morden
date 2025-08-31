@@ -2,7 +2,7 @@
   "type": "tconstruct:material_fluid",
   "fluid": {
     "amount": 144,
-    "fluid": "tconstruct:molten_cinderslime"
+    "fluid": "tconstruct:cinderslime"
   },
   "output": "tconstruct:cinderslime",
   "temperature": 1050

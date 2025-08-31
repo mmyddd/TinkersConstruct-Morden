@@ -20,7 +20,7 @@
           {
             "amount": 1296,
             "rate": "metal",
-            "tag": "forge:molten_tin"
+            "tag": "forge:tin"
           }
         ],
         "ingredient": {
@@ -29,7 +29,7 @@
         "rate": "metal",
         "result": {
           "amount": 1296,
-          "tag": "forge:molten_zinc"
+          "tag": "forge:zinc"
         },
         "temperature": 420,
         "time": 282
@@ -47,7 +47,7 @@
           {
             "amount": 1296,
             "rate": "metal",
-            "tag": "forge:molten_copper"
+            "tag": "forge:copper"
           }
         ],
         "ingredient": {
@@ -56,7 +56,7 @@
         "rate": "metal",
         "result": {
           "amount": 1296,
-          "tag": "forge:molten_zinc"
+          "tag": "forge:zinc"
         },
         "temperature": 420,
         "time": 282

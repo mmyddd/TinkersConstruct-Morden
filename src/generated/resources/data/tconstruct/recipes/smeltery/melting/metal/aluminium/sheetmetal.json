@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:sheetmetals/aluminium"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:sheetmetals/aluminium"
+  },
+  "result": {
+    "amount": 144,
+    "tag": "forge:aluminium"
+  },
+  "temperature": 425,
+  "time": 47
+}

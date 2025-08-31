@@ -1,0 +1,15 @@
+{
+  "type": "tconstruct:material_fluid",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:ingots/aluminium"
+    }
+  ],
+  "fluid": {
+    "amount": 144,
+    "tag": "forge:aluminium"
+  },
+  "output": "tconstruct:aluminium",
+  "temperature": 425
+}

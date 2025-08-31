@@ -1,0 +1,18 @@
+{
+  "type": "tconstruct:melting",
+  "conditions": [
+    {
+      "type": "mantle:tag_filled",
+      "tag": "forge:plates/aluminium"
+    }
+  ],
+  "ingredient": {
+    "tag": "forge:plates/aluminium"
+  },
+  "result": {
+    "amount": 144,
+    "tag": "forge:aluminium"
+  },
+  "temperature": 425,
+  "time": 47
+}

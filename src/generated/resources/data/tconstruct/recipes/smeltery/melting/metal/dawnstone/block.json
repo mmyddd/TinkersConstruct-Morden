@@ -8,7 +8,7 @@
     {
       "type": "mantle:tag_filled",
       "registry": "minecraft:fluid",
-      "tag": "forge:molten_dawnstone"
+      "tag": "forge:dawnstone"
     }
   ],
   "ingredient": {
@@ -16,7 +16,7 @@
   },
   "result": {
     "amount": 1296,
-    "tag": "forge:molten_dawnstone"
+    "tag": "forge:dawnstone"
   },
   "temperature": 900,
   "time": 190

@@ -9,7 +9,7 @@
   "cooling_time": 192,
   "fluid": {
     "amount": 1296,
-    "tag": "forge:molten_constantan"
+    "tag": "forge:constantan"
   },
   "result": {
     "tag": "forge:storage_blocks/constantan"
