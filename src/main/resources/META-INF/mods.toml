@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="${loader_range}"
-issueTrackerURL="https://github.com/mmyddd/TinkersConstruct-Morden"
+issueTrackerURL="https://github.com/mmyddd/TinkersConstruct-Morden/issues"
 logoFile="logo.png"
 license="MIT"
 
