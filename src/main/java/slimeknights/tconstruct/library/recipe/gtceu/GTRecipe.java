@@ -3,18 +3,18 @@ package slimeknights.tconstruct.library.recipe.gtceu;
 import com.gregtechceu.gtceu.api.data.chemical.material.Material;
 import com.gregtechceu.gtceu.api.data.chemical.material.properties.PropertyKey;
 import com.gregtechceu.gtceu.api.data.chemical.material.stack.MaterialEntry;
-import dev.electrolyte.gm_construct.GMConstruct;
-import dev.electrolyte.gm_construct.config.GMCConfig;
-import dev.electrolyte.gm_construct.helper.GTMaterialHelper;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.world.item.ArmorItem.Type;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import slimeknights.mantle.registration.object.ItemObject;
+import slimeknights.tconstruct.TConstruct;
 import slimeknights.tconstruct.common.registration.CastItemObject;
+import slimeknights.tconstruct.library.materials.definition.MaterialId;
 import slimeknights.tconstruct.library.tools.part.ToolPartItem;
 import slimeknights.tconstruct.smeltery.TinkerSmeltery;
 import slimeknights.tconstruct.tools.TinkerToolParts;
+import slimeknights.tconstruct.library.recipe.gtceu.GTMaterial;
 
 import java.util.function.Consumer;
 
@@ -24,10 +24,10 @@ import static com.gregtechceu.gtceu.api.data.tag.TagPrefix.ingot;
 import static com.gregtechceu.gtceu.common.data.GTRecipeTypes.EXTRUDER_RECIPES;
 import static com.gregtechceu.gtceu.common.data.GTRecipeTypes.FLUID_SOLIDFICATION_RECIPES;
 
-public class GTCEURecipe {
+public class GTRecipe {
 
   public static void register(Consumer<FinishedRecipe> provider) {
-    for(Material material : GTMaterialHelper.REGISTERED_TOOL_MATERIALS) {
+    for(Material material : GTMaterial.REGISTERED_TOOL_MATERIALS) {
       MaterialEntry inputMaterial;
       if(material.hasProperty(PropertyKey.GEM)) {
         inputMaterial = new MaterialEntry(gem, material);
@@ -35,7 +35,6 @@ public class GTCEURecipe {
         inputMaterial = new MaterialEntry(ingot, material);
       }
 
-      if(GMCConfig.GENERATE_EXTRUDER_RECIPES.get()) {
         generateExtruderRecipes(inputMaterial, TinkerToolParts.repairKit, 2, TinkerSmeltery.repairKitCast, "repair_kit", provider);
 
         if(material.hasProperty(PropertyKey.TOOL)) {
@@ -64,13 +63,8 @@ public class GTCEURecipe {
 
           generateExtruderRecipes(inputMaterial, TinkerToolParts.maille, 2, TinkerSmeltery.mailleCast, "maille", provider);
         }
-      }
 
-      if(GMCConfig.GENERATE_FLUID_SOLIDIFICATION_RECIPES.get()) {
-        if(!inputMaterial.material().hasProperty(PropertyKey.FLUID)) {
-          GMConstruct.LOGGER.warn("Material {} does not have a fluid, no solidification recipes will be added for this material.", inputMaterial.material());
-          continue;
-        }
+
         generateSolidifierRecipes(inputMaterial, TinkerToolParts.repairKit, 2, TinkerSmeltery.repairKitCast, "repair_kit", provider);
 
         if(inputMaterial.material().hasProperty(PropertyKey.TOOL)) {
@@ -98,12 +92,12 @@ public class GTCEURecipe {
 
           generateSolidifierRecipes(inputMaterial, TinkerToolParts.maille, 2, TinkerSmeltery.mailleCast, "maille", provider);
         }
-      }
+
     }
   }
 
   private static void generateExtruderRecipes(MaterialEntry inputMaterial, ItemObject<?> toolPartStack, int materialCost, CastItemObject cast, String path, Consumer<FinishedRecipe> provider) {
-    EXTRUDER_RECIPES.recipeBuilder(GMConstruct.id("extrude_" + inputMaterial.material().getName() + "_to_" + path))
+    EXTRUDER_RECIPES.recipeBuilder(TConstruct.getResource("extrude_" + inputMaterial.material().getName() + "_to_" + path))
       .inputItems(inputMaterial, materialCost)
       .notConsumable(cast)
       .outputItems(getToolStack(toolPartStack.asItem(), inputMaterial.material()))
@@ -113,7 +107,7 @@ public class GTCEURecipe {
   }
 
   private static void generateArmorExtruderRecipes(MaterialEntry inputMaterial, ToolPartItem toolPartStack, int materialCost, CastItemObject cast, String path, Consumer<FinishedRecipe> provider) {
-    EXTRUDER_RECIPES.recipeBuilder(GMConstruct.id("extrude_" + inputMaterial.material().getName() + "_to_" + path))
+    EXTRUDER_RECIPES.recipeBuilder(TConstruct.getResource("extrude_" + inputMaterial.material().getName() + "_to_" + path))
       .inputItems(inputMaterial, materialCost)
       .notConsumable(cast)
       .outputItems(getToolStack(toolPartStack.asItem(), inputMaterial.material()))
@@ -123,7 +117,7 @@ public class GTCEURecipe {
   }
 
   private static void generateSolidifierRecipes(MaterialEntry inputMaterial, ItemObject<?> toolPartStack, int materialCost, CastItemObject cast, String path, Consumer<FinishedRecipe> provider) {
-    FLUID_SOLIDFICATION_RECIPES.recipeBuilder(GMConstruct.id("solidify_" + inputMaterial.material().getName() + "_to_" + path))
+    FLUID_SOLIDFICATION_RECIPES.recipeBuilder(TConstruct.getResource("solidify_" + inputMaterial.material().getName() + "_to_" + path))
       .inputFluids(inputMaterial.material().getFluid(materialCost * L))
       .notConsumable(cast)
       .outputItems(getToolStack(toolPartStack.asItem(), inputMaterial.material()))
@@ -133,7 +127,7 @@ public class GTCEURecipe {
   }
 
   private static void generateArmorSolidificationRecipes(MaterialEntry inputMaterial, ToolPartItem toolPartStack, int materialCost, CastItemObject cast, String path, Consumer<FinishedRecipe> provider) {
-    FLUID_SOLIDFICATION_RECIPES.recipeBuilder(GMConstruct.id("solidify_" + inputMaterial.material().getName() + "_to_" + path))
+    FLUID_SOLIDFICATION_RECIPES.recipeBuilder(TConstruct.getResource("solidify_" + inputMaterial.material().getName() + "_to_" + path))
       .inputFluids(inputMaterial.material().getFluid(materialCost * L))
       .notConsumable(cast)
       .outputItems(getToolStack(toolPartStack, inputMaterial.material()))
@@ -144,7 +138,11 @@ public class GTCEURecipe {
 
   private static ItemStack getToolStack(Item toolPart, Material material) {
     ItemStack stack = new ItemStack(toolPart);
-    stack.getOrCreateTag().putString("Material", GMConstruct.materialId(material.getName()).toString());
+    stack.getOrCreateTag().putString("Material", materialId(material.getName()).toString());
     return stack;
+  }
+
+  private static MaterialId materialId(String location) {
+    return new MaterialId(TConstruct.MOD_ID, location);
   }
 }
