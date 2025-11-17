@@ -14,7 +14,6 @@ import slimeknights.tconstruct.library.materials.definition.MaterialId;
 import slimeknights.tconstruct.library.tools.part.ToolPartItem;
 import slimeknights.tconstruct.smeltery.TinkerSmeltery;
 import slimeknights.tconstruct.tools.TinkerToolParts;
-import slimeknights.tconstruct.library.recipe.gtceu.GTMaterial;
 
 import java.util.function.Consumer;
 
@@ -24,10 +23,14 @@ import static com.gregtechceu.gtceu.api.data.tag.TagPrefix.ingot;
 import static com.gregtechceu.gtceu.common.data.GTRecipeTypes.EXTRUDER_RECIPES;
 import static com.gregtechceu.gtceu.common.data.GTRecipeTypes.FLUID_SOLIDFICATION_RECIPES;
 
-public class GTRecipe {
+public class GTRecipes {
 
   public static void register(Consumer<FinishedRecipe> provider) {
-    for(Material material : GTMaterial.REGISTERED_TOOL_MATERIALS) {
+    for(Material material : GTMaterial.getRegisteredMaterials()) {
+      if (material == null) {
+        continue;
+      }
+
       MaterialEntry inputMaterial;
       if(material.hasProperty(PropertyKey.GEM)) {
         inputMaterial = new MaterialEntry(gem, material);
@@ -37,7 +40,7 @@ public class GTRecipe {
 
         generateExtruderRecipes(inputMaterial, TinkerToolParts.repairKit, 2, TinkerSmeltery.repairKitCast, "repair_kit", provider);
 
-        if(material.hasProperty(PropertyKey.TOOL)) {
+        if(material.hasProperty(PropertyKey.TOOL) && material.hasProperty(PropertyKey.FLUID)) {
           generateExtruderRecipes(inputMaterial, TinkerToolParts.pickHead, 2, TinkerSmeltery.pickHeadCast, "pick_head", provider);
           generateExtruderRecipes(inputMaterial, TinkerToolParts.hammerHead, 8, TinkerSmeltery.hammerHeadCast, "hammer_head", provider);
           generateExtruderRecipes(inputMaterial, TinkerToolParts.smallAxeHead, 2, TinkerSmeltery.smallAxeHeadCast, "small_axe_head", provider);
@@ -55,7 +58,7 @@ public class GTRecipe {
           generateExtruderRecipes(inputMaterial, TinkerToolParts.toughHandle, 3, TinkerSmeltery.toughHandleCast, "tough_handle", provider);
         }
 
-        if(material.hasProperty(PropertyKey.ARMOR)) {
+        if(material.hasProperty(PropertyKey.ARMOR) && material.hasProperty(PropertyKey.FLUID)) {
           generateArmorExtruderRecipes(inputMaterial, TinkerToolParts.plating.get(Type.HELMET), 3, TinkerSmeltery.helmetPlatingCast, "helmet_plating", provider);
           generateArmorExtruderRecipes(inputMaterial, TinkerToolParts.plating.get(Type.CHESTPLATE), 6, TinkerSmeltery.chestplatePlatingCast, "chestplate_plating", provider);
           generateArmorExtruderRecipes(inputMaterial, TinkerToolParts.plating.get(Type.LEGGINGS), 5, TinkerSmeltery.leggingsPlatingCast, "leggings_plating", provider);
@@ -67,7 +70,7 @@ public class GTRecipe {
 
         generateSolidifierRecipes(inputMaterial, TinkerToolParts.repairKit, 2, TinkerSmeltery.repairKitCast, "repair_kit", provider);
 
-        if(inputMaterial.material().hasProperty(PropertyKey.TOOL)) {
+        if(inputMaterial.material().hasProperty(PropertyKey.TOOL) && material.hasProperty(PropertyKey.FLUID)) {
           generateSolidifierRecipes(inputMaterial, TinkerToolParts.pickHead, 2, TinkerSmeltery.pickHeadCast, "pick_head", provider);
           generateSolidifierRecipes(inputMaterial, TinkerToolParts.hammerHead, 8, TinkerSmeltery.hammerHeadCast, "hammer_head", provider);
           generateSolidifierRecipes(inputMaterial, TinkerToolParts.smallAxeHead, 2, TinkerSmeltery.smallAxeHeadCast, "small_axe_head", provider);
@@ -84,7 +87,7 @@ public class GTRecipe {
           generateSolidifierRecipes(inputMaterial, TinkerToolParts.toolHandle, 1, TinkerSmeltery.toolHandleCast, "tool_handle", provider);
           generateSolidifierRecipes(inputMaterial, TinkerToolParts.toughHandle, 3, TinkerSmeltery.toughHandleCast, "tough_handle", provider);
         }
-        if(inputMaterial.material().hasProperty(PropertyKey.ARMOR)) {
+        if(inputMaterial.material().hasProperty(PropertyKey.ARMOR) && material.hasProperty(PropertyKey.FLUID)) {
           generateArmorSolidificationRecipes(inputMaterial, TinkerToolParts.plating.get(Type.HELMET), 3, TinkerSmeltery.helmetPlatingCast, "helmet_plating", provider);
           generateArmorSolidificationRecipes(inputMaterial, TinkerToolParts.plating.get(Type.CHESTPLATE), 6, TinkerSmeltery.chestplatePlatingCast, "chestplate_plating", provider);
           generateArmorSolidificationRecipes(inputMaterial, TinkerToolParts.plating.get(Type.LEGGINGS), 5, TinkerSmeltery.leggingsPlatingCast, "leggings_plating", provider);
@@ -97,6 +100,9 @@ public class GTRecipe {
   }
 
   private static void generateExtruderRecipes(MaterialEntry inputMaterial, ItemObject<?> toolPartStack, int materialCost, CastItemObject cast, String path, Consumer<FinishedRecipe> provider) {
+    if (!inputMaterial.material().hasProperty(PropertyKey.FLUID)) {
+      return;
+    }
     EXTRUDER_RECIPES.recipeBuilder(TConstruct.getResource("extrude_" + inputMaterial.material().getName() + "_to_" + path))
       .inputItems(inputMaterial, materialCost)
       .notConsumable(cast)
@@ -107,6 +113,9 @@ public class GTRecipe {
   }
 
   private static void generateArmorExtruderRecipes(MaterialEntry inputMaterial, ToolPartItem toolPartStack, int materialCost, CastItemObject cast, String path, Consumer<FinishedRecipe> provider) {
+    if (!inputMaterial.material().hasProperty(PropertyKey.FLUID)) {
+      return;
+    }
     EXTRUDER_RECIPES.recipeBuilder(TConstruct.getResource("extrude_" + inputMaterial.material().getName() + "_to_" + path))
       .inputItems(inputMaterial, materialCost)
       .notConsumable(cast)
@@ -117,6 +126,9 @@ public class GTRecipe {
   }
 
   private static void generateSolidifierRecipes(MaterialEntry inputMaterial, ItemObject<?> toolPartStack, int materialCost, CastItemObject cast, String path, Consumer<FinishedRecipe> provider) {
+    if (!inputMaterial.material().hasProperty(PropertyKey.FLUID)) {
+      return;
+    }
     FLUID_SOLIDFICATION_RECIPES.recipeBuilder(TConstruct.getResource("solidify_" + inputMaterial.material().getName() + "_to_" + path))
       .inputFluids(inputMaterial.material().getFluid(materialCost * L))
       .notConsumable(cast)
@@ -127,6 +139,9 @@ public class GTRecipe {
   }
 
   private static void generateArmorSolidificationRecipes(MaterialEntry inputMaterial, ToolPartItem toolPartStack, int materialCost, CastItemObject cast, String path, Consumer<FinishedRecipe> provider) {
+    if (!inputMaterial.material().hasProperty(PropertyKey.FLUID)) {
+      return;
+    }
     FLUID_SOLIDFICATION_RECIPES.recipeBuilder(TConstruct.getResource("solidify_" + inputMaterial.material().getName() + "_to_" + path))
       .inputFluids(inputMaterial.material().getFluid(materialCost * L))
       .notConsumable(cast)

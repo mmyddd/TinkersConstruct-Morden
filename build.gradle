@@ -87,9 +87,9 @@ legacyForge {
     }
 }
 jar {
-    manifest.attributes([
-        "MixinConfigs": "${mod_id}.mixins.json"
-    ])
+    //anifest.attributes([
+        //"MixinConfigs": "${mod_id}.mixins.json"
+    //])
 }
 
 //apply from: "$rootDir/gradle/scripts/spotless.gradle"
@@ -102,23 +102,31 @@ idea {
 
 
 // See com.example.examplemod.mixin.DummyMixin for information about mixins
-mixin {
-    add sourceSets.main, "mixins.${mod_id}.refmap.json"
-    config "${mod_id}.mixins.json"
-}
+//mixin {
+//    add sourceSets.main, "mixins.${mod_id}.refmap.json"
+//    config "${mod_id}.mixins.json"
+//}
 
 tasks.named('processResources', ProcessResources).configure {
     var properties = [
         "mod_license": mod_license,
-        "mod_id": mod_id,
-        "mod_version": mod_version,
-        "mod_name": mod_name,
-        "mod_url": mod_url,
-        "mod_author": mod_author,
+        "modId": mod_id,
+        "version": mod_version,
+        "displayName": mod_name,
+        "displayURL": mod_url,
+        "authors": mod_author,
         "mod_description": mod_description,
         "forge_version": forge_version.split("\\.")[0], // only specify major version of forge
         "minecraft_version": minecraft_version,
         "gtceu_version": gtceu_version,
+        'loader_range': loader_range,
+        'forge_range': forge_range,
+        'minecraft_range': minecraft_range,
+        'mantle_range': mantle_range,
+        'jei_range': jei_range,
+        'json_things_range': json_things_range
+
+
     ]
     inputs.properties(properties)
 
