@@ -11,7 +11,7 @@ import java.util.function.Consumer;
 import static slimeknights.tconstruct.TConstruct.MOD_ID;
 
 @GTAddon
-public class GTCAddon implements IGTAddon {
+public class GTConstructAddon implements IGTAddon {
   @Override
   public GTRegistrate getRegistrate() {
     return GTRegistrate.create(MOD_ID);
@@ -28,6 +28,6 @@ public class GTCAddon implements IGTAddon {
 
   @Override
   public void addRecipes(Consumer<FinishedRecipe> provider) {
-    GTRecipes.register(provider);
+    GTConstructRecipes.register(provider);
   }
 }
