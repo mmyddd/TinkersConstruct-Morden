@@ -1,4 +1,4 @@
-name: CTNHCore Build
+name: TinkersConstruct-Morden Build
 
 on:
   push:
