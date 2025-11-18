@@ -21,7 +21,7 @@
         },
         {
           "type": "mantle:tag_filled",
-          "tag": "forge:ingots/nicrosil"
+          "tag": "forge:ingots/nichrome"
         }
       ]
     }
@@ -45,6 +45,6 @@
   ],
   "fluid": {
     "amount": 16,
-    "tag": "forge:nicrosil"
+    "tag": "forge:nichrome"
   }
 }

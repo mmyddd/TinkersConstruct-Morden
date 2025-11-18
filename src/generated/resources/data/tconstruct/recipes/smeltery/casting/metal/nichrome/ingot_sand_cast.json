@@ -7,15 +7,15 @@
   "conditions": [
     {
       "type": "mantle:tag_filled",
-      "tag": "forge:ingots/nicrosil"
+      "tag": "forge:ingots/nichrome"
     }
   ],
   "cooling_time": 69,
   "fluid": {
     "amount": 144,
-    "tag": "forge:nicrosil"
+    "tag": "forge:nichrome"
   },
   "result": {
-    "tag": "forge:ingots/nicrosil"
+    "tag": "forge:ingots/nichrome"
   }
 }

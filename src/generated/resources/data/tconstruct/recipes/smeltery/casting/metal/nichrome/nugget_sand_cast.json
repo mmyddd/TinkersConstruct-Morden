@@ -7,15 +7,15 @@
   "conditions": [
     {
       "type": "mantle:tag_filled",
-      "tag": "forge:nuggets/nicrosil"
+      "tag": "forge:nuggets/nichrome"
     }
   ],
   "cooling_time": 23,
   "fluid": {
     "amount": 16,
-    "tag": "forge:nicrosil"
+    "tag": "forge:nichrome"
   },
   "result": {
-    "tag": "forge:nuggets/nicrosil"
+    "tag": "forge:nuggets/nichrome"
   }
 }

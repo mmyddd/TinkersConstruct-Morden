@@ -3,16 +3,16 @@
   "conditions": [
     {
       "type": "mantle:tag_filled",
-      "tag": "forge:storage_blocks/nicrosil"
+      "tag": "forge:ingots/nichrome"
     }
   ],
   "ingredient": {
-    "tag": "forge:storage_blocks/nicrosil"
+    "tag": "forge:ingots/nichrome"
   },
   "result": {
-    "amount": 1296,
-    "tag": "forge:nicrosil"
+    "amount": 144,
+    "tag": "forge:nichrome"
   },
   "temperature": 1100,
-  "time": 208
+  "time": 69
 }

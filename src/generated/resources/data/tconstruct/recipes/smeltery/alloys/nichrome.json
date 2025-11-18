@@ -36,7 +36,7 @@
         ],
         "result": {
           "amount": 576,
-          "tag": "forge:nicrosil"
+          "tag": "forge:nichrome"
         },
         "temperature": 1100
       }
@@ -61,7 +61,7 @@
         ],
         "result": {
           "amount": 288,
-          "tag": "forge:nicrosil"
+          "tag": "forge:nichrome"
         },
         "temperature": 1100
       }
