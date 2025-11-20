@@ -93,7 +93,6 @@ public class GTConstructRecipes {
       LOGGER.info("Processing craftable fluid: {}", fluidId);
       processedFluids++;
 
-      // 【核心逻辑】判断是否为特殊流体
       boolean isSpecial = SPECIAL_FLUIDS.contains(fluid);
       generateRecipesForFluid(provider, fluid, fluidId, isSpecial);
     }
@@ -103,7 +102,6 @@ public class GTConstructRecipes {
 
   private static void generateRecipesForFluid(Consumer<FinishedRecipe> provider, Fluid fluid, ResourceLocation fluidId, boolean isSpecial) {
     String materialName = GTConstructFluid.extractMaterialName(fluidId.getPath());
-    // 【结合】创建两种类型的ID
     MaterialId matId = materialId(materialName);
     MaterialVariantId defaultMatVariantId = MaterialVariantId.tryParse(TConstruct.MOD_ID + ":" + materialName);
 
@@ -130,47 +128,33 @@ public class GTConstructRecipes {
     generateSolidifierRecipes(fluid, matId, defaultMatVariantId, TinkerToolParts.maille, 2, TinkerSmeltery.mailleCast, "maille", provider, isSpecial);
   }
 
-  /**
-   * 【结合】生成工具部件的固化配方。
-   * 现在同时接收 MaterialId 和 MaterialVariantId，以处理所有情况。
-   */
-// ... (文件开头的 import 和 public class GTConstructRecipes { 部分保持不变) ...
 
   private static void generateSolidifierRecipes(Fluid inputFluid, MaterialId matId, MaterialVariantId defaultMatVariantId, ItemObject<?> toolPartStack, int materialCost, CastItemObject cast, String path, Consumer<FinishedRecipe> provider, boolean isSpecial) {
     FluidStack fluidInput = new FluidStack(inputFluid, materialCost * L);
 
-    // 【核心逻辑】决定最终产出的材料ID和类型
     MaterialVariantId outputMaterialVariantId;
     if (isSpecial) {
-      // 如果是特殊流体，尝试从输出材料映射中获取变体，如果没有则使用默认的变体
       outputMaterialVariantId = SPECIAL_FLUID_OUTPUT_MATERIALS.getOrDefault(inputFluid, defaultMatVariantId);
     } else {
-      // 普通流体，直接使用默认的材料变体ID
       outputMaterialVariantId = defaultMatVariantId;
     }
 
     var builder = FLUID_SOLIDFICATION_RECIPES.recipeBuilder(TConstruct.getResource("solidify_" + ForgeRegistries.FLUIDS.getKey(inputFluid).getPath() + "_to_" + path))
-      // 【结合】使用 outputMaterialVariantId
       .outputItems(getToolStack(toolPartStack.asItem(), outputMaterialVariantId))
       .duration((int) (40 * materialCost))
       .EUt(VA[LV]);
 
-    // 【核心逻辑】决定输入项
     if (isSpecial) {
-      // 如果是特殊流体，消耗基底材料
       MaterialId baseMaterial = SPECIAL_FLUID_BASE_MATERIALS.get(inputFluid);
       if (baseMaterial != null) {
-        // 【关键修复】使用 baseMaterial 的字符串形式来创建 MaterialVariantId
         MaterialVariantId baseMaterialVariantId = MaterialVariantId.tryParse(baseMaterial.toString());
         builder.inputFluids(FluidIngredient.of(fluidInput))
           .inputItems(getToolStack(toolPartStack.asItem(), baseMaterialVariantId));
       } else {
-        // 【关键修复】如果没有定义基底材料（如 pig_iron），仍然需要铸模
         builder.inputFluids(FluidIngredient.of(fluidInput))
           .notConsumable(cast);
       }
     } else {
-      // 如果不是特殊流体，普通流体，使用铸模
       builder.inputFluids(fluidInput)
         .notConsumable(cast);
     }
@@ -181,7 +165,6 @@ public class GTConstructRecipes {
   private static void generateArmorSolidificationRecipes(Fluid inputFluid, MaterialId matId, MaterialVariantId defaultMatVariantId, ToolPartItem toolPartStack, int materialCost, CastItemObject cast, String path, Consumer<FinishedRecipe> provider, boolean isSpecial) {
     FluidStack fluidInput = new FluidStack(inputFluid, materialCost * L);
 
-    // 【核心逻辑】决定最终产出的材料ID和类型
     MaterialVariantId outputMaterialVariantId;
     if (isSpecial) {
       outputMaterialVariantId = SPECIAL_FLUID_OUTPUT_MATERIALS.getOrDefault(inputFluid, defaultMatVariantId);
@@ -197,12 +180,10 @@ public class GTConstructRecipes {
     if (isSpecial) {
       MaterialId baseMaterial = SPECIAL_FLUID_BASE_MATERIALS.get(inputFluid);
       if (baseMaterial != null) {
-        // 【关键修复】使用 baseMaterial 的字符串形式来创建 MaterialVariantId
         MaterialVariantId baseMaterialVariantId = MaterialVariantId.tryParse(baseMaterial.toString());
         builder.inputFluids(FluidIngredient.of(fluidInput))
           .inputItems(getToolStack(toolPartStack, baseMaterialVariantId));
       } else {
-        // 【关键修复】如果没有定义基底材料（如 pig_iron），仍然需要铸模
         builder.inputFluids(FluidIngredient.of(fluidInput))
           .notConsumable(cast);
       }
@@ -214,10 +195,6 @@ public class GTConstructRecipes {
     builder.save(provider);
   }
 
-// ... (文件末尾的辅助方法部分保持不变) ...
-
-
-  // --- 辅助方法 ---
   private static ItemStack getToolStack(net.minecraft.world.item.Item toolPart, MaterialVariantId matVariantId) {
     ItemStack stack = new ItemStack(toolPart);
     stack.getOrCreateTag().putString("Material", matVariantId.toString());
