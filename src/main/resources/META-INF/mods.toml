@@ -1,19 +1,19 @@
 modLoader="javafml"
 loaderVersion="${loader_range}"
-issueTrackerURL="https://github.com/mmyddd/TinkersConstruct-Morden/issues"
+issueTrackerURL="https://github.com/mmyddd/TinkersConstruct-Modern/issues"
 logoFile="logo.png"
 license="MIT"
 
 [[mods]]
     modId="tconstruct"
     version="${version}"
-    displayName="Tinkers' Construct-Morden"
+    displayName="Tinkers' Construct-Modern"
 
     authors="Slime Knights & mmyddd"
     description='''
 A little of this, a little of that, a lot of tinkering, and a lot of tools
     '''
-    displayURL="https://www.curseforge.com/minecraft/mc-mods/tinkersconstruct-morden"
+    displayURL="https://www.curseforge.com/minecraft/mc-mods/tinkersconstruct-modern"
     
 [[dependencies.tconstruct]]
     modId="forge"
