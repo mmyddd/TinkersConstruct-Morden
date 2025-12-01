@@ -1804,10 +1804,11 @@ public class SmelteryRecipeProvider extends BaseRecipeProvider implements ISmelt
                       .save(consumer, prefix(TinkerFluids.moltenAmethystBronze, folder));
 
     // rose gold: 1 copper + 1 gold = 2
-    AlloyRecipeBuilder.alloy(TinkerFluids.moltenRoseGold, FluidValues.INGOT * 2)
-                      .addInput(TinkerFluids.moltenCopper.ingredient(FluidValues.INGOT))
-                      .addInput(TinkerFluids.moltenGold.ingredient(FluidValues.INGOT))
-                      .save(consumer, prefix(TinkerFluids.moltenRoseGold, folder));
+    //AlloyRecipeBuilder.alloy(TinkerFluids.moltenRoseGold, FluidValues.INGOT * 2)
+    //                  .addInput(TinkerFluids.moltenCopper.ingredient(FluidValues.INGOT))
+    //                  .addInput(TinkerFluids.moltenGold.ingredient(FluidValues.INGOT))
+    //                  .save(consumer, prefix(TinkerFluids.moltenRoseGold, folder));
+
     // pig iron: 1 iron + 2 blood + 1 honey = 2
     AlloyRecipeBuilder.alloy(TinkerFluids.moltenPigIron, FluidValues.INGOT * 2)
                       .addInput(TinkerFluids.moltenIron.ingredient(FluidValues.INGOT))
@@ -1884,18 +1885,18 @@ public class SmelteryRecipeProvider extends BaseRecipeProvider implements ISmelt
                       .save(wrapped, prefix(TinkerFluids.moltenBrass, folder));
 
     // electrum
-    wrapped = withCondition(consumer, tagCondition("ingots/silver"));
-    AlloyRecipeBuilder.alloy(TinkerFluids.moltenElectrum, FluidValues.INGOT * 2)
-                      .addInput(TinkerFluids.moltenGold.ingredient(FluidValues.INGOT))
-                      .addInput(TinkerFluids.moltenSilver.ingredient(FluidValues.INGOT))
-                      .save(wrapped, prefix(TinkerFluids.moltenElectrum, folder));
+    //wrapped = withCondition(consumer, tagCondition("ingots/silver"));
+    //AlloyRecipeBuilder.alloy(TinkerFluids.moltenElectrum, FluidValues.INGOT * 2)
+    //                  .addInput(TinkerFluids.moltenGold.ingredient(FluidValues.INGOT))
+    //                  .addInput(TinkerFluids.moltenSilver.ingredient(FluidValues.INGOT))
+    //                  .save(wrapped, prefix(TinkerFluids.moltenElectrum, folder));
 
     // invar
-    wrapped = withCondition(consumer, tagCondition("ingots/nickel"));
-    AlloyRecipeBuilder.alloy(TinkerFluids.moltenInvar, FluidValues.INGOT * 3)
-                      .addInput(TinkerFluids.moltenIron.ingredient(FluidValues.INGOT * 2))
-                      .addInput(TinkerFluids.moltenNickel.ingredient(FluidValues.INGOT))
-                      .save(wrapped, prefix(TinkerFluids.moltenInvar, folder));
+    //wrapped = withCondition(consumer, tagCondition("ingots/nickel"));
+    //AlloyRecipeBuilder.alloy(TinkerFluids.moltenInvar, FluidValues.INGOT * 3)
+    //                  .addInput(TinkerFluids.moltenIron.ingredient(FluidValues.INGOT * 2))
+    //                  .addInput(TinkerFluids.moltenNickel.ingredient(FluidValues.INGOT))
+    //                  .save(wrapped, prefix(TinkerFluids.moltenInvar, folder));
 
     // constantan
     wrapped = withCondition(consumer, tagCondition("ingots/nickel"));
@@ -1958,12 +1959,12 @@ public class SmelteryRecipeProvider extends BaseRecipeProvider implements ISmelt
                       .save(wrapped, prefix(TinkerFluids.moltenSignalum, folder));
 
     // refined obsidian, note glowstone is done as a composite
-    wrapped = withCondition(consumer, tagCondition("ingots/refined_obsidian"), tagCondition("ingots/osmium"));
-    AlloyRecipeBuilder.alloy(TinkerFluids.moltenRefinedObsidian, FluidValues.INGOT)
-                      .addInput(TinkerFluids.moltenObsidian.ingredient(FluidValues.GLASS_PANE))
-                      .addInput(TinkerFluids.moltenDiamond.ingredient(FluidValues.GEM))
-                      .addInput(TinkerFluids.moltenOsmium.ingredient(FluidValues.INGOT))
-                      .save(wrapped, prefix(TinkerFluids.moltenRefinedObsidian, folder));
+    //wrapped = withCondition(consumer, tagCondition("ingots/refined_obsidian"), tagCondition("ingots/osmium"));
+    //AlloyRecipeBuilder.alloy(TinkerFluids.moltenRefinedObsidian, FluidValues.INGOT)
+    //                  .addInput(TinkerFluids.moltenObsidian.ingredient(FluidValues.GLASS_PANE))
+    //                  .addInput(TinkerFluids.moltenDiamond.ingredient(FluidValues.GEM))
+    //                  .addInput(TinkerFluids.moltenOsmium.ingredient(FluidValues.INGOT))
+    //                  .save(wrapped, prefix(TinkerFluids.moltenRefinedObsidian, folder));
 
     // nicrosil
     // TODO: consider adding chromium as an option
@@ -2176,14 +2177,14 @@ public class SmelteryRecipeProvider extends BaseRecipeProvider implements ISmelt
 
     // compat ores
     metal(consumer, TinkerFluids.moltenTin     ).ore(Byproduct.NICKEL, Byproduct.COPPER).optional().metal().dust().oreberry().plate().gear().coin().common(TOOLS_COMPLEMENT).common(ARMOR);
-    metal(consumer, TinkerFluids.moltenAluminium).ore(Byproduct.IRON                    ).optional().metal().dust().oreberry().plate().gear().coin().sheetmetal().wire().rod();
+    //metal(consumer, TinkerFluids.moltenAluminium).ore(Byproduct.IRON                    ).optional().metal().dust().oreberry().plate().gear().coin().sheetmetal().wire().rod();
     metal(consumer, TinkerFluids.moltenLead    ).ore(Byproduct.SILVER, Byproduct.GOLD  ).optional().metal().dust().oreberry().plate().gear().coin().common(TOOLS_COMPLEMENT).common(ARMOR).sheetmetal().wire();
     metal(consumer, TinkerFluids.moltenSilver  ).ore(Byproduct.LEAD, Byproduct.GOLD    ).optional().metal().dust().oreberry().plate().gear().coin().common(TOOLS_COMPLEMENT).common(ARMOR).sheetmetal();
     metal(consumer, TinkerFluids.moltenNickel  ).ore(Byproduct.PLATINUM, Byproduct.IRON).optional().metal().dust().oreberry().plate().gear().coin().common(TOOLS_COMPLEMENT).common(ARMOR).sheetmetal();
     metal(consumer, TinkerFluids.moltenZinc    ).ore(Byproduct.TIN, Byproduct.COPPER   ).optional().metal().dust().oreberry().plate().gear().geore();
-    metal(consumer, TinkerFluids.moltenPlatinum).ore(Byproduct.GOLD                    ).optional().metal().dust();
-    metal(consumer, TinkerFluids.moltenTungsten).ore(Byproduct.PLATINUM, Byproduct.GOLD).optional().metal().dust();
-    metal(consumer, TinkerFluids.moltenOsmium  ).ore(Byproduct.IRON                    ).optional().metal().dust().oreberry().common(TOOLS).common(MEKANISM_ARMOR);
+    //metal(consumer, TinkerFluids.moltenPlatinum).ore(Byproduct.GOLD                    ).optional().metal().dust();
+    //metal(consumer, TinkerFluids.moltenTungsten).ore(Byproduct.PLATINUM, Byproduct.GOLD).optional().metal().dust();
+    //metal(consumer, TinkerFluids.moltenOsmium  ).ore(Byproduct.IRON                    ).optional().metal().dust().oreberry().common(TOOLS).common(MEKANISM_ARMOR);
     metal(consumer, TinkerFluids.moltenUranium ).ore(Byproduct.LEAD, Byproduct.COPPER  ).optional().metal().dust().oreberry().plate().gear().coin().sheetmetal();
     // compat alloys
     metal(consumer, TinkerFluids.moltenBronze    ).optional().metal().dust().plate().gear().coin().common(TOOLS_COMPLEMENT).common(MEKANISM_ARMOR);
