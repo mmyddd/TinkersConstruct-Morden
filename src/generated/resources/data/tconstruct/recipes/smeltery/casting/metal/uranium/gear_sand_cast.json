@@ -10,9 +10,9 @@
       "tag": "forge:gears/uranium"
     }
   ],
-  "cooling_time": 122,
+  "cooling_time": 150,
   "fluid": {
-    "amount": 576,
+    "amount": 864,
     "tag": "forge:uranium"
   },
   "result": {

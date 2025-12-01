@@ -9,9 +9,9 @@
       "tag": "forge:plates/uranium"
     }
   ],
-  "cooling_time": 61,
+  "cooling_time": 75,
   "fluid": {
-    "amount": 144,
+    "amount": 216,
     "tag": "forge:uranium"
   },
   "result": {

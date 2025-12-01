@@ -10,9 +10,9 @@
       "tag": "forge:gears/enderium"
     }
   ],
-  "cooling_time": 152,
+  "cooling_time": 187,
   "fluid": {
-    "amount": 576,
+    "amount": 864,
     "tag": "forge:enderium"
   },
   "result": {

@@ -9,9 +9,9 @@
       "tag": "forge:plates/silver"
     }
   ],
-  "cooling_time": 60,
+  "cooling_time": 73,
   "fluid": {
-    "amount": 144,
+    "amount": 216,
     "tag": "forge:silver"
   },
   "result": {

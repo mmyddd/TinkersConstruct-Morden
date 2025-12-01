@@ -9,9 +9,9 @@
       "tag": "forge:plates/electrum"
     }
   ],
-  "cooling_time": 59,
+  "cooling_time": 72,
   "fluid": {
-    "amount": 144,
+    "amount": 216,
     "tag": "forge:electrum"
   },
   "result": {

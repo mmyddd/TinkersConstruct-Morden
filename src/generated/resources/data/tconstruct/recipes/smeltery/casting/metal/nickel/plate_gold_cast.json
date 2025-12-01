@@ -9,9 +9,9 @@
       "tag": "forge:plates/nickel"
     }
   ],
-  "cooling_time": 65,
+  "cooling_time": 79,
   "fluid": {
-    "amount": 144,
+    "amount": 216,
     "tag": "forge:nickel"
   },
   "result": {

@@ -10,9 +10,9 @@
       "tag": "forge:plates/lead"
     }
   ],
-  "cooling_time": 43,
+  "cooling_time": 53,
   "fluid": {
-    "amount": 144,
+    "amount": 216,
     "tag": "forge:lead"
   },
   "result": {
