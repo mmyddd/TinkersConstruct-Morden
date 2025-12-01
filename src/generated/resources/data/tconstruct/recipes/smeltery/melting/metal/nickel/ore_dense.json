@@ -1,5 +1,12 @@
 {
-  "type": "forge:conditional",
+  "type": "tconstruct:ore_melting",
+  "byproducts": [
+    {
+      "amount": 864,
+      "rate": "metal",
+      "tag": "forge:iron"
+    }
+  ],
   "conditions": [
     {
       "type": "mantle:tag_combination_filled",
@@ -9,77 +16,22 @@
       ]
     }
   ],
-  "recipes": [
-    {
-      "conditions": [
-        {
-          "type": "mantle:tag_filled",
-          "tag": "forge:ingots/platinum"
-        }
-      ],
-      "recipe": {
-        "type": "tconstruct:ore_melting",
-        "byproducts": [
-          {
-            "amount": 864,
-            "rate": "metal",
-            "tag": "forge:platinum"
-          }
-        ],
-        "ingredient": {
-          "type": "forge:intersection",
-          "children": [
-            {
-              "tag": "forge:ores/nickel"
-            },
-            {
-              "tag": "forge:ore_rates/dense"
-            }
-          ]
-        },
-        "rate": "metal",
-        "result": {
-          "amount": 864,
-          "tag": "forge:nickel"
-        },
-        "temperature": 950,
-        "time": 292
+  "ingredient": {
+    "type": "forge:intersection",
+    "children": [
+      {
+        "tag": "forge:ores/nickel"
+      },
+      {
+        "tag": "forge:ore_rates/dense"
       }
-    },
-    {
-      "conditions": [
-        {
-          "type": "forge:true"
-        }
-      ],
-      "recipe": {
-        "type": "tconstruct:ore_melting",
-        "byproducts": [
-          {
-            "amount": 864,
-            "rate": "metal",
-            "tag": "forge:iron"
-          }
-        ],
-        "ingredient": {
-          "type": "forge:intersection",
-          "children": [
-            {
-              "tag": "forge:ores/nickel"
-            },
-            {
-              "tag": "forge:ore_rates/dense"
-            }
-          ]
-        },
-        "rate": "metal",
-        "result": {
-          "amount": 864,
-          "tag": "forge:nickel"
-        },
-        "temperature": 950,
-        "time": 292
-      }
-    }
-  ]
+    ]
+  },
+  "rate": "metal",
+  "result": {
+    "amount": 864,
+    "tag": "forge:nickel"
+  },
+  "temperature": 950,
+  "time": 292
 }
