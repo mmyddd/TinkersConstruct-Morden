@@ -1,7 +1,6 @@
 package slimeknights.tconstruct.library.recipe.gtceu;
 
 import com.gregtechceu.gtceu.api.recipe.ingredient.FluidIngredient;
-import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ArmorItem;
@@ -14,7 +13,6 @@ import slimeknights.tconstruct.TConstruct;
 import slimeknights.tconstruct.common.registration.CastItemObject;
 import slimeknights.tconstruct.fluids.TinkerFluids;
 import slimeknights.tconstruct.library.fluid.GTConstructFluid;
-import slimeknights.tconstruct.library.materials.definition.MaterialId;
 import slimeknights.tconstruct.library.materials.definition.MaterialVariantId;
 import slimeknights.tconstruct.library.tools.part.ToolPartItem;
 import slimeknights.tconstruct.smeltery.TinkerSmeltery;
@@ -22,6 +20,7 @@ import slimeknights.tconstruct.tools.TinkerToolParts;
 import slimeknights.tconstruct.library.utils.Util;
 import slimeknights.tconstruct.tools.data.material.MaterialIds;
 
+import com.gregtechceu.gtceu.common.data.GTRecipeTypes;
 import java.util.Map;
 import java.util.Set;
 import java.util.function.Consumer;
@@ -42,45 +41,32 @@ public class GTConstructRecipes {
     "netherite", "tin", "zinc", "nickel", "brass", "porcelain", "uranium", "enderium", "lumium"
   );
 
-  private static final Map<Fluid, Integer> HOT_FLUIDS_VOLTAGE_MAP = Map.of(
-    TinkerFluids.moltenPlatinum.get(), LuV
-  );
-
   private static final Set<Fluid> SPECIAL_FLUIDS = Set.of(
     TinkerFluids.moltenSlimesteel.get(),
     TinkerFluids.moltenQueensSlime.get(),
-    TinkerFluids.skySlime.get(),
-    TinkerFluids.enderSlime.get(),
-    TinkerFluids.earthSlime.get(),
     TinkerFluids.searedStone.get(),
     TinkerFluids.scorchedStone.get(),
     TinkerFluids.moltenPigIron.get(),
-    TinkerFluids.moltenCinderslime.get(),
-    TinkerFluids.blazingBlood.get()
-  );
-
-  private static final Map<Fluid, MaterialId> SPECIAL_FLUID_BASE_MATERIALS = Map.of(
-    TinkerFluids.skySlime.get(), MaterialIds.wood,
-    TinkerFluids.enderSlime.get(), MaterialIds.leather,
-    TinkerFluids.earthSlime.get(), MaterialIds.wood,
-    TinkerFluids.blazingBlood.get(), MaterialIds.necroticBone
-  );
-
-  private static final Map<Fluid, MaterialVariantId> SPECIAL_FLUID_OUTPUT_MATERIALS = Map.of(
-    TinkerFluids.skySlime.get(), MaterialIds.skySlimeskin,
-    TinkerFluids.enderSlime.get(), MaterialIds.enderSlimeskin,
-    TinkerFluids.earthSlime.get(), MaterialIds.slimewoodComposite,
-    TinkerFluids.blazingBlood.get(), MaterialIds.blazingBone
+    TinkerFluids.moltenCinderslime.get()
   );
 
   public static void register(Consumer<FinishedRecipe> provider) {
     LOGGER.info("Starting recipe generation for Tinkers' Construct fluids...");
     Map<ResourceLocation, Fluid> tinkersFluids = GTConstructFluid.getAllTinkersFluids();
     int totalFluids = tinkersFluids.size();
-    int processedFluids = 0;
     int skippedFluids = 0;
-    int hotFluidsProcessed = 0;
-    int normalFluidsProcessed = 0;
+    int specialProcessed = 0;
+    int standardProcessed = 0;
+
+    registerSpecialRecipes(provider);
+
+    Set<Fluid> processedSpecialFluids = Set.of(
+      TinkerFluids.moltenPlatinum.get(),
+      TinkerFluids.skySlime.get(),
+      TinkerFluids.enderSlime.get(),
+      TinkerFluids.earthSlime.get(),
+      TinkerFluids.blazingBlood.get()
+    );
 
     for (Map.Entry<ResourceLocation, Fluid> entry : tinkersFluids.entrySet()) {
       ResourceLocation fluidId = entry.getKey();
@@ -95,84 +81,104 @@ public class GTConstructRecipes {
         continue;
       }
 
-      // *** 核心改动: 检查是否是热流体，并获取其电压 ***
-      Integer voltage = HOT_FLUIDS_VOLTAGE_MAP.get(fluid);
-      if (voltage != null) {
-        LOGGER.info("Processing HOT fluid with Vacuum Freezer at {}V: {}", VA[voltage], fluidId);
-        hotFluidsProcessed++;
-        generateRecipesForFluid(provider, fluid, fluidId, true, voltage); // 使用真空冷冻和指定电压
-      } else {
-        LOGGER.info("Processing normal fluid with Fluid Solidifier: {}", fluidId);
-        normalFluidsProcessed++;
-        generateRecipesForFluid(provider, fluid, fluidId, false, LV); // 使用流体固化器和默认LV电压
+      if (processedSpecialFluids.contains(fluid)) {
+        continue;
       }
-      processedFluids++;
+
+      boolean isSpecial = SPECIAL_FLUIDS.contains(fluid);
+      if (isSpecial) {
+        LOGGER.info("Processing SPECIAL fluid with standard solidifier: {}", fluidId);
+        specialProcessed++;
+      } else {
+        LOGGER.info("Processing normal fluid with standard solidifier: {}", fluidId);
+        standardProcessed++;
+      }
+
+      generateStandardSolidifierRecipes(provider, fluid, isSpecial);
     }
 
-    LOGGER.info("Recipe generation complete. Processed {} fluids ({} hot, {} normal) out of {} total. Skipped {}.",
-      processedFluids, hotFluidsProcessed, normalFluidsProcessed, totalFluids, skippedFluids);
+    LOGGER.info("Recipe generation complete. Processed {} fluids ({} special, {} standard) out of {} total. Skipped {}.",
+      specialProcessed + standardProcessed, specialProcessed, standardProcessed, totalFluids, skippedFluids);
   }
 
-  /**
-   * 为单个流体生成所有部件配方
-   */
-  private static void generateRecipesForFluid(Consumer<FinishedRecipe> provider, Fluid fluid, ResourceLocation fluidId, boolean useVacuum, int voltage) {
-    String materialName = GTConstructFluid.extractMaterialName(fluidId.getPath());
-    MaterialId matId = materialId(materialName);
-    MaterialVariantId defaultMatVariantId = MaterialVariantId.tryParse(TConstruct.MOD_ID + ":" + materialName);
-    boolean isSpecial = SPECIAL_FLUIDS.contains(fluid);
+  private static void registerSpecialRecipes(Consumer<FinishedRecipe> provider) {
+    LOGGER.info("Registering hardcoded special/hot fluid recipes...");
 
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.repairKit, 2, TinkerSmeltery.repairKitCast, "repair_kit", isSpecial, useVacuum, voltage);
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.pickHead, 2, TinkerSmeltery.pickHeadCast, "pick_head", isSpecial, useVacuum, voltage);
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.hammerHead, 8, TinkerSmeltery.hammerHeadCast, "hammer_head", isSpecial, useVacuum, voltage);
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.smallAxeHead, 2, TinkerSmeltery.smallAxeHeadCast, "small_axe_head", isSpecial, useVacuum, voltage);
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.broadAxeHead, 8, TinkerSmeltery.broadAxeHeadCast, "broad_axe_head", isSpecial, useVacuum, voltage);
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.smallBlade, 2, TinkerSmeltery.smallBladeCast, "small_blade", isSpecial, useVacuum, voltage);
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.broadBlade, 8, TinkerSmeltery.broadBladeCast, "broad_blade", isSpecial, useVacuum, voltage);
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.bowLimb, 2, TinkerSmeltery.bowLimbCast, "bow_limb", isSpecial, useVacuum, voltage);
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.bowGrip, 2, TinkerSmeltery.bowGripCast, "bow_grip", isSpecial, useVacuum, voltage);
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.toolBinding, 1, TinkerSmeltery.toolBindingCast, "tool_binding", isSpecial, useVacuum, voltage);
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.toughBinding, 3, TinkerSmeltery.toughBindingCast, "tough_binding", isSpecial, useVacuum, voltage);
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.adzeHead, 2, TinkerSmeltery.adzeHeadCast, "adze_head", isSpecial, useVacuum, voltage);
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.largePlate, 4, TinkerSmeltery.largePlateCast, "large_plate", isSpecial, useVacuum, voltage);
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.toolHandle, 1, TinkerSmeltery.toolHandleCast, "tool_handle", isSpecial, useVacuum, voltage);
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.toughHandle, 3, TinkerSmeltery.toughHandleCast, "tough_handle", isSpecial, useVacuum, voltage);
+    GTConstructRecipeType.builder()
+      .inputFluids(TinkerFluids.moltenPlatinum.get())
+      .outputMaterial(MaterialIds.platinum)
+      .voltage(LuV)
+      .inVacuumFreezer()
+      .register(provider);
 
-    generateArmorSolidificationRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.plating.get(ArmorItem.Type.HELMET), 3, TinkerSmeltery.helmetPlatingCast, "helmet_plating", isSpecial, useVacuum, voltage);
-    generateArmorSolidificationRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.plating.get(ArmorItem.Type.CHESTPLATE), 6, TinkerSmeltery.chestplatePlatingCast, "chestplate_plating", isSpecial, useVacuum, voltage);
-    generateArmorSolidificationRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.plating.get(ArmorItem.Type.LEGGINGS), 5, TinkerSmeltery.leggingsPlatingCast, "leggings_plating", isSpecial, useVacuum, voltage);
-    generateArmorSolidificationRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.plating.get(ArmorItem.Type.BOOTS), 2, TinkerSmeltery.bootsPlatingCast, "boots_plating", isSpecial, useVacuum, voltage);
-    generateSolidifierRecipes(provider, fluid, matId, defaultMatVariantId, TinkerToolParts.maille, 2, TinkerSmeltery.mailleCast, "maille", isSpecial, useVacuum, voltage);
+    GTConstructRecipeType.builder()
+      .inputFluids(TinkerFluids.skySlime.get())
+      .baseMaterial(MaterialIds.wood)
+      .outputMaterial(MaterialIds.skySlimeskin)
+      .voltage(LV)
+      .register(provider);
+
+    GTConstructRecipeType.builder()
+      .inputFluids(TinkerFluids.enderSlime.get())
+      .baseMaterial(MaterialIds.leather)
+      .outputMaterial(MaterialIds.enderSlimeskin)
+      .voltage(LV)
+      .register(provider);
+
+    GTConstructRecipeType.builder()
+      .inputFluids(TinkerFluids.earthSlime.get())
+      .baseMaterial(MaterialIds.wood)
+      .outputMaterial(MaterialIds.slimewoodComposite)
+      .voltage(LV)
+      .register(provider);
+
+    GTConstructRecipeType.builder()
+      .inputFluids(TinkerFluids.blazingBlood.get())
+      .baseMaterial(MaterialIds.necroticBone)
+      .outputMaterial(MaterialIds.blazingBone)
+      .voltage(LV)
+      .register(provider);
   }
 
-  /**
-   * 生成单个部件的固化/冷冻配方
-   */
-  private static void generateSolidifierRecipes(Consumer<FinishedRecipe> provider, Fluid inputFluid, MaterialId matId, MaterialVariantId defaultMatVariantId, ItemObject<?> toolPartStack, int materialCost, CastItemObject cast, String path, boolean isSpecial, boolean useVacuum, int voltage) {
+  private static void generateStandardSolidifierRecipes(Consumer<FinishedRecipe> provider, Fluid fluid, boolean isSpecial) {
+    String materialName = GTConstructFluid.extractMaterialName(ForgeRegistries.FLUIDS.getKey(fluid).getPath());
+    MaterialVariantId outputMaterialVariantId = MaterialVariantId.tryParse(TConstruct.MOD_ID + ":" + materialName);
+
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.repairKit, 2, TinkerSmeltery.repairKitCast, "repair_kit", isSpecial);
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.pickHead, 2, TinkerSmeltery.pickHeadCast, "pick_head", isSpecial);
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.hammerHead, 8, TinkerSmeltery.hammerHeadCast, "hammer_head", isSpecial);
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.smallAxeHead, 2, TinkerSmeltery.smallAxeHeadCast, "small_axe_head", isSpecial);
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.broadAxeHead, 8, TinkerSmeltery.broadAxeHeadCast, "broad_axe_head", isSpecial);
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.smallBlade, 2, TinkerSmeltery.smallBladeCast, "small_blade", isSpecial);
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.broadBlade, 8, TinkerSmeltery.broadBladeCast, "broad_blade", isSpecial);
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.bowLimb, 2, TinkerSmeltery.bowLimbCast, "bow_limb", isSpecial);
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.bowGrip, 2, TinkerSmeltery.bowGripCast, "bow_grip", isSpecial);
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.toolBinding, 1, TinkerSmeltery.toolBindingCast, "tool_binding", isSpecial);
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.toughBinding, 3, TinkerSmeltery.toughBindingCast, "tough_binding", isSpecial);
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.adzeHead, 2, TinkerSmeltery.adzeHeadCast, "adze_head", isSpecial);
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.largePlate, 4, TinkerSmeltery.largePlateCast, "large_plate", isSpecial);
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.toolHandle, 1, TinkerSmeltery.toolHandleCast, "tool_handle", isSpecial);
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.toughHandle, 3, TinkerSmeltery.toughHandleCast, "tough_handle", isSpecial);
+
+    generateArmorSolidificationRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.plating.get(ArmorItem.Type.HELMET), 3, TinkerSmeltery.helmetPlatingCast, "helmet_plating", isSpecial);
+    generateArmorSolidificationRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.plating.get(ArmorItem.Type.CHESTPLATE), 6, TinkerSmeltery.chestplatePlatingCast, "chestplate_plating", isSpecial);
+    generateArmorSolidificationRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.plating.get(ArmorItem.Type.LEGGINGS), 5, TinkerSmeltery.leggingsPlatingCast, "leggings_plating", isSpecial);
+    generateArmorSolidificationRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.plating.get(ArmorItem.Type.BOOTS), 2, TinkerSmeltery.bootsPlatingCast, "boots_plating", isSpecial);
+    generateSolidifierRecipes(provider, fluid, outputMaterialVariantId, TinkerToolParts.maille, 2, TinkerSmeltery.mailleCast, "maille", isSpecial);
+  }
+
+  private static void generateSolidifierRecipes(Consumer<FinishedRecipe> provider, Fluid inputFluid, MaterialVariantId outputMaterialVariantId, ItemObject<?> toolPartStack, int materialCost, CastItemObject cast, String path, boolean isSpecial) {
     FluidStack fluidInput = new FluidStack(inputFluid, materialCost * L);
+    String recipePath = "solidify_" + ForgeRegistries.FLUIDS.getKey(inputFluid).getPath() + "_to_" + path;
 
-    MaterialVariantId outputMaterialVariantId = isSpecial
-      ? SPECIAL_FLUID_OUTPUT_MATERIALS.getOrDefault(inputFluid, defaultMatVariantId)
-      : defaultMatVariantId;
-
-    var recipeType = useVacuum ? GTRecipeTypes.VACUUM_RECIPES : GTRecipeTypes.FLUID_SOLIDFICATION_RECIPES;
-    String recipeTypeName = useVacuum ? "vacuum_freeze" : "solidify";
-
-    var builder = recipeType.recipeBuilder(TConstruct.getResource(recipeTypeName + "_" + ForgeRegistries.FLUIDS.getKey(inputFluid).getPath() + "_to_" + path))
+    var builder = GTRecipeTypes.FLUID_SOLIDFICATION_RECIPES.recipeBuilder(recipePath)
       .outputItems(getToolStack(toolPartStack.asItem(), outputMaterialVariantId))
       .duration(40 * materialCost)
-      .EUt(VA[voltage]);
+      .EUt(VA[LV]);
 
     if (isSpecial) {
-      MaterialId baseMaterial = SPECIAL_FLUID_BASE_MATERIALS.get(inputFluid);
-      if (baseMaterial != null) {
-        MaterialVariantId baseMaterialVariantId = MaterialVariantId.tryParse(baseMaterial.toString());
-        builder.inputFluids(FluidIngredient.of(fluidInput))
-          .inputItems(getToolStack(toolPartStack.asItem(), baseMaterialVariantId));
-      } else {
-        builder.inputFluids(FluidIngredient.of(fluidInput))
-          .notConsumable(cast);
-      }
+      builder.inputFluids(FluidIngredient.of(fluidInput))
+        .notConsumable(cast);
     } else {
       builder.inputFluids(fluidInput)
         .notConsumable(cast);
@@ -181,33 +187,18 @@ public class GTConstructRecipes {
     builder.save(provider);
   }
 
-  private static void generateArmorSolidificationRecipes(Consumer<FinishedRecipe> provider, Fluid inputFluid, MaterialId matId, MaterialVariantId defaultMatVariantId, ToolPartItem toolPartStack, int materialCost, CastItemObject cast, String path, boolean isSpecial, boolean useVacuum, int voltage) {
+  private static void generateArmorSolidificationRecipes(Consumer<FinishedRecipe> provider, Fluid inputFluid, MaterialVariantId outputMaterialVariantId, ToolPartItem toolPartStack, int materialCost, CastItemObject cast, String path, boolean isSpecial) {
     FluidStack fluidInput = new FluidStack(inputFluid, materialCost * L);
+    String recipePath = "solidify_" + ForgeRegistries.FLUIDS.getKey(inputFluid).getPath() + "_to_" + path;
 
-    MaterialVariantId outputMaterialVariantId = isSpecial
-      ? SPECIAL_FLUID_OUTPUT_MATERIALS.getOrDefault(inputFluid, defaultMatVariantId)
-      : defaultMatVariantId;
-
-    var recipeType = useVacuum ? GTRecipeTypes.VACUUM_RECIPES : GTRecipeTypes.FLUID_SOLIDFICATION_RECIPES;
-    String recipeTypeName = useVacuum ? "vacuum_freeze" : "solidify";
-
-    var builder = recipeType.recipeBuilder(TConstruct.getResource(recipeTypeName + "_" + ForgeRegistries.FLUIDS.getKey(inputFluid).getPath() + "_to_" + path))
+    var builder = GTRecipeTypes.FLUID_SOLIDFICATION_RECIPES.recipeBuilder(recipePath)
       .outputItems(getToolStack(toolPartStack, outputMaterialVariantId))
       .duration(40 * materialCost)
-      .EUt(VA[voltage]);
+      .EUt(VA[LV]);
 
     if (isSpecial) {
-      MaterialId baseMaterial = SPECIAL_FLUID_BASE_MATERIALS.get(inputFluid);
-      if (baseMaterial != null) {
-        MaterialVariantId baseMaterialVariantId = MaterialVariantId.tryParse(baseMaterial.toString());
-        if (baseMaterialVariantId != null) {
-          builder.inputFluids(FluidIngredient.of(fluidInput))
-            .inputItems(getToolStack(toolPartStack, baseMaterialVariantId));
-        }
-      } else {
-        builder.inputFluids(FluidIngredient.of(fluidInput))
-          .notConsumable(cast);
-      }
+      builder.inputFluids(FluidIngredient.of(fluidInput))
+        .notConsumable(cast);
     } else {
       builder.inputFluids(fluidInput)
         .notConsumable(cast);
@@ -220,9 +211,5 @@ public class GTConstructRecipes {
     ItemStack stack = new ItemStack(toolPart);
     stack.getOrCreateTag().putString("Material", matVariantId.toString());
     return stack;
-  }
-
-  private static MaterialId materialId(String location) {
-    return new MaterialId(TConstruct.MOD_ID, location);
   }
 }
