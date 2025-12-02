@@ -14,10 +14,24 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Set up JetBrains Runtime (JBR)
-      uses: DeLaGuardo/setup-jbr@v1
+    - name: Set up JDK 17 (Temurin as fallback)
+      uses: actions/setup-java@v4
       with:
-        jbr-version: '17'
+        distribution: 'temurin'
+        java-version: '17'
+
+    - name: Download and Install JetBrains Runtime (JBR)
+      run: |
+        JBR_VERSION="17.0.12-b527.4"
+        JBR_URL="https://cache-redirector.jetbrains.com/intellij-jbr/jbr-${JBR_VERSION}-linux-x64-b527.4.tar.gz"
+        JBR_PATH="$HOME/jbr"
+        
+        wget -O jbr.tar.gz ${JBR_URL}
+        
+        mkdir -p ${JBR_PATH}
+        tar -xzf jbr.tar.gz -C ${JBR_PATH} --strip-components=1
+        
+        echo "${JBR_PATH}/bin" >> $GITHUB_PATH
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
