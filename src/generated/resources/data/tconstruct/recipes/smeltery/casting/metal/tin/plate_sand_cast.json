@@ -10,9 +10,9 @@
       "tag": "forge:plates/tin"
     }
   ],
-  "cooling_time": 39,
+  "cooling_time": 48,
   "fluid": {
-    "amount": 144,
+    "amount": 216,
     "tag": "forge:tin"
   },
   "result": {

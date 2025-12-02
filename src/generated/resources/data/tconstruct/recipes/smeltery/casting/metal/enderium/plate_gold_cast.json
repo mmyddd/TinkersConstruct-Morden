@@ -9,9 +9,9 @@
       "tag": "forge:plates/enderium"
     }
   ],
-  "cooling_time": 76,
+  "cooling_time": 93,
   "fluid": {
-    "amount": 144,
+    "amount": 216,
     "tag": "forge:enderium"
   },
   "result": {

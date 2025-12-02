@@ -10,9 +10,9 @@
       "tag": "forge:plates/zinc"
     }
   ],
-  "cooling_time": 47,
+  "cooling_time": 57,
   "fluid": {
-    "amount": 144,
+    "amount": 216,
     "tag": "forge:zinc"
   },
   "result": {

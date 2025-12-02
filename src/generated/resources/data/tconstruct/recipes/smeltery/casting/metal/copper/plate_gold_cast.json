@@ -9,9 +9,9 @@
       "tag": "forge:plates/copper"
     }
   ],
-  "cooling_time": 50,
+  "cooling_time": 61,
   "fluid": {
-    "amount": 144,
+    "amount": 216,
     "tag": "forge:copper"
   },
   "result": {

@@ -9,9 +9,9 @@
       "tag": "forge:plates/rose_gold"
     }
   ],
-  "cooling_time": 52,
+  "cooling_time": 63,
   "fluid": {
-    "amount": 144,
+    "amount": 216,
     "tag": "forge:rose_gold"
   },
   "result": {

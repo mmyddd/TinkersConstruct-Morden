@@ -9,9 +9,9 @@
       "tag": "forge:plates/iron"
     }
   ],
-  "cooling_time": 60,
+  "cooling_time": 74,
   "fluid": {
-    "amount": 144,
+    "amount": 216,
     "tag": "forge:iron"
   },
   "result": {

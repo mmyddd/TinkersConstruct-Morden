@@ -10,9 +10,9 @@
       "tag": "forge:plates/brass"
     }
   ],
-  "cooling_time": 54,
+  "cooling_time": 66,
   "fluid": {
-    "amount": 144,
+    "amount": 216,
     "tag": "forge:brass"
   },
   "result": {

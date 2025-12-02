@@ -10,9 +10,9 @@
       "tag": "forge:gears/nickel"
     }
   ],
-  "cooling_time": 130,
+  "cooling_time": 159,
   "fluid": {
-    "amount": 576,
+    "amount": 864,
     "tag": "forge:nickel"
   },
   "result": {

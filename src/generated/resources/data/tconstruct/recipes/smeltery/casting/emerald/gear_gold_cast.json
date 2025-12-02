@@ -9,9 +9,9 @@
       "tag": "forge:gears/emerald"
     }
   ],
-  "cooling_time": 429,
+  "cooling_time": 525,
   "fluid": {
-    "amount": 6400,
+    "amount": 9600,
     "tag": "tconstruct:emerald"
   },
   "result": {

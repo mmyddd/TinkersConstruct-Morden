@@ -1,12 +1,5 @@
 {
   "type": "tconstruct:damagable_melting",
-  "byproducts": [
-    {
-      "amount": 240,
-      "tag": "forge:steel",
-      "unit_size": 16
-    }
-  ],
   "ingredient": {
     "item": "minecraft:chainmail_helmet"
   },

@@ -524,17 +524,17 @@ public class SmelteryRecipeBuilder {
 
   /** Adds a recipe for melting plates */
   public SmelteryRecipeBuilder plate() {
-    return meltingCasting(1, TinkerSmeltery.plateCast, 1, true);
+    return meltingCasting(1.5F, TinkerSmeltery.plateCast, 1, true);
   }
 
   /** Adds a recipe for melting gears */
   public SmelteryRecipeBuilder gear() {
-    return meltingCasting(4, TinkerSmeltery.gearCast, 2, true);
+    return meltingCasting(10, TinkerSmeltery.gearCast, 2, true);
   }
 
   /** Adds a recipe for melting rods from IE */
   public SmelteryRecipeBuilder rod() {
-    return meltingCasting(0.5f, TinkerSmeltery.rodCast, 1 / 5f, true);
+    return meltingCasting(0.75f, TinkerSmeltery.rodCast, 1 / 5f, true);
   }
 
   /** Adds a recipe for melting sheetmetal from IE */

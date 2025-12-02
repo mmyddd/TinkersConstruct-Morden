@@ -10,9 +10,9 @@
       "tag": "forge:rods/steel"
     }
   ],
-  "cooling_time": 46,
+  "cooling_time": 56,
   "fluid": {
-    "amount": 72,
+    "amount": 108,
     "tag": "forge:steel"
   },
   "result": {

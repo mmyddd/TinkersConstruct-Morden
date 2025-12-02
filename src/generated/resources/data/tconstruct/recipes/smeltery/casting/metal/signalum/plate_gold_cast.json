@@ -9,9 +9,9 @@
       "tag": "forge:plates/signalum"
     }
   ],
-  "cooling_time": 66,
+  "cooling_time": 81,
   "fluid": {
-    "amount": 144,
+    "amount": 216,
     "tag": "forge:signalum"
   },
   "result": {
