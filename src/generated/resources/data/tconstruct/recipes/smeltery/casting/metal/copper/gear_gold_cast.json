@@ -9,9 +9,9 @@
       "tag": "forge:gears/copper"
     }
   ],
-  "cooling_time": 122,
+  "cooling_time": 158,
   "fluid": {
-    "amount": 864,
+    "amount": 1440,
     "tag": "forge:copper"
   },
   "result": {

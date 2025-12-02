@@ -10,9 +10,9 @@
       "tag": "forge:gears/gold"
     }
   ],
-  "cooling_time": 139,
+  "cooling_time": 180,
   "fluid": {
-    "amount": 864,
+    "amount": 1440,
     "tag": "forge:gold"
   },
   "result": {

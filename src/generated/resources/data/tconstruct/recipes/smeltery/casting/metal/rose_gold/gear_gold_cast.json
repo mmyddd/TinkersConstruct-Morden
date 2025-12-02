@@ -9,9 +9,9 @@
       "tag": "forge:gears/rose_gold"
     }
   ],
-  "cooling_time": 127,
+  "cooling_time": 164,
   "fluid": {
-    "amount": 864,
+    "amount": 1440,
     "tag": "forge:rose_gold"
   },
   "result": {

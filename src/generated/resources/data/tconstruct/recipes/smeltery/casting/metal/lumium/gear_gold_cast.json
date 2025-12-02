@@ -9,9 +9,9 @@
       "tag": "forge:gears/lumium"
     }
   ],
-  "cooling_time": 166,
+  "cooling_time": 214,
   "fluid": {
-    "amount": 864,
+    "amount": 1440,
     "tag": "forge:lumium"
   },
   "result": {

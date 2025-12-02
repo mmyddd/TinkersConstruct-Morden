@@ -10,9 +10,9 @@
       "tag": "forge:gears/iron"
     }
   ],
-  "cooling_time": 147,
+  "cooling_time": 190,
   "fluid": {
-    "amount": 864,
+    "amount": 1440,
     "tag": "forge:iron"
   },
   "result": {

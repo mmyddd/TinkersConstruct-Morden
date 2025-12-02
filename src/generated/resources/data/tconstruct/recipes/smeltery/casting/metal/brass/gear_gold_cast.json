@@ -9,9 +9,9 @@
       "tag": "forge:gears/brass"
     }
   ],
-  "cooling_time": 131,
+  "cooling_time": 170,
   "fluid": {
-    "amount": 864,
+    "amount": 1440,
     "tag": "forge:brass"
   },
   "result": {

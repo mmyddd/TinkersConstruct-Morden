@@ -10,9 +10,9 @@
       "tag": "forge:gears/steel"
     }
   ],
-  "cooling_time": 159,
+  "cooling_time": 205,
   "fluid": {
-    "amount": 864,
+    "amount": 1440,
     "tag": "forge:steel"
   },
   "result": {

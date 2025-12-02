@@ -10,9 +10,9 @@
       "tag": "forge:gears/zinc"
     }
   ],
-  "cooling_time": 115,
+  "cooling_time": 148,
   "fluid": {
-    "amount": 864,
+    "amount": 1440,
     "tag": "forge:zinc"
   },
   "result": {

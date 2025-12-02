@@ -10,9 +10,9 @@
       "tag": "forge:gears/constantan"
     }
   ],
-  "cooling_time": 157,
+  "cooling_time": 202,
   "fluid": {
-    "amount": 864,
+    "amount": 1440,
     "tag": "forge:constantan"
   },
   "result": {

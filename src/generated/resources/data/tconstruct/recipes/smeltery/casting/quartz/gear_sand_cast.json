@@ -10,9 +10,9 @@
       "tag": "forge:gears/quartz"
     }
   ],
-  "cooling_time": 447,
+  "cooling_time": 577,
   "fluid": {
-    "amount": 9600,
+    "amount": 16000,
     "tag": "tconstruct:quartz"
   },
   "result": {
