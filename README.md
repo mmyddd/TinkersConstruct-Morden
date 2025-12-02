@@ -13,11 +13,12 @@ For documentation on writing addons or working with Tinkers' Consrtuct datapacks
 
 ## Setting up a Workspace/Compiling from Source
 
-Note: Git MUST be installed and in the system path to use our scripts.
-* Setup: Import Tinkers' Construct as a Gradle project into IDEA. Let it run setup.
-* Run: Run the `gradlew genIntellijRuns` through IDEA.
-* Build: Run `gradlew build`.
-* If obscure Gradle issues are found try running `gradlew clean` and `gradlew cleanCache`
+Development Setup
+* First, ensure you have IntelliJ IDEA and Java 17 installed. It is highly recommended to configure IDEA to use its bundled JetBrains Runtime (JBR) for optimal performance and stability; you can set this in Settings > Build Tools > Gradle > Gradle JVM. Clone the repository and open it as a Gradle project in IDEA, allowing the initial setup and dependency sync to complete. Once synced, run the genIntellijRuns Gradle task to automatically generate the necessary run configurations for the IDE.
+
+* The project is pre-configured with three primary run configurations. The client run launches a Minecraft instance for testing gameplay and UI, while the server run starts a dedicated server for backend logic. Crucially, the data run executes the data generator, which scans your code to create asset files like recipes and models, outputting them to src/generated/resources/. This automated generation is a core part of the modern modding workflow.
+
+* To build the project, run the gradlew build command. This will compile your code and package the mod into the build/libs/ directory. If you encounter any obscure Gradle issues during development, try running gradlew clean followed by gradlew cleanCache to reset your environment. Note that the build script is configured to skip tests to avoid known issues with the current Forge plugin.
 
 ## Issue reporting
 Please include the following:
