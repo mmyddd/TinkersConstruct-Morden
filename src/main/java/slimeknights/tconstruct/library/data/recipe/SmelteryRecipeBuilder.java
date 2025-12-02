@@ -529,7 +529,7 @@ public class SmelteryRecipeBuilder {
 
   /** Adds a recipe for melting gears */
   public SmelteryRecipeBuilder gear() {
-    return meltingCasting(6, TinkerSmeltery.gearCast, 2, true);
+    return meltingCasting(10, TinkerSmeltery.gearCast, 2, true);
   }
 
   /** Adds a recipe for melting rods from IE */
