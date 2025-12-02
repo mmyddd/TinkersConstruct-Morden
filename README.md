@@ -13,12 +13,17 @@ For documentation on writing addons or working with Tinkers' Consrtuct datapacks
 
 ## Setting up a Workspace/Compiling from Source
 
-Development Setup
-* First, ensure you have IntelliJ IDEA and Java 17 installed. It is highly recommended to configure IDEA to use its bundled JetBrains Runtime (JBR) for optimal performance and stability; you can set this in Settings > Build Tools > Gradle > Gradle JVM. Clone the repository and open it as a Gradle project in IDEA, allowing the initial setup and dependency sync to complete. Once synced, run the genIntellijRuns Gradle task to automatically generate the necessary run configurations for the IDE.
 
-* The project is pre-configured with three primary run configurations. The client run launches a Minecraft instance for testing gameplay and UI, while the server run starts a dedicated server for backend logic. Crucially, the data run executes the data generator, which scans your code to create asset files like recipes and models, outputting them to src/generated/resources/. This automated generation is a core part of the modern modding workflow.
+- Java 17
+- JetBrains Runtime (JBR) is mandatory. You must configure IntelliJ IDEA to use the bundled JBR (version 17 or newer) for the Gradle JVM. This can be set in `Settings > Build, Execution, Deployment > Build Tools > Gradle > Gradle JVM`.
 
-* To build the project, run the gradlew build command. This will compile your code and package the mod into the build/libs/ directory. If you encounter any obscure Gradle issues during development, try running gradlew clean followed by gradlew cleanCache to reset your environment. Note that the build script is configured to skip tests to avoid known issues with the current Forge plugin.
+The project uses a modern Forge plugin to define run configurations directly in `build.gradle`. These are imported into your IDE by running the `genIntellijRuns` Gradle task.
+
+- **`client`**: Launches the Minecraft client for testing mod features, UI, and gameplay.
+- **`server`**: Launches a dedicated, no-GUI server instance for testing server-side logic and commands.
+- **`data`**: Runs the data generator. It scans your code for data providers and automatically generates resource files like recipes, models, and loot tables into the `src/generated/resources/` directory.
+
+To build the project, execute `gradlew build`. For troubleshooting Gradle issues, use `gradlew clean` and `gradlew cleanCache`. The build script is configured to skip tests to resolve plugin compatibility problems.
 
 ## Issue reporting
 Please include the following:
