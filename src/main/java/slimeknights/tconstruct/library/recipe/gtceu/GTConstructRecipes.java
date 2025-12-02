@@ -61,7 +61,7 @@ public class GTConstructRecipes {
     registerSpecialRecipes(provider);
 
     Set<Fluid> processedSpecialFluids = Set.of(
-      TinkerFluids.moltenPlatinum.get(),
+      //TinkerFluids.moltenPlatinum.get(),
       TinkerFluids.skySlime.get(),
       TinkerFluids.enderSlime.get(),
       TinkerFluids.earthSlime.get(),
@@ -104,12 +104,12 @@ public class GTConstructRecipes {
   private static void registerSpecialRecipes(Consumer<FinishedRecipe> provider) {
     LOGGER.info("Registering hardcoded special/hot fluid recipes...");
 
-    GTConstructRecipeType.builder()
-      .inputFluids(TinkerFluids.moltenPlatinum.get())
-      .outputMaterial(MaterialIds.platinum)
-      .voltage(LuV)
-      .inVacuumFreezer()
-      .register(provider);
+    //GTConstructRecipeType.builder()
+    //  .inputFluids(TinkerFluids.moltenPlatinum.get())
+    //  .outputMaterial(MaterialIds.platinum)
+    //  .voltage(LuV)
+    //  .inVacuumFreezer()
+    //  .register(provider);
 
     GTConstructRecipeType.builder()
       .inputFluids(TinkerFluids.skySlime.get())
